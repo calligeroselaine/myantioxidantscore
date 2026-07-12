@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import BookingForm from "@/components/BookingForm";
 
 export const metadata: Metadata = {
@@ -22,9 +24,9 @@ const partnerTypes = [
     icon: "💪",
   },
   {
-    title: "Pharmacies & Health Food Stores",
+    title: "Wellness Consultation Services",
     description:
-      "Attract foot traffic and build customer loyalty with on-site scanning events. Help shoppers choose the right supplements with confidence.",
+      "Differentiate your consultations with fast, non-invasive antioxidant scanning. Provide measurable wellness insights that support informed conversations about nutrition and healthy living.",
     icon: "🌿",
   },
   {
@@ -36,12 +38,13 @@ const partnerTypes = [
 ];
 
 const benefits = [
-  "No upfront device cost for qualified partners",
-  "Full training and certification provided",
+  "Wholesale device cost for qualified partners",
+  "Full training provided at no charge",
   "Co-branded marketing materials",
-  "Ongoing support from our wellness team",
+  "Ongoing support from an experienced team",
   "Access to Prysm Certified product range",
   "Revenue share on supplement referrals",
+  "Custom revenue projections based on your expected scan volume and referral conversion rates",
 ];
 
 export default function PartnerWithUsPage() {
@@ -57,10 +60,16 @@ export default function PartnerWithUsPage() {
             Partner With Us
           </h1>
           <p className="mt-6 text-white/60 text-lg leading-relaxed max-w-xl mx-auto">
-            Bring the world&apos;s most advanced antioxidant scanning technology
-            to your clients and customers. We make it easy to offer a genuinely
-            life-changing service.
+            Bring innovative antioxidant scanning technology to your clients
+            and customers. Give them measurable insights that support more
+            informed wellness decisions.
           </p>
+
+          <div className="mt-10 max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg">
+            <style>{`wistia-player[media-id='zrw2qb4qsn']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/zrw2qb4qsn/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }`}</style>
+            <wistia-player media-id="zrw2qb4qsn" aspect="0.5625"></wistia-player>
+          </div>
+
           <Link
             href="#partner-form"
             className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full transition-all duration-200 text-sm"
@@ -70,6 +79,9 @@ export default function PartnerWithUsPage() {
         </div>
       </section>
 
+      <Script src="https://fast.wistia.com/player.js" strategy="lazyOnload" />
+      <Script src="https://fast.wistia.com/embed/zrw2qb4qsn.js" strategy="lazyOnload" type="module" />
+
       {/* Partner types */}
       <section className="py-24 bg-white" aria-labelledby="partner-types-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,7 +90,7 @@ export default function PartnerWithUsPage() {
               Who We Partner With
             </h2>
             <p className="mt-3 text-gray-500 max-w-xl mx-auto">
-              We work with a wide range of health and wellness businesses across Australia.
+              We work with a wide range of health and wellness businesses.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -92,6 +104,37 @@ export default function PartnerWithUsPage() {
                 <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Imagine banner */}
+      <section className="bg-white" aria-labelledby="imagine-heading">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="relative min-h-[400px] lg:min-h-[560px] bg-[#3a4048]">
+            <Image
+              src="/output.auto.jpg"
+              alt="Imagine leading the charge in beauty and wellness innovation"
+              fill
+              className="object-contain"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+          <div className="bg-[#F9FAFB] flex flex-col justify-center px-10 py-16 lg:px-16">
+            <h2 id="imagine-heading" className="text-3xl sm:text-4xl font-bold text-[#0D1B3E] leading-tight">
+              A groundbreaking platform for your business
+            </h2>
+            <p className="mt-6 text-gray-500 leading-relaxed">
+              Position your business at the forefront of beauty and wellness
+              innovation. The Prysm iO gives you a genuinely differentiated
+              offering — one backed by science, not trends.
+            </p>
+            <Link
+              href="#partner-form"
+              className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full transition-all duration-200 text-sm w-fit"
+            >
+              Enquire Now
+            </Link>
           </div>
         </div>
       </section>
@@ -118,6 +161,10 @@ export default function PartnerWithUsPage() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-6 text-white/40 text-xs leading-relaxed">
+                Revenue projections are illustrative only and based on
+                user-provided assumptions. Actual results may vary.
+              </p>
             </div>
             <div className="bg-[#1a2f5e] rounded-3xl p-8 text-center">
               <div className="text-[#C8953C] text-5xl font-black mb-2">$200B</div>

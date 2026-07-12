@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-const BASE = "https://static.wixstatic.com/media";
-
 export const metadata: Metadata = {
   title: "Certified Products",
   description:
@@ -12,58 +10,86 @@ export const metadata: Metadata = {
 
 const products = [
   {
+    name: "Prysm iO",
+    badge: "2025 BIG Awards Winner",
+    image: "/2025-BIG%20Awards-Prysm%20iO.jpg",
+    description:
+      "The award-winning device behind your score. This palm-sized scanner delivers a personalised nutritional assessment in just 15 seconds, giving you real-time insight into your antioxidant defences.",
+    benefits: [
+      "Winner, 2025 BIG Innovation Awards",
+      "Real-time antioxidant health insights",
+      "Personalised wellness tracking over time",
+      "Non-invasive, painless, 15-second scan",
+    ],
+    guarantee: false,
+  },
+  {
     name: "Pharmanex® LifePak®",
     badge: "Bestseller",
-    image: `${BASE}/2cbe9c_c661e5125a8a4eb6ae48492d989be1e9~mv2.avif`,
+    image: "/IMG2507300837.jpg.avif",
     description:
-      "The gold standard in comprehensive nutritional supplementation. LifePak® is a multi-nutrient system clinically shown to raise Prysm Scores. Backed by 20+ years of research.",
+      "A complete dietary supplement system delivering vitamins, minerals, phytonutrients, and antioxidants in clinically significant amounts — the foundation of the Prysm Certified range.",
     benefits: [
-      "Comprehensive antioxidant protection",
-      "Clinically proven to raise Prysm Score",
-      "Essential vitamins, minerals & omega-3s",
+      "Comprehensive daily nutritional support",
+      "Clinically significant antioxidant dosing",
       "Bioavailability-optimised formulation",
+      "20+ years of clinical research",
     ],
     guarantee: true,
   },
   {
-    name: "g3® Juice",
+    name: "Beauty Focus® Collagen+",
     badge: "Popular",
-    image: `${BASE}/2cbe9c_178911420ef0472a91451087c7ed7ab4~mv2.avif`,
+    image: "/16002208-beautyfocus-collagen.avif",
     description:
-      "A unique blend of four powerful adaptogenic fruits — gac, goji, cili, and sea buckthorn — delivering exceptional antioxidant density in every serving.",
+      "A collagen drink featuring Bioactive Collagen Peptides, Lutein, and Phytoceramides — clinically proven to improve skin texture, radiance, and overall appearance from within.",
     benefits: [
-      "4 of the world's most antioxidant-rich fruits",
-      "Supports immune function",
-      "Anti-inflammatory benefits",
-      "No artificial colours or flavours",
-    ],
-    guarantee: true,
-  },
-  {
-    name: "ageLOC® Meta",
-    badge: "Advanced",
-    image: `${BASE}/2cbe9c_5f23817806644ad2b5393ab51a7eba45~mv2.jpg`,
-    description:
-      "Targets metabolic ageing at the cellular level. ageLOC® Meta supports healthy metabolism and energy production, complementing your antioxidant score improvement programme.",
-    benefits: [
-      "Cellular-level metabolic support",
-      "Targets sirtuin gene expression",
-      "Supports healthy body composition",
+      "Clinically proven skin texture improvement",
+      "Bioactive Collagen Peptides formula",
+      "Supports skin radiance and hydration",
       "Complements antioxidant supplementation",
     ],
     guarantee: true,
   },
   {
-    name: "Vitality® Bundle",
-    badge: "New",
-    image: `${BASE}/2cbe9c_6c63b07746c641d3b0a62e680ade79fa~mv2.jpg`,
+    name: "Pharmanex® Eye Formula",
+    badge: "Eye Health",
+    image: "/Prysm-Device-Page-Eye-Formula.avif",
     description:
-      "A curated bundle combining LifePak®, g3® Juice, and targeted antioxidant boosters — designed for rapid, measurable Prysm Score improvement.",
+      "A targeted nutrient blend featuring lutein and zeaxanthin, formulated to support long-term eye health and protect against everyday visual strain.",
     benefits: [
-      "Optimised for maximum score improvement",
-      "30-day supply included",
-      "Guided improvement programme",
-      "Score tracking support",
+      "Macular protection support",
+      "Healthy lens antioxidant defence",
+      "Reduced glare sensitivity",
+      "Lutein & zeaxanthin rich formula",
+    ],
+    guarantee: true,
+  },
+  {
+    name: "ageLOC® Y-Span",
+    badge: "Advanced",
+    image: "/Prysm-iO-SCS-Posts-ageLOC-Youth-Rectangle-Product.jpg",
+    description:
+      "An advanced anti-ageing supplement designed to promote active, energetic ageing by supporting optimal gene expression and your body's natural healthy-ageing defences.",
+    benefits: [
+      "Supports optimal gene expression",
+      "Healthy ageing defence mechanisms",
+      "Promotes active, energetic ageing",
+      "Complements antioxidant supplementation",
+    ],
+    guarantee: true,
+  },
+  {
+    name: "Pharmanex® G3",
+    badge: "Immune Support",
+    image: "/Prysm-Device-Page-G3.avif",
+    description:
+      "A formula built around gâc fruit and its unique lipocarotenes, combined with three super fruits — Chinese lycium, Siberian pineapple, and cili fruit — for exceptional antioxidant density.",
+    benefits: [
+      "Fortifies antioxidant defences",
+      "Supports healthy immune function",
+      "Protects against free radical damage",
+      "Four rare, antioxidant-rich super fruits",
     ],
     guarantee: true,
   },
@@ -110,8 +136,8 @@ export default function CertifiedProductsPage() {
                 className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:border-[#C8953C]/20 transition-all duration-300"
               >
                 {/* Product image */}
-                <div className="relative h-56 w-full bg-gray-50">
-                  <Image src={image} alt={name} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+                <div className="relative h-80 w-full bg-gray-50">
+                  <Image src={image} alt={name} fill className="object-contain p-6" sizes="(max-width: 768px) 100vw, 50vw" />
                 </div>
                 <div className="p-8">
                 <div className="flex items-start justify-between mb-4">

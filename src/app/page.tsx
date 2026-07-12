@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import BookingForm from "@/components/BookingForm";
+import HeroVideoButton from "@/components/HeroVideoButton";
 
 export const metadata: Metadata = {
   title: "Antioxidant Scan | Check Your Health Score in Seconds",
@@ -54,10 +55,11 @@ export default function HomePage() {
               src={IMG.hero}
               alt="Prysm iO antioxidant scanning device"
               fill
-              className="object-cover"
+              className="object-contain"
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
+            <HeroVideoButton />
           </div>
           <div className="bg-[#0f1b35] flex flex-col justify-center px-10 py-16 lg:px-16 lg:py-24">
             <h1 className="text-4xl sm:text-5xl font-light text-white leading-tight tracking-tight">
@@ -195,12 +197,12 @@ export default function HomePage() {
 
       {/* ── 7. APP HERO — full-width app image ── */}
       <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh]" aria-labelledby="app-heading">
-        <div className="relative min-h-[50vh]">
+        <div className="relative min-h-[50vh] bg-black">
           <Image
             src={IMG.appHero}
             alt="Prysm iO app showing antioxidant score"
             fill
-            className="object-cover"
+            className="object-contain object-left lg:object-center"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>

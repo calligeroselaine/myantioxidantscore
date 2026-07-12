@@ -1,8 +1,15 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
   // Compress responses
   compress: true,
+
+  // Pin the workspace root to this project, so stray lockfiles elsewhere
+  // on the machine can't cause Turbopack to infer the wrong root.
+  turbopack: {
+    root: path.resolve(__dirname),
+  },
 
   // Optimise images
   images: {

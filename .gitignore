@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large unused source assets (not referenced in code)
+public/lifepak-family-au.tif
+public/lifepak-family-au-1.tif
+public/*.mp4

@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/partner-with-us", label: "PARTNER WITH US" },
   { href: "/certified-products", label: "CERTIFIED PRODUCTS" },
   { href: "/backed-by-science", label: "BACKED BY SCIENCE" },
+  { href: "/testimonials", label: "TESTIMONIALS" },
   { href: "/blog", label: "BLOG" },
   { href: "/contact", label: "CONTACT US" },
 ];

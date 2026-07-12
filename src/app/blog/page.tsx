@@ -1,75 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { posts } from "./posts";
 
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Expert articles on antioxidants, nutritional health, supplement science, and tips to raise your Prysm Score.",
+    "Expert articles on antioxidants, oxidative stress, and how to improve your Prysm Score.",
 };
 
-const posts = [
-  {
-    slug: "what-is-your-antioxidant-score",
-    title: "What Is Your Antioxidant Score and Why Does It Matter?",
-    excerpt:
-      "Your Prysm Score is a window into your body's antioxidant defence system. Learn what it measures, why it matters, and how to improve it.",
-    category: "Education",
-    date: "June 15, 2026",
-    readTime: "5 min read",
-  },
-  {
-    slug: "do-your-supplements-actually-work",
-    title: "Do Your Supplements Actually Work? Here's How to Know",
-    excerpt:
-      "Australians spend billions on supplements each year — but most never know if they're being absorbed. The Prysm iO changes that equation forever.",
-    category: "Science",
-    date: "June 8, 2026",
-    readTime: "4 min read",
-  },
-  {
-    slug: "carotenoids-antioxidants-explained",
-    title: "Carotenoids & Antioxidants: A Plain-English Explanation",
-    excerpt:
-      "What are carotenoids? How do they protect your body? And why are they the key ingredient your health score is actually measuring? We break it all down.",
-    category: "Nutrition",
-    date: "May 30, 2026",
-    readTime: "6 min read",
-  },
-  {
-    slug: "raise-your-prysm-score",
-    title: "7 Evidence-Based Ways to Raise Your Prysm Score",
-    excerpt:
-      "Diet, supplements, sleep, and lifestyle — discover the strategies that move the needle most, backed by clinical data from real Prysm iO users.",
-    category: "Tips",
-    date: "May 20, 2026",
-    readTime: "7 min read",
-  },
-  {
-    slug: "oxidative-stress-disease",
-    title: "Oxidative Stress: The Silent Driver of Chronic Disease",
-    excerpt:
-      "From cardiovascular disease to accelerated ageing, oxidative stress is implicated in a wide range of conditions. Understanding it is the first step to fighting back.",
-    category: "Science",
-    date: "May 10, 2026",
-    readTime: "5 min read",
-  },
-  {
-    slug: "lifepak-clinical-results",
-    title: "LifePak® Clinical Results: What the Studies Actually Show",
-    excerpt:
-      "Pharmanex® LifePak® has been studied for over two decades. We examine the clinical evidence for its ability to raise antioxidant scores in real-world populations.",
-    category: "Research",
-    date: "April 28, 2026",
-    readTime: "8 min read",
-  },
-];
-
 const categoryColors: Record<string, string> = {
-  Education: "bg-blue-50 text-blue-700",
+  Wellness: "bg-[#C8953C]/10 text-[#C8953C]",
   Science: "bg-purple-50 text-purple-700",
-  Nutrition: "bg-green-50 text-green-700",
-  Tips: "bg-[#C8953C]/10 text-[#C8953C]",
-  Research: "bg-indigo-50 text-indigo-700",
+  Education: "bg-blue-50 text-blue-700",
+  News: "bg-green-50 text-green-700",
 };
 
 export default function BlogPage() {
@@ -86,7 +29,7 @@ export default function BlogPage() {
           </h1>
           <p className="mt-6 text-white/60 text-lg leading-relaxed">
             Science-backed articles to help you understand, track, and improve
-            your nutritional health.
+            your antioxidant health.
           </p>
         </div>
       </section>
@@ -101,7 +44,6 @@ export default function BlogPage() {
                 key={slug}
                 className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:border-[#C8953C]/20 transition-all duration-300 flex flex-col"
               >
-                {/* Placeholder image */}
                 <div className="h-44 bg-gradient-to-br from-[#0D1B3E] to-[#1a2f5e] flex items-center justify-center" aria-hidden="true">
                   <svg viewBox="0 0 80 60" className="w-16 opacity-30">
                     <rect x="10" y="10" width="60" height="40" rx="4" fill="none" stroke="#C8953C" strokeWidth="2" />

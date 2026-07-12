@@ -49,7 +49,7 @@ export default function BookAScanPage() {
                   {
                     step: "2",
                     title: "You get scanned in 15 seconds",
-                    desc: "Simply place your palm on the Prysm iO device. No preparation needed — no fasting, no blood draw.",
+                    desc: "Simply place your finger tip on the Prysm iO device. No preparation needed — no fasting, no blood draw.",
                   },
                   {
                     step: "3",
@@ -87,7 +87,7 @@ export default function BookAScanPage() {
                     },
                     {
                       q: "Does it hurt?",
-                      a: "Not at all. You simply place your palm on the device — it's completely painless.",
+                      a: "Not at all. You simply place your finger tip on the device — it's completely painless.",
                     },
                     {
                       q: "How accurate is it?",

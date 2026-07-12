@@ -72,7 +72,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-              Empowering Australians to take control of their health with
+              Empowering People to take control of their health with
               science-backed antioxidant scanning technology.
             </p>
             {/* Social */}
