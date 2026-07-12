@@ -108,7 +108,7 @@ export default function BookAScanPage() {
               <h2 className="text-xl font-bold text-[#0D1B3E] mb-6">
                 Reserve Your Spot
               </h2>
-              <BookingForm />
+              <BookingForm source="booking" />
             </div>
           </div>
         </div>

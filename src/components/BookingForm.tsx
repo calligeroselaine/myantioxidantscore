@@ -20,7 +20,11 @@ interface FormState {
   referral: string;
 }
 
-export default function BookingForm() {
+interface BookingFormProps {
+  source?: "booking" | "partner";
+}
+
+export default function BookingForm({ source = "booking" }: BookingFormProps) {
   const [form, setForm] = useState<FormState>({
     firstName: "",
     lastName: "",
@@ -31,6 +35,7 @@ export default function BookingForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Partial<FormState>>({});
+  const [submitError, setSubmitError] = useState(false);
 
   const validate = () => {
     const e: Partial<FormState> = {};
@@ -57,9 +62,20 @@ export default function BookingForm() {
       return;
     }
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1200));
-    setLoading(false);
-    setSubmitted(true);
+    setSubmitError(false);
+    try {
+      const res = await fetch("/api/submit-lead", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ ...form, source }),
+      });
+      if (!res.ok) throw new Error("Submission failed");
+      setSubmitted(true);
+    } catch {
+      setSubmitError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -234,6 +250,12 @@ export default function BookingForm() {
           ))}
         </select>
       </div>
+
+      {submitError && (
+        <p className="text-sm text-red-500 text-center" role="alert">
+          Something went wrong submitting your details. Please try again, or contact us directly.
+        </p>
+      )}
 
       <button
         type="submit"

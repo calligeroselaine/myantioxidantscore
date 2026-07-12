@@ -194,7 +194,7 @@ export default function PartnerWithUsPage() {
             </p>
           </div>
           <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8">
-            <BookingForm />
+            <BookingForm source="partner" />
           </div>
         </div>
       </section>
