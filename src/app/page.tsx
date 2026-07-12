@@ -187,8 +187,8 @@ export default function HomePage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {scoreItems.map(({ img, label }) => (
-              <div key={label} className="relative aspect-[4/3] rounded overflow-hidden">
-                <Image src={img} alt={label} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+              <div key={label} className="relative rounded overflow-hidden bg-[#e8e6dd]" style={{ aspectRatio: "3/4" }}>
+                <Image src={img} alt={label} fill className="object-contain" sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
             ))}
           </div>
