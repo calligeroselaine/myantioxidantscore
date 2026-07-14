@@ -314,6 +314,8 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
             </svg>
             Submitting…
           </>
+        ) : source === "partner" ? (
+          "I'm Interested"
         ) : (
           "Book My Free Scan"
         )}
