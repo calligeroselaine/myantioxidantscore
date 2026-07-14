@@ -46,6 +46,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
     if (!form.email.trim() || !/\S+@\S+\.\S+/.test(form.email))
       e.email = "Valid email is required";
     if (!form.phone.trim()) e.phone = "Phone number is required";
+    if (!form.referredBy.trim()) e.referredBy = "This field is required";
     return e;
   };
 
@@ -258,7 +259,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
           htmlFor="referredBy"
           className="block text-sm font-medium text-[#0D1B3E] mb-1"
         >
-          Who referred you/what is their email?
+          Who referred you/what is their email? <span className="text-red-500">*</span>
         </label>
         <input
           id="referredBy"
@@ -267,8 +268,15 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
           value={form.referredBy}
           onChange={handleChange}
           className={inputClass("referredBy")}
-          placeholder="Name of person or business (optional)"
+          placeholder="Name of person or business"
+          aria-required="true"
+          aria-describedby={errors.referredBy ? "referredBy-error" : undefined}
         />
+        {errors.referredBy && (
+          <p id="referredBy-error" className="mt-1 text-xs text-red-500" role="alert">
+            {errors.referredBy}
+          </p>
+        )}
       </div>
 
       {submitError && (
