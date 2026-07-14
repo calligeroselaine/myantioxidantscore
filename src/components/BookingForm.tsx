@@ -258,7 +258,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
           htmlFor="referredBy"
           className="block text-sm font-medium text-[#0D1B3E] mb-1"
         >
-          Who referred you to this site?
+          Who referred you/what is their email?
         </label>
         <input
           id="referredBy"
