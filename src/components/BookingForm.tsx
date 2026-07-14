@@ -18,6 +18,7 @@ interface FormState {
   email: string;
   phone: string;
   referral: string;
+  referredBy: string;
 }
 
 interface BookingFormProps {
@@ -31,6 +32,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
     email: "",
     phone: "",
     referral: "",
+    referredBy: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -249,6 +251,24 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
             </option>
           ))}
         </select>
+      </div>
+
+      <div>
+        <label
+          htmlFor="referredBy"
+          className="block text-sm font-medium text-[#0D1B3E] mb-1"
+        >
+          Who referred you to this site?
+        </label>
+        <input
+          id="referredBy"
+          name="referredBy"
+          type="text"
+          value={form.referredBy}
+          onChange={handleChange}
+          className={inputClass("referredBy")}
+          placeholder="Name of person or business (optional)"
+        />
       </div>
 
       {submitError && (
