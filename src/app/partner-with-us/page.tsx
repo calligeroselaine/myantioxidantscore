@@ -188,10 +188,6 @@ export default function PartnerWithUsPage() {
             <h2 id="partner-form-heading" className="text-3xl font-bold text-[#0D1B3E]">
               Get in Touch
             </h2>
-            <p className="mt-3 text-gray-500">
-              Tell us about your business and we&apos;ll reach out to explore
-              how we can work together.
-            </p>
           </div>
           <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8">
             <BookingForm source="partner" />
