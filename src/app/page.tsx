@@ -82,12 +82,24 @@ export default function HomePage() {
               </p>
             </div>
             <div className="mt-10">
-              <Link
-                href="/book-a-scan"
-                className="inline-block px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0f1b35] transition-all duration-200"
-              >
-                Book a Scan
-              </Link>
+              <p className="text-white/70 text-sm leading-relaxed mb-5">
+                Whether you want to check your own antioxidant levels or add
+                measurable wellness technology to your business, start here.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/book-a-scan"
+                  className="flex-1 text-center px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0f1b35] transition-all duration-200"
+                >
+                  Get Your Own Scan
+                </Link>
+                <Link
+                  href="/partner-with-us"
+                  className="flex-1 text-center px-8 py-3 bg-[#C8953C] border border-[#C8953C] text-white text-sm font-semibold tracking-widest uppercase hover:bg-[#e8b05a] hover:border-[#e8b05a] transition-all duration-200"
+                >
+                  Add This to Your Business
+                </Link>
+              </div>
             </div>
           </div>
         </div>
