@@ -323,9 +323,9 @@ export default function HomePage() {
               <p className="text-white/70 text-sm leading-relaxed">
                 &ldquo;Adding scans to our consultations gave clients
                 something to come back for. Instead of a one-off visit, we
-                now see people quarterly to track their progress.&rdquo;
+                now see people regularly to track their progress.&rdquo;
               </p>
-              <p className="mt-5 font-semibold text-white text-sm">Placeholder Name</p>
+              <p className="mt-5 font-semibold text-white text-sm">Steve</p>
               <p className="text-white/40 text-xs">Clinic Owner — Higher client retention</p>
             </div>
           </div>
