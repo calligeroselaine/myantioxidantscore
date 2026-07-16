@@ -40,8 +40,9 @@ export default function WhyMeasurePage() {
             are not the same thing — and the gap between them is where trust quietly erodes.
           </p>
           <p className="text-gray-600 leading-relaxed mb-10">
-            One of our own clients put it best. She wasn&apos;t skipping her supplements or
-            ignoring her health — quite the opposite.
+            One person who chose to measure her antioxidant levels put it best. She
+            wasn&apos;t skipping her supplements or ignoring her health — quite the
+            opposite.
           </p>
 
           <blockquote className="bg-[#F9FAFB] rounded-2xl border border-gray-100 p-8">
@@ -53,7 +54,7 @@ export default function WhyMeasurePage() {
               score. When I had my antioxidant levels measured with the Prysm iO, I was
               genuinely surprised. My score was much lower than I expected.&rdquo;
             </p>
-            <p className="mt-4 text-sm font-semibold text-[#0D1B3E]">Sally A Mumford</p>
+            <p className="mt-4 text-sm font-semibold text-[#0D1B3E]">— Sally A. Mumford</p>
           </blockquote>
 
           <p className="mt-10 text-gray-600 leading-relaxed">
