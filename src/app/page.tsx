@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const BASE = "https://static.wixstatic.com/media";
 
 const IMG = {
-  hero:           `${BASE}/2cbe9c_ec832e1b69724f599e3ba08e39023451~mv2.avif`,
+  hero:           "/IMG25081400427.jpg",
   lifestyle1:     `${BASE}/2cbe9c_c92926f009194ad4813908678bf53e73~mv2.jpg`,
   carousel1:      `${BASE}/2cbe9c_c661e5125a8a4eb6ae48492d989be1e9~mv2.avif`,
   carousel2:      `${BASE}/2cbe9c_178911420ef0472a91451087c7ed7ab4~mv2.avif`,
