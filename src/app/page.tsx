@@ -91,7 +91,7 @@ export default function HomePage() {
                   href="#book"
                   className="flex-1 text-center px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0f1b35] transition-all duration-200"
                 >
-                  Get Your Own Scan
+                  Get Your Prysm Score
                 </Link>
                 <Link
                   href="/partner-with-us"
@@ -274,7 +274,7 @@ export default function HomePage() {
             href="#book"
             className="inline-block mt-8 px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0f1b35] transition-all duration-200 w-fit"
           >
-            Book a Scan
+            Get Your Prysm Score
           </Link>
         </div>
       </section>
@@ -361,13 +361,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 10. BOOK A SCAN FORM ── */}
+      {/* ── 10. GET YOUR PRYSM SCORE FORM ── */}
       <section id="book" className="py-24 bg-white" aria-labelledby="book-heading">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <h2 id="book-heading" className="text-3xl sm:text-4xl font-light text-[#0f1b35] tracking-wide">
-                Book a Free Scan Today
+                Find Out How to Get Your Prysm Score
               </h2>
               <p className="mt-4 text-gray-500 leading-relaxed">
                 Fill in your details and we&apos;ll be in touch to arrange your

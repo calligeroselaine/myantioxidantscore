@@ -16,7 +16,7 @@ We are committed to protecting your privacy in accordance with the Australian Pr
     heading: "2. Information We Collect",
     body: `We may collect the following types of personal information:
 
-— **Contact details**: name, email address, phone number, and suburb/state when you book a scan, submit a contact form, or subscribe to our newsletter.
+— **Contact details**: name, email address, phone number, and suburb/state when you submit a form to get your Prysm Score, enquire about our services, or subscribe to our newsletter.
 
 — **Booking information**: your preferred scan location, date, and time.
 

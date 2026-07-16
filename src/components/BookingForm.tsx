@@ -123,7 +123,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
       onSubmit={handleSubmit}
       noValidate
       className="space-y-4"
-      aria-label="Book a Scan form"
+      aria-label="Get your Prysm Score form"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>

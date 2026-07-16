@@ -170,7 +170,7 @@ export default function CertifiedProductsPage() {
                     href="/#book"
                     className="text-sm font-semibold text-[#C8953C] hover:text-[#a67820] flex items-center gap-1 transition-colors"
                   >
-                    Book a scan to see if this is right for you
+                    Find out if this is right for you
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
@@ -190,7 +190,7 @@ export default function CertifiedProductsPage() {
             Not sure which product is right for you?
           </h2>
           <p className="mt-4 text-white/60 leading-relaxed">
-            Book a free scan first. Your Prysm Score tells us exactly which
+            Find out your Prysm Score first — it tells us exactly which
             certified products will make the biggest difference for you.
           </p>
           <Link
