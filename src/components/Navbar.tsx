@@ -11,7 +11,7 @@ const navLinks = [
   { href: "/who-its-for", label: "WHO IT'S FOR" },
   { href: "/testimonials", label: "SUCCESS STORIES" },
   { href: "/backed-by-science", label: "TECHNOLOGY & SCIENCE" },
-  { href: "/blog", label: "RESOURCES" },
+  { href: "/blog", label: "BLOG" },
   { href: "/book-a-scan#faq", label: "FAQ" },
   { href: "/contact", label: "CONTACT" },
 ];
