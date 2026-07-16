@@ -6,9 +6,10 @@ import { usePathname } from "next/navigation";
 const footerLinks = {
   Company: [
     { href: "/", label: "Home" },
-    { href: "/backed-by-science", label: "Backed by Science" },
-    { href: "/partner-with-us", label: "Partner With Us" },
-    { href: "/blog", label: "Blog" },
+    { href: "/backed-by-science", label: "Technology & Science" },
+    { href: "/partner-with-us", label: "Business Opportunities" },
+    { href: "/testimonials", label: "Success Stories" },
+    { href: "/blog", label: "Resources" },
     { href: "/contact", label: "Contact Us" },
   ],
   Products: [
