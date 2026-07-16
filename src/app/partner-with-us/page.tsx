@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import BookingForm from "@/components/BookingForm";
+import GrowthCalculator from "@/components/GrowthCalculator";
 
 export const metadata: Metadata = {
   title: "Business Opportunities",
@@ -182,6 +183,25 @@ export default function PartnerWithUsPage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Practice Growth Calculator */}
+      <section className="py-24 bg-white" aria-labelledby="calculator-heading">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-[#C8953C] font-semibold text-sm uppercase tracking-widest mb-3">
+              Estimate Your Impact
+            </p>
+            <h2 id="calculator-heading" className="text-3xl font-bold text-[#0D1B3E]">
+              Practice Growth Calculator
+            </h2>
+            <p className="mt-3 text-gray-500 max-w-xl mx-auto">
+              Adjust the numbers below to see an illustrative projection of the recurring
+              revenue scanning could add to your business.
+            </p>
+          </div>
+          <GrowthCalculator />
         </div>
       </section>
 
