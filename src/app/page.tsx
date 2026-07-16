@@ -172,6 +172,49 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── 4b. FOR YOUR BUSINESS — 3-column value props ── */}
+      <section className="py-20 bg-[#0a1628]" aria-labelledby="business-heading">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <h2 id="business-heading" className="text-3xl font-light text-white text-center mb-14 tracking-wide">
+            For Your Business
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {[
+              {
+                title: "Client Retention",
+                copy: "Clients come back when they can see real progress, not just to restock a product. A follow-up scan gives them a reason to return — and gives you a natural touchpoint every time.",
+              },
+              {
+                title: "Recurring Revenue",
+                copy: "A single scan is a moment. A quarterly rescan is a relationship. Offering measurable tracking turns a one-off sale into an ongoing service clients actually look forward to.",
+              },
+              {
+                title: "Real Differentiation",
+                copy: "Most competitors are selling supplements. Almost none can show a client hard evidence that what they're doing is actually working.",
+              },
+            ].map(({ title, copy }) => (
+              <div key={title} className="text-center flex flex-col items-center">
+                <div className="w-12 h-12 rounded-full bg-[#C8953C]/15 flex items-center justify-center mb-5" aria-hidden="true">
+                  <svg className="w-5 h-5 text-[#C8953C]" fill="none" stroke="currentColor" strokeWidth={1.75} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                  </svg>
+                </div>
+                <h3 className="text-white text-lg font-light tracking-wide mb-3">{title}</h3>
+                <p className="text-white/60 text-sm leading-relaxed">{copy}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-16 text-center">
+            <Link
+              href="/partner-with-us"
+              className="inline-block px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0a1628] transition-all duration-200"
+            >
+              See Business Opportunities
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── 5. SECOND LIFESTYLE — full-width lifestyle image ── */}
       <section className="relative h-[60vh]" aria-label="Wellness lifestyle">
         <Image
