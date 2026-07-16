@@ -38,12 +38,12 @@ const partnerTypes = [
 ];
 
 const benefits = [
-  "Wholesale device cost for qualified partners",
+  "An accessible technology investment, with setup and onboarding handled for you",
   "Full training provided at no charge",
   "Co-branded marketing materials",
   "Ongoing support from an experienced team",
-  "Access to Prysm Certified product range",
-  "Revenue share on supplement referrals",
+  "Access to the clinically-validated formulations the technology is built around",
+  "Recurring revenue potential — turn scans into an ongoing client service with quarterly rescans and membership-style tracking",
   "Custom revenue projections based on your expected scan volume and referral conversion rates",
 ];
 
@@ -60,9 +60,13 @@ export default function PartnerWithUsPage() {
             Partner With Us
           </h1>
           <p className="mt-6 text-white/60 text-lg leading-relaxed max-w-xl mx-auto">
-            Bring innovative antioxidant scanning technology to your clients
-            and customers. Give them measurable insights that support more
-            informed wellness decisions.
+            Every year, people spend $200 billion on supplements and wellness
+            services with no way to know if any of it is working. PRYSM
+            changes that. In 15 seconds, our scanning technology gives your
+            clients an objective, data-backed measurement of their wellness
+            progress — turning guesswork into proof, one-off visits into
+            ongoing relationships, and your existing business into one with a
+            new, recurring revenue stream.
           </p>
 
           <div className="mt-10 max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg">
