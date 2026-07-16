@@ -12,7 +12,7 @@ const navLinks = [
   { href: "/testimonials", label: "SUCCESS STORIES" },
   { href: "/backed-by-science", label: "TECHNOLOGY & SCIENCE" },
   { href: "/blog", label: "WELLNESS INSIGHTS" },
-  { href: "/book-a-scan#faq", label: "FAQ" },
+  { href: "/#faq", label: "FAQ" },
   { href: "/contact", label: "CONTACT" },
 ];
 
@@ -42,14 +42,8 @@ export default function Navbar() {
               <div className="pointer-events-none sticky right-0 h-full w-6 shrink-0 -ml-6 bg-gradient-to-r from-transparent to-white" aria-hidden="true" />
             </nav>
 
-            {/* Right side — primary + secondary actions */}
+            {/* Right side — primary action */}
             <div className="flex items-center gap-2 shrink-0 ml-2">
-              <Link
-                href="/book-a-scan"
-                className="text-[11px] font-semibold text-gray-500 hover:text-[#0D1B3E] tracking-wide whitespace-nowrap transition-colors"
-              >
-                Book a Scan
-              </Link>
               <Link
                 href="/partner-with-us#partner-form"
                 className="px-4 py-2 bg-[#C8953C] hover:bg-[#a67820] text-white text-[11px] font-bold rounded-full tracking-wide whitespace-nowrap transition-colors duration-200"
@@ -101,13 +95,6 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
           >
             Book a Discovery Call
-          </Link>
-          <Link
-            href="/book-a-scan"
-            className="block px-3 py-2.5 text-xs font-semibold text-gray-500 hover:text-[#0D1B3E] hover:bg-gray-50 rounded tracking-wide text-center transition-colors"
-            onClick={() => setMenuOpen(false)}
-          >
-            Book a Scan
           </Link>
         </nav>
       </div>

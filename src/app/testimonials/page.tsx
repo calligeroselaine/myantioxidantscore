@@ -155,7 +155,7 @@ export default function TestimonialsPage() {
             Book a free scan and find out where your Prysm Score stands today.
           </p>
           <Link
-            href="/book-a-scan"
+            href="/#book"
             className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full transition-all duration-200 text-sm"
           >
             Book a Scan

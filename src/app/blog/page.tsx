@@ -76,34 +76,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-
-      {/* Newsletter */}
-      <section className="py-20 bg-[#0D1B3E]" aria-labelledby="newsletter-heading">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-          <h2 id="newsletter-heading" className="text-3xl font-bold text-white">
-            Stay in the loop
-          </h2>
-          <p className="mt-3 text-white/60">
-            Get the latest science on antioxidants, supplement tips, and
-            exclusive scan offers delivered to your inbox.
-          </p>
-          <form className="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" aria-label="Newsletter signup">
-            <label htmlFor="newsletter-email" className="sr-only">Email address</label>
-            <input
-              id="newsletter-email"
-              type="email"
-              placeholder="Your email address"
-              className="flex-1 px-5 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#C8953C] focus:ring-2 focus:ring-[#C8953C]/20"
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full text-sm transition-colors duration-200 shrink-0"
-            >
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </section>
     </>
   );
 }

@@ -88,7 +88,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/book-a-scan"
+                  href="#book"
                   className="flex-1 text-center px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0f1b35] transition-all duration-200"
                 >
                   Get Your Own Scan
@@ -271,7 +271,7 @@ export default function HomePage() {
             healthier habits.
           </p>
           <Link
-            href="/book-a-scan"
+            href="#book"
             className="inline-block mt-8 px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0f1b35] transition-all duration-200 w-fit"
           >
             Book a Scan
@@ -390,6 +390,34 @@ export default function HomePage() {
             </div>
             <div className="bg-[#f9fafb] rounded-2xl border border-gray-100 p-8">
               <BookingForm />
+            </div>
+          </div>
+
+          {/* FAQ */}
+          <div id="faq" className="mt-16 max-w-3xl">
+            <h3 className="text-xl font-bold text-[#0f1b35] mb-6">
+              Frequently Asked Questions
+            </h3>
+            <div className="bg-[#F7F4EF] rounded-2xl p-6 border border-[#C8953C]/10 space-y-4 text-sm">
+              {[
+                {
+                  q: "Is the scan free?",
+                  a: "Yes, your first scan is completely free with no obligation.",
+                },
+                {
+                  q: "Does it hurt?",
+                  a: "Not at all. You simply place your finger tip on the device — it's completely painless.",
+                },
+                {
+                  q: "How accurate is it?",
+                  a: "Prysm iO uses 700,000+ measurements per reading and has been validated against blood tests over 20+ years of research.",
+                },
+              ].map(({ q, a }) => (
+                <div key={q}>
+                  <p className="font-semibold text-[#0D1B3E]">{q}</p>
+                  <p className="text-gray-500 mt-0.5">{a}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

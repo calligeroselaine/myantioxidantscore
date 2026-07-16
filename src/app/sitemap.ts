@@ -5,7 +5,6 @@ const BASE_URL = "https://www.myantioxidantscore.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     { url: "/", priority: 1.0, changeFrequency: "weekly" as const },
-    { url: "/book-a-scan", priority: 0.9, changeFrequency: "monthly" as const },
     { url: "/partner-with-us", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/certified-products", priority: 0.8, changeFrequency: "weekly" as const },
     { url: "/backed-by-science", priority: 0.7, changeFrequency: "monthly" as const },

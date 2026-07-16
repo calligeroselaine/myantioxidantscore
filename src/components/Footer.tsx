@@ -14,20 +14,22 @@ const footerLinks = {
   ],
   Products: [
     { href: "/certified-products", label: "Certified Products" },
-    { href: "/book-a-scan", label: "Book a Scan" },
   ],
-  Legal: [
-    { href: "/privacy-policy", label: "Privacy Policy" },
-    { href: "/terms", label: "Terms of Service" },
-    { href: "/disclaimer", label: "Disclaimer" },
-  ],
+  // Legal links hidden for now — revisit later.
+  // Legal: [
+  //   { href: "/privacy-policy", label: "Privacy Policy" },
+  //   { href: "/terms", label: "Terms of Service" },
+  //   { href: "/disclaimer", label: "Disclaimer" },
+  // ],
 };
 
 const BUSINESS_CTA_PATHS = ["/partner-with-us", "/backed-by-science"];
+const HIDE_CTA_PATHS = ["/blog"];
 
 export default function Footer() {
   const pathname = usePathname();
   const isBusinessCta = BUSINESS_CTA_PATHS.includes(pathname);
+  const hideCta = HIDE_CTA_PATHS.includes(pathname);
 
   const ctaHeadline = isBusinessCta
     ? "Ready to add this to your business?"
@@ -36,29 +38,31 @@ export default function Footer() {
     ? "Book a free discovery call and we'll walk you through the fit, the numbers, and what's involved."
     : "Book a free antioxidant scan and get results in 15 seconds.";
   const ctaButtonLabel = isBusinessCta ? "Book a Discovery Call" : "Book a Scan";
-  const ctaButtonHref = isBusinessCta ? "/partner-with-us#partner-form" : "/book-a-scan";
+  const ctaButtonHref = isBusinessCta ? "/partner-with-us#partner-form" : "/#book";
 
   return (
     <footer className="bg-[#0D1B3E] text-white" role="contentinfo">
       {/* CTA Banner */}
-      <div className="bg-[#C8953C]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <h2 className="text-xl font-bold text-white">
-              {ctaHeadline}
-            </h2>
-            <p className="text-white/90 mt-1 text-sm">
-              {ctaSubtext}
-            </p>
+      {!hideCta && (
+        <div className="bg-[#C8953C]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <h2 className="text-xl font-bold text-white">
+                {ctaHeadline}
+              </h2>
+              <p className="text-white/90 mt-1 text-sm">
+                {ctaSubtext}
+              </p>
+            </div>
+            <Link
+              href={ctaButtonHref}
+              className="shrink-0 px-8 py-3 bg-[#0D1B3E] hover:bg-[#1a2f5e] text-white font-semibold rounded-full transition-colors duration-200 text-sm"
+            >
+              {ctaButtonLabel}
+            </Link>
           </div>
-          <Link
-            href={ctaButtonHref}
-            className="shrink-0 px-8 py-3 bg-[#0D1B3E] hover:bg-[#1a2f5e] text-white font-semibold rounded-full transition-colors duration-200 text-sm"
-          >
-            {ctaButtonLabel}
-          </Link>
         </div>
-      </div>
+      )}
 
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">

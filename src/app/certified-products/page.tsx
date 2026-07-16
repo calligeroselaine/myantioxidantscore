@@ -167,7 +167,7 @@ export default function CertifiedProductsPage() {
                 )}
                 <div className="mt-5 pt-5 border-t border-gray-100">
                   <Link
-                    href="/book-a-scan"
+                    href="/#book"
                     className="text-sm font-semibold text-[#C8953C] hover:text-[#a67820] flex items-center gap-1 transition-colors"
                   >
                     Book a scan to see if this is right for you
@@ -194,7 +194,7 @@ export default function CertifiedProductsPage() {
             certified products will make the biggest difference for you.
           </p>
           <Link
-            href="/book-a-scan"
+            href="/#book"
             className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full transition-all duration-200 text-sm"
           >
             Get My Score First

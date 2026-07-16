@@ -20,7 +20,7 @@ export default function NotFound() {
             Go Home
           </Link>
           <Link
-            href="/book-a-scan"
+            href="/#book"
             className="px-8 py-3 border border-white/30 hover:border-white/60 text-white font-semibold rounded-full transition-colors duration-200 text-sm"
           >
             Book a Scan
