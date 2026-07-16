@@ -149,16 +149,13 @@ export default function TestimonialsPage() {
       <section className="py-20 bg-[#0D1B3E] text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl font-bold text-white">
-            Ready to see your own results?
+            Find Out How to Get Your Prysm Score
           </h2>
-          <p className="mt-4 text-white/60 leading-relaxed">
-            Find out where your Prysm Score stands today.
-          </p>
           <Link
             href="/#book"
             className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full transition-all duration-200 text-sm"
           >
-            Get Your Prysm Score
+            Submit Enquiry
           </Link>
         </div>
       </section>

@@ -317,7 +317,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
         ) : source === "partner" ? (
           "I'm Interested"
         ) : (
-          "Book My Free Scan"
+          "Submit"
         )}
       </button>
 

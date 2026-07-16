@@ -369,24 +369,6 @@ export default function HomePage() {
               <h2 id="book-heading" className="text-3xl sm:text-4xl font-light text-[#0f1b35] tracking-wide">
                 Find Out How to Get Your Prysm Score
               </h2>
-              <p className="mt-4 text-gray-500 leading-relaxed">
-                Fill in your details and we&apos;ll be in touch to arrange your
-                free 15-second antioxidant scan.
-              </p>
-              <div className="mt-8 space-y-3">
-                {[
-                  "Completely free — your first scan is on us",
-                  "Takes 15 seconds, results are instant",
-                  "Expert guidance to understand your score",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3 text-sm text-gray-600">
-                    <svg className="w-5 h-5 text-[#C8953C] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
-                    </svg>
-                    {item}
-                  </div>
-                ))}
-              </div>
             </div>
             <div className="bg-[#f9fafb] rounded-2xl border border-gray-100 p-8">
               <BookingForm />
