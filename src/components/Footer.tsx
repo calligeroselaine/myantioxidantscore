@@ -90,9 +90,6 @@ export default function Footer() {
           {/* Link columns */}
           {Object.entries(footerLinks).map(([heading, links]) => (
             <div key={heading}>
-              <h3 className="text-sm font-semibold text-white uppercase tracking-widest mb-4">
-                {heading}
-              </h3>
               <ul className="space-y-2.5">
                 {links.map((link) => (
                   <li key={link.href}>
