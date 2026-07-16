@@ -84,9 +84,9 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
   if (submitted) {
     return (
       <div className="text-center py-12 px-6">
-        <div className="w-16 h-16 bg-[#0F8A7D]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+        <div className="w-16 h-16 bg-[#5C7A94]/20 rounded-full flex items-center justify-center mx-auto mb-4">
           <svg
-            className="w-8 h-8 text-[#0F8A7D]"
+            className="w-8 h-8 text-[#5C7A94]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -100,7 +100,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
             />
           </svg>
         </div>
-        <h3 className="text-2xl font-bold text-[#0C2A2C] mb-2">
+        <h3 className="text-2xl font-bold text-[#1B2A3D] mb-2">
           You&apos;re booked in!
         </h3>
         <p className="text-gray-600 max-w-sm mx-auto">
@@ -115,7 +115,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
     `w-full px-4 py-3 rounded-xl border text-sm text-[#1A1A2E] placeholder-gray-400 transition-colors duration-200 focus:outline-none focus:ring-2 ${
       errors[field]
         ? "border-red-400 focus:ring-red-200"
-        : "border-gray-200 focus:border-[#0F8A7D] focus:ring-[#0F8A7D]/20"
+        : "border-gray-200 focus:border-[#5C7A94] focus:ring-[#5C7A94]/20"
     }`;
 
   return (
@@ -129,7 +129,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
         <div>
           <label
             htmlFor="firstName"
-            className="block text-sm font-medium text-[#0C2A2C] mb-1"
+            className="block text-sm font-medium text-[#1B2A3D] mb-1"
           >
             First Name <span className="text-red-500">*</span>
           </label>
@@ -155,7 +155,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
         <div>
           <label
             htmlFor="lastName"
-            className="block text-sm font-medium text-[#0C2A2C] mb-1"
+            className="block text-sm font-medium text-[#1B2A3D] mb-1"
           >
             Last Name <span className="text-red-500">*</span>
           </label>
@@ -182,7 +182,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium text-[#0C2A2C] mb-1"
+          className="block text-sm font-medium text-[#1B2A3D] mb-1"
         >
           Email Address <span className="text-red-500">*</span>
         </label>
@@ -208,7 +208,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
       <div>
         <label
           htmlFor="phone"
-          className="block text-sm font-medium text-[#0C2A2C] mb-1"
+          className="block text-sm font-medium text-[#1B2A3D] mb-1"
         >
           Phone Number <span className="text-red-500">*</span>
         </label>
@@ -234,7 +234,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
       <div>
         <label
           htmlFor="referral"
-          className="block text-sm font-medium text-[#0C2A2C] mb-1"
+          className="block text-sm font-medium text-[#1B2A3D] mb-1"
         >
           How did you hear about us?
         </label>
@@ -243,7 +243,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
           name="referral"
           value={form.referral}
           onChange={handleChange}
-          className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1A1A2E] transition-colors duration-200 focus:outline-none focus:ring-2 focus:border-[#0F8A7D] focus:ring-[#0F8A7D]/20 bg-white"
+          className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1A1A2E] transition-colors duration-200 focus:outline-none focus:ring-2 focus:border-[#5C7A94] focus:ring-[#5C7A94]/20 bg-white"
         >
           <option value="">Select an option</option>
           {referralOptions.map((o) => (
@@ -257,7 +257,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
       <div>
         <label
           htmlFor="referredBy"
-          className="block text-sm font-medium text-[#0C2A2C] mb-1"
+          className="block text-sm font-medium text-[#1B2A3D] mb-1"
         >
           Who referred you/what is their email? <span className="text-red-500">*</span>
         </label>
@@ -288,7 +288,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
       <button
         type="submit"
         disabled={loading}
-        className="w-full py-4 bg-[#0F8A7D] hover:bg-[#0A6358] text-white font-bold rounded-full transition-all duration-200 text-sm tracking-wide disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+        className="w-full py-4 bg-[#5C7A94] hover:bg-[#45607A] text-white font-bold rounded-full transition-all duration-200 text-sm tracking-wide disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
       >
         {loading ? (
           <>
@@ -323,7 +323,7 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
 
       <p className="text-xs text-gray-400 text-center">
         By submitting, you agree to our{" "}
-        <a href="/privacy-policy" className="text-[#0F8A7D] hover:underline">
+        <a href="/privacy-policy" className="text-[#5C7A94] hover:underline">
           Privacy Policy
         </a>
         . We&apos;ll never share your details.

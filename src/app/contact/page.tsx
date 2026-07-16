@@ -45,9 +45,9 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0C2A2C] pt-28 pb-20" aria-labelledby="contact-hero-heading">
+      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="contact-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
             Get in Touch
           </p>
           <h1 id="contact-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
@@ -66,10 +66,10 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {contactMethods.map(({ title, value, icon }) => (
               <div key={title} className="flex flex-col items-center text-center p-6">
-                <div className="w-12 h-12 rounded-full bg-[#0F8A7D]/15 flex items-center justify-center text-[#0F8A7D] mb-4">
+                <div className="w-12 h-12 rounded-full bg-[#5C7A94]/15 flex items-center justify-center text-[#5C7A94] mb-4">
                   {icon}
                 </div>
-                <h3 className="font-bold text-[#0C2A2C] mb-1">{title}</h3>
+                <h3 className="font-bold text-[#1B2A3D] mb-1">{title}</h3>
                 <p className="text-gray-500 text-sm">{value}</p>
               </div>
             ))}
@@ -81,7 +81,7 @@ export default function ContactPage() {
       <section className="py-24 bg-[#F9FAFB]" aria-labelledby="contact-form-heading">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <h2 id="contact-form-heading" className="text-3xl font-bold text-[#0C2A2C]">
+            <h2 id="contact-form-heading" className="text-3xl font-bold text-[#1B2A3D]">
               Send Us a Message
             </h2>
             <p className="mt-3 text-gray-500">

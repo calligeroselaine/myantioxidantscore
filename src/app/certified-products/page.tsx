@@ -113,9 +113,9 @@ export default function CertifiedProductsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0C2A2C] pt-28 pb-20" aria-labelledby="products-hero-heading">
+      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="products-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
             Guaranteed Results
           </p>
           <h1 id="products-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
@@ -130,7 +130,7 @@ export default function CertifiedProductsPage() {
       </section>
 
       {/* Guarantee banner */}
-      <div className="bg-[#0F8A7D] py-4">
+      <div className="bg-[#5C7A94] py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-center gap-3 text-white text-sm font-semibold">
           <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
@@ -147,7 +147,7 @@ export default function CertifiedProductsPage() {
             {products.map(({ name, badge, description, benefits, guarantee, image }) => (
               <article
                 key={name}
-                className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:border-[#0F8A7D]/20 transition-all duration-300"
+                className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:border-[#5C7A94]/20 transition-all duration-300"
               >
                 {/* Product image */}
                 <div className="relative h-80 w-full bg-gray-50">
@@ -155,8 +155,8 @@ export default function CertifiedProductsPage() {
                 </div>
                 <div className="p-8">
                 <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-xl font-bold text-[#0C2A2C]">{name}</h3>
-                  <span className="px-3 py-1 bg-[#0F8A7D]/15 text-[#0F8A7D] text-xs font-bold rounded-full">
+                  <h3 className="text-xl font-bold text-[#1B2A3D]">{name}</h3>
+                  <span className="px-3 py-1 bg-[#5C7A94]/15 text-[#5C7A94] text-xs font-bold rounded-full">
                     {badge}
                   </span>
                 </div>
@@ -172,7 +172,7 @@ export default function CertifiedProductsPage() {
                   ))}
                 </ul>
                 {guarantee && (
-                  <p className="text-xs text-[#0F8A7D] font-semibold flex items-center gap-1.5">
+                  <p className="text-xs text-[#5C7A94] font-semibold flex items-center gap-1.5">
                     <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                       <path fillRule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clipRule="evenodd" />
                     </svg>
@@ -182,7 +182,7 @@ export default function CertifiedProductsPage() {
                 <div className="mt-5 pt-5 border-t border-gray-100">
                   <Link
                     href="/#book"
-                    className="text-sm font-semibold text-[#0F8A7D] hover:text-[#0A6358] flex items-center gap-1 transition-colors"
+                    className="text-sm font-semibold text-[#5C7A94] hover:text-[#45607A] flex items-center gap-1 transition-colors"
                   >
                     Find out if this is right for you
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
@@ -198,7 +198,7 @@ export default function CertifiedProductsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#0C2A2C] text-center">
+      <section className="py-20 bg-[#1B2A3D] text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl font-bold text-white">
             Not sure which product is right for you?
@@ -209,7 +209,7 @@ export default function CertifiedProductsPage() {
           </p>
           <Link
             href="/#book"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#0F8A7D] hover:bg-[#34B3A3] text-white font-bold rounded-full transition-all duration-200 text-sm"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#5C7A94] hover:bg-[#7A96AC] text-white font-bold rounded-full transition-all duration-200 text-sm"
           >
             Get My Score First
           </Link>

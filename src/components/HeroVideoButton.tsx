@@ -19,7 +19,7 @@ export default function HeroVideoButton() {
         className="absolute top-[72%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center gap-3 group"
       >
         <span className="w-16 h-16 rounded-full bg-white/90 group-hover:bg-white flex items-center justify-center shadow-lg transition-all duration-200 group-hover:scale-105">
-          <svg className="w-6 h-6 text-[#0A2224] translate-x-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <svg className="w-6 h-6 text-[#17242F] translate-x-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M8 5v14l11-7z" />
           </svg>
         </span>

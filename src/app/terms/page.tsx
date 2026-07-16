@@ -106,9 +106,9 @@ Email: info@myantioxidantscore.com.au`,
 export default function TermsPage() {
   return (
     <>
-      <section className="bg-[#0C2A2C] pt-28 pb-20" aria-labelledby="terms-hero-heading">
+      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="terms-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">Legal</p>
+          <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">Legal</p>
           <h1 id="terms-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
             Terms of Service
           </h1>
@@ -121,7 +121,7 @@ export default function TermsPage() {
           <div className="bg-white rounded-3xl border border-gray-100 shadow-sm divide-y divide-gray-100">
             {sections.map(({ heading, body }) => (
               <div key={heading} className="px-8 py-8">
-                <h2 className="text-lg font-bold text-[#0C2A2C] mb-4">{heading}</h2>
+                <h2 className="text-lg font-bold text-[#1B2A3D] mb-4">{heading}</h2>
                 <div className="text-gray-600 text-sm leading-relaxed space-y-3">
                   {body.split("\n\n").map((para, i) => (
                     <p key={i} dangerouslySetInnerHTML={{

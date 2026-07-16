@@ -106,9 +106,9 @@ export default function BackedBySciencePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0C2A2C] pt-28 pb-20" aria-labelledby="science-hero-heading">
+      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="science-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
             80+ Independent Studies
           </p>
           <h1 id="science-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
@@ -123,7 +123,7 @@ export default function BackedBySciencePage() {
       </section>
 
       {/* Study count banner */}
-      <div className="bg-[#0F8A7D] py-5">
+      <div className="bg-[#5C7A94] py-5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 grid grid-cols-3 gap-4 text-white text-center">
           <div>
             <div className="text-3xl font-black">3</div>
@@ -145,7 +145,7 @@ export default function BackedBySciencePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 id="tech-overview-heading" className="text-3xl font-bold text-[#0C2A2C]">
+              <h2 id="tech-overview-heading" className="text-3xl font-bold text-[#1B2A3D]">
                 Hyperspectral Measurement Technology
               </h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
@@ -164,8 +164,8 @@ export default function BackedBySciencePage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {specs.map(({ label, value }) => (
-                <div key={label} className="bg-[#F0F6F5] rounded-2xl p-5 border border-[#0F8A7D]/10">
-                  <div className="text-2xl font-black text-[#0F8A7D] mb-1">{value}</div>
+                <div key={label} className="bg-[#F4F5F6] rounded-2xl p-5 border border-[#5C7A94]/10">
+                  <div className="text-2xl font-black text-[#5C7A94] mb-1">{value}</div>
                   <div className="text-xs text-gray-500 uppercase tracking-wider">{label}</div>
                 </div>
               ))}
@@ -178,10 +178,10 @@ export default function BackedBySciencePage() {
       <section className="py-24 bg-[#F9FAFB]" aria-labelledby="universities-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-2">
+            <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-2">
               Independent Research
             </p>
-            <h2 id="universities-heading" className="text-3xl font-bold text-[#0C2A2C]">
+            <h2 id="universities-heading" className="text-3xl font-bold text-[#1B2A3D]">
               World-Leading Institutions Back the Data
             </h2>
             <p className="mt-3 text-gray-500 max-w-xl mx-auto">
@@ -193,10 +193,10 @@ export default function BackedBySciencePage() {
             {universities.map(({ name, study, detail }) => (
               <div
                 key={name}
-                className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:border-[#0F8A7D]/20 hover:shadow-md transition-all duration-300"
+                className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:border-[#5C7A94]/20 hover:shadow-md transition-all duration-300"
               >
-                <div className="text-xs font-bold text-[#0F8A7D] uppercase tracking-widest mb-2">{name}</div>
-                <h3 className="text-lg font-bold text-[#0C2A2C] mb-3">{study}</h3>
+                <div className="text-xs font-bold text-[#5C7A94] uppercase tracking-widest mb-2">{name}</div>
+                <h3 className="text-lg font-bold text-[#1B2A3D] mb-3">{study}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{detail}</p>
               </div>
             ))}
@@ -208,10 +208,10 @@ export default function BackedBySciencePage() {
       <section className="py-24 bg-white" aria-labelledby="aging-heading">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-2">
+            <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-2">
               Biological Ageing
             </p>
-            <h2 id="aging-heading" className="text-3xl font-bold text-[#0C2A2C]">
+            <h2 id="aging-heading" className="text-3xl font-bold text-[#1B2A3D]">
               Higher Prysm Score, Slower Biological Ageing
             </h2>
             <p className="mt-3 text-gray-500 max-w-2xl mx-auto">
@@ -225,7 +225,7 @@ export default function BackedBySciencePage() {
             <div className="lg:col-span-2 overflow-x-auto">
               <table className="w-full text-sm" aria-label="Aging clock correlations with Prysm Score">
                 <thead>
-                  <tr className="bg-[#0C2A2C] text-white text-left">
+                  <tr className="bg-[#1B2A3D] text-white text-left">
                     <th className="px-5 py-3 font-semibold rounded-tl-xl">Ageing Clock</th>
                     <th className="px-4 py-3 font-semibold text-center">r vs Prysm</th>
                     <th className="px-4 py-3 font-semibold text-center">p-value</th>
@@ -238,8 +238,8 @@ export default function BackedBySciencePage() {
                       key={clock}
                       className={i % 2 === 0 ? "bg-[#F9FAFB]" : "bg-white"}
                     >
-                      <td className="px-5 py-3 font-medium text-[#0C2A2C]">{clock}</td>
-                      <td className="px-4 py-3 text-center font-bold text-[#0F8A7D]">{r}</td>
+                      <td className="px-5 py-3 font-medium text-[#1B2A3D]">{clock}</td>
+                      <td className="px-4 py-3 text-center font-bold text-[#5C7A94]">{r}</td>
                       <td className="px-4 py-3 text-center text-gray-500">{p}</td>
                       <td className="px-5 py-3 text-gray-600">{direction}</td>
                     </tr>
@@ -249,26 +249,26 @@ export default function BackedBySciencePage() {
             </div>
 
             {/* Tertile callout */}
-            <div className="bg-[#0C2A2C] rounded-2xl p-6 text-white">
-              <p className="text-[#0F8A7D] text-xs font-bold uppercase tracking-widest mb-2">Tertile Comparison</p>
+            <div className="bg-[#1B2A3D] rounded-2xl p-6 text-white">
+              <p className="text-[#5C7A94] text-xs font-bold uppercase tracking-widest mb-2">Tertile Comparison</p>
               <p className="font-bold text-lg leading-snug mb-4">
                 Top-Prysm tertile averages 3–5 years younger on every ageing clock
               </p>
               <ul className="space-y-2 text-sm text-white/70">
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#0F8A7D] shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#5C7A94] shrink-0" />
                   Symphony Age: 51.6 vs 56.6
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#0F8A7D] shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#5C7A94] shrink-0" />
                   OMICm Age: 49.6 vs 52.9
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#0F8A7D] shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#5C7A94] shrink-0" />
                   Pace of Ageing: 0.94 vs 0.97
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#0F8A7D] shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#5C7A94] shrink-0" />
                   Telomeres favour high scorers on both metrics
                 </li>
               </ul>
@@ -280,7 +280,7 @@ export default function BackedBySciencePage() {
 
           {/* Verdict box */}
           <div className="mt-8 border border-gray-200 rounded-2xl p-6 bg-[#F9FAFB]">
-            <p className="text-xs font-bold text-[#0F8A7D] uppercase tracking-widest mb-2">Verdict</p>
+            <p className="text-xs font-bold text-[#5C7A94] uppercase tracking-widest mb-2">Verdict</p>
             <p className="text-gray-700 text-sm leading-relaxed">
               All four independent clocks trend in the{" "}
               <strong>&ldquo;slower ageing → higher Prysm Score&rdquo;</strong> direction. None
@@ -296,10 +296,10 @@ export default function BackedBySciencePage() {
       <section className="bg-[#F9FAFB] py-24" aria-labelledby="systems-heading">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-2">
+            <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-2">
               Your Body&apos;s Age Scoreboard
             </p>
-            <h2 id="systems-heading" className="text-3xl font-bold text-[#0C2A2C]">
+            <h2 id="systems-heading" className="text-3xl font-bold text-[#1B2A3D]">
               High-Prysm Scorers Look Younger Across Every System
             </h2>
             <p className="mt-3 text-gray-500 max-w-xl mx-auto">
@@ -313,18 +313,18 @@ export default function BackedBySciencePage() {
                 key={system}
                 className="flex items-center gap-4 bg-white rounded-xl px-5 py-4 border border-gray-100 shadow-sm"
               >
-                <span className="w-8 h-8 rounded-full bg-[#0C2A2C] text-white text-xs font-bold flex items-center justify-center shrink-0">
+                <span className="w-8 h-8 rounded-full bg-[#1B2A3D] text-white text-xs font-bold flex items-center justify-center shrink-0">
                   {rank}
                 </span>
-                <span className="flex-1 font-medium text-[#0C2A2C]">{system}</span>
-                <span className="px-4 py-1.5 bg-[#0C2A2C] text-white text-sm font-bold rounded-lg">
+                <span className="flex-1 font-medium text-[#1B2A3D]">{system}</span>
+                <span className="px-4 py-1.5 bg-[#1B2A3D] text-white text-sm font-bold rounded-lg">
                   {years}
                 </span>
               </div>
             ))}
           </div>
 
-          <div className="mt-8 bg-[#0C2A2C] rounded-2xl px-8 py-6 text-white text-center">
+          <div className="mt-8 bg-[#1B2A3D] rounded-2xl px-8 py-6 text-white text-center">
             <p className="font-bold text-lg">
               Every single system points the same way — high-Prysm scorers look younger across the board.
             </p>
@@ -338,7 +338,7 @@ export default function BackedBySciencePage() {
       {/* Stanford quote */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <svg className="w-10 h-10 text-[#0F8A7D]/30 mx-auto mb-6" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+          <svg className="w-10 h-10 text-[#5C7A94]/30 mx-auto mb-6" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
             <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H6.5c0-1.9 1.6-3.5 3.5-3.5V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-3.5c0-1.9 1.6-3.5 3.5-3.5V8z" />
           </svg>
           <blockquote className="text-gray-700 text-lg leading-relaxed italic">
@@ -347,7 +347,7 @@ export default function BackedBySciencePage() {
             ageing clocks. The consistent trends suggest the relationship warrants further investigation
             in larger studies.&rdquo;
           </blockquote>
-          <p className="mt-6 text-sm font-semibold text-[#0C2A2C]">Stanford Medicine</p>
+          <p className="mt-6 text-sm font-semibold text-[#1B2A3D]">Stanford Medicine</p>
           <p className="text-xs text-gray-400">Skin &amp; Wellness Factor Correlation Study</p>
           <p className="mt-3 text-xs text-gray-400 italic">
             This study shows an <strong>association</strong> between higher Prysm scores and better biological ageing markers.
@@ -359,7 +359,7 @@ export default function BackedBySciencePage() {
       <section className="py-24 bg-[#F9FAFB]" aria-labelledby="research-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 id="research-heading" className="text-3xl font-bold text-[#0C2A2C]">
+            <h2 id="research-heading" className="text-3xl font-bold text-[#1B2A3D]">
               The Research Behind Your Score
             </h2>
             <p className="mt-3 text-gray-500 max-w-xl mx-auto">
@@ -372,9 +372,9 @@ export default function BackedBySciencePage() {
                 key={title}
                 className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm"
               >
-                <h3 className="text-lg font-bold text-[#0C2A2C] mb-3">{title}</h3>
+                <h3 className="text-lg font-bold text-[#1B2A3D] mb-3">{title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
-                <p className="mt-4 text-xs text-[#0F8A7D] font-medium italic">
+                <p className="mt-4 text-xs text-[#5C7A94] font-medium italic">
                   {citation}
                 </p>
               </div>
@@ -384,7 +384,7 @@ export default function BackedBySciencePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#0C2A2C] text-center">
+      <section className="py-20 bg-[#1B2A3D] text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl font-bold text-white">
             Ready to see the science in action?
@@ -394,7 +394,7 @@ export default function BackedBySciencePage() {
           </p>
           <Link
             href="/#book"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#0F8A7D] hover:bg-[#34B3A3] text-white font-bold rounded-full transition-all duration-200 text-sm"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#5C7A94] hover:bg-[#7A96AC] text-white font-bold rounded-full transition-all duration-200 text-sm"
           >
             Get Your Prysm Score
           </Link>

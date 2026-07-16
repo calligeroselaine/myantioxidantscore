@@ -77,9 +77,9 @@ export default function WhoItsForPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0C2A2C] pt-28 pb-20" aria-labelledby="who-its-for-heading">
+      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="who-its-for-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
             Who It&apos;s For
           </p>
           <h1 id="who-its-for-heading" className="text-4xl sm:text-5xl font-bold text-white">
@@ -104,23 +104,23 @@ export default function WhoItsForPage() {
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="text-3xl shrink-0" aria-hidden="true">{icon}</div>
-                  <h3 className="text-2xl font-bold text-[#0C2A2C]">{title}</h3>
+                  <h3 className="text-2xl font-bold text-[#1B2A3D]">{title}</h3>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div>
-                    <p className="text-xs font-bold text-[#0F8A7D] uppercase tracking-widest mb-2">
+                    <p className="text-xs font-bold text-[#5C7A94] uppercase tracking-widest mb-2">
                       Today
                     </p>
                     <p className="text-gray-600 text-sm leading-relaxed">{today}</p>
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-[#0F8A7D] uppercase tracking-widest mb-2">
+                    <p className="text-xs font-bold text-[#5C7A94] uppercase tracking-widest mb-2">
                       The Problem
                     </p>
                     <p className="text-gray-600 text-sm leading-relaxed">{problem}</p>
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-[#0F8A7D] uppercase tracking-widest mb-2">
+                    <p className="text-xs font-bold text-[#5C7A94] uppercase tracking-widest mb-2">
                       How PRYSM Fits
                     </p>
                     <p className="text-gray-600 text-sm leading-relaxed">{fit}</p>
@@ -133,7 +133,7 @@ export default function WhoItsForPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#0C2A2C] text-center">
+      <section className="py-20 bg-[#1B2A3D] text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl font-bold text-white">
             See where PRYSM fits into your business
@@ -144,7 +144,7 @@ export default function WhoItsForPage() {
           </p>
           <Link
             href="/partner-with-us#partner-form"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#0F8A7D] hover:bg-[#34B3A3] text-white font-bold rounded-full transition-all duration-200 text-sm"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#5C7A94] hover:bg-[#7A96AC] text-white font-bold rounded-full transition-all duration-200 text-sm"
           >
             Book a Discovery Call
           </Link>

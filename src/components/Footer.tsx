@@ -30,10 +30,10 @@ export default function Footer() {
   const isBusinessCta = BUSINESS_CTA_PATHS.includes(pathname);
 
   return (
-    <footer className="bg-[#0C2A2C] text-white" role="contentinfo">
+    <footer className="bg-[#1B2A3D] text-white" role="contentinfo">
       {/* CTA Banner — business pages only */}
       {isBusinessCta && (
-        <div className="bg-[#0F8A7D]">
+        <div className="bg-[#5C7A94]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h2 className="text-xl font-bold text-white">
@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
             <Link
               href="/partner-with-us#partner-form"
-              className="shrink-0 px-8 py-3 bg-[#0C2A2C] hover:bg-[#123638] text-white font-semibold rounded-full transition-colors duration-200 text-sm"
+              className="shrink-0 px-8 py-3 bg-[#1B2A3D] hover:bg-[#2C3E52] text-white font-semibold rounded-full transition-colors duration-200 text-sm"
             >
               Book a Discovery Call
             </Link>
@@ -59,24 +59,24 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-full bg-[#0F8A7D] flex items-center justify-center shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#5C7A94] flex items-center justify-center shrink-0">
                 <svg viewBox="0 0 36 36" className="w-4 h-4" aria-hidden="true">
-                  <circle cx="18" cy="18" r="16" fill="#0C2A2C" />
+                  <circle cx="18" cy="18" r="16" fill="#1B2A3D" />
                   <path
                     d="M10 22 Q14 10 18 18 Q22 26 26 14"
-                    stroke="#0F8A7D"
+                    stroke="#5C7A94"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     fill="none"
                   />
-                  <circle cx="18" cy="18" r="3" fill="#0F8A7D" />
+                  <circle cx="18" cy="18" r="3" fill="#5C7A94" />
                 </svg>
               </div>
               <div className="leading-tight">
                 <span className="block text-white font-semibold text-xs tracking-wide">
                   MY ANTIOXIDANT
                 </span>
-                <span className="block text-[#0F8A7D] font-bold text-sm tracking-widest">
+                <span className="block text-[#5C7A94] font-bold text-sm tracking-widest">
                   SCORE
                 </span>
               </div>
@@ -95,7 +95,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-white/60 hover:text-[#0F8A7D] text-sm transition-colors duration-200"
+                      className="text-white/60 hover:text-[#5C7A94] text-sm transition-colors duration-200"
                     >
                       {link.label}
                     </Link>
@@ -111,7 +111,7 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} My Antioxidant Score. All rights reserved.</p>
           <p>
             Powered by{" "}
-            <span className="text-[#0F8A7D]">Prysm iO Technology</span>
+            <span className="text-[#5C7A94]">Prysm iO Technology</span>
           </p>
         </div>
       </div>
