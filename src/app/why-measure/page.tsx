@@ -5,6 +5,19 @@ export const metadata: Metadata = {
   title: "Why Measure?",
   description:
     "Wellness businesses sell products and services promising results — but almost none measure whether they actually work. Here's why that gap matters, and how PRYSM closes it.",
+  keywords: [
+    "why measure wellness results",
+    "supplement effectiveness proof",
+    "wellness business trust gap",
+    "measurable client outcomes",
+  ],
+  alternates: { canonical: "/why-measure" },
+  openGraph: {
+    url: "/why-measure",
+    title: "Why Measure?",
+    description:
+      "Wellness businesses sell products and services promising results — but almost none measure whether they actually work.",
+  },
 };
 
 export default function WhyMeasurePage() {

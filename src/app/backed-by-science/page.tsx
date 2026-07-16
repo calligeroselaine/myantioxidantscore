@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "Technology & Science",
   description:
     "Discover the 80+ studies behind Prysm iO antioxidant scanning technology — including research from Stanford, Yonsei University, and Jiao Tong University.",
+  keywords: [
+    "antioxidant scanning research",
+    "carotenoid biomarker studies",
+    "Raman spectroscopy skin scan",
+    "Prysm iO clinical studies",
+    "hyperspectral measurement technology",
+  ],
+  alternates: { canonical: "/backed-by-science" },
+  openGraph: {
+    url: "/backed-by-science",
+    title: "Technology & Science",
+    description:
+      "Discover the 80+ studies behind Prysm iO antioxidant scanning technology — including research from Stanford, Yonsei University, and Jiao Tong University.",
+  },
 };
 
 const researchPoints = [

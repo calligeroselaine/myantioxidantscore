@@ -8,6 +8,21 @@ export const metadata: Metadata = {
   title: "Antioxidant Scan | Check Your Health Score in Seconds",
   description:
     "In 15 seconds, the Prysm iO shows you if your supplements are working — no blood tests, no guessing. Book a free antioxidant scan today.",
+  keywords: [
+    "antioxidant scan",
+    "Prysm iO",
+    "antioxidant score",
+    "carotenoid scanner",
+    "15 second health scan",
+    "supplement effectiveness test",
+  ],
+  alternates: { canonical: "/" },
+  openGraph: {
+    url: "/",
+    title: "Antioxidant Scan | Check Your Health Score in Seconds",
+    description:
+      "In 15 seconds, the Prysm iO shows you if your supplements are working — no blood tests, no guessing. Book a free antioxidant scan today.",
+  },
 };
 
 const BASE = "https://static.wixstatic.com/media";
@@ -404,6 +419,42 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Is the scan free?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, your first scan is completely free with no obligation.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Does it hurt?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Not at all. You simply place your finger tip on the device — it's completely painless.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How accurate is it?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Prysm iO uses 700,000+ measurements per reading and has been validated against blood tests over 20+ years of research.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

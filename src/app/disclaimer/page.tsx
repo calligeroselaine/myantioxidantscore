@@ -4,6 +4,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Disclaimer",
   description: "Important information about the limitations of the Prysm Score and My Antioxidant Score services.",
+  keywords: ["medical disclaimer", "wellness disclaimer", "antioxidant score limitations"],
+  alternates: { canonical: "/disclaimer" },
+  openGraph: {
+    url: "/disclaimer",
+    title: "Disclaimer",
+    description: "Important information about the limitations of the Prysm Score and My Antioxidant Score services.",
+  },
 };
 
 const sections = [

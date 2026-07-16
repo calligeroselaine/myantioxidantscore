@@ -17,6 +17,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
+    keywords: [
+      post.category,
+      "antioxidant health",
+      "Prysm Score",
+      ...post.title
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, "")
+        .split(" ")
+        .filter((w) => w.length > 4)
+        .slice(0, 4),
+    ],
+    alternates: { canonical: `/blog/${post.slug}` },
+    openGraph: {
+      url: `/blog/${post.slug}`,
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+    },
   };
 }
 
@@ -25,8 +43,32 @@ export default async function BlogPostPage({ params }: Props) {
   const post = posts.find((p) => p.slug === slug);
   if (!post) notFound();
 
+  const isoDate = new Date(post.date).toISOString();
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: isoDate,
+    dateModified: isoDate,
+    author: { "@type": "Person", name: "Elaine Calligeros" },
+    publisher: {
+      "@type": "Organization",
+      name: "My Antioxidant Score",
+      logo: { "@type": "ImageObject", url: "https://www.myantioxidantscore.com/og-image.jpg" },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.myantioxidantscore.com/blog/${post.slug}`,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Hero */}
       <section className="bg-[#0D1B3E] pt-28 pb-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">

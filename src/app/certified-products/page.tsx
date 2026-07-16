@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: "Certified Products",
   description:
     "Explore Prysm Certified supplements — clinically proven to raise your Prysm antioxidant score. Includes Pharmanex® LifePak® and more.",
+  keywords: [
+    "Prysm Certified supplements",
+    "Pharmanex LifePak",
+    "antioxidant supplements Australia",
+    "Beauty Focus Collagen",
+    "ageLOC Y-Span",
+  ],
+  alternates: { canonical: "/certified-products" },
+  openGraph: {
+    url: "/certified-products",
+    title: "Certified Products",
+    description:
+      "Explore Prysm Certified supplements — clinically proven to raise your Prysm antioxidant score.",
+  },
 };
 
 const products = [

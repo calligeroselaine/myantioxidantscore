@@ -5,6 +5,19 @@ export const metadata: Metadata = {
   title: "Success Stories",
   description:
     "Real stories from people who raised their Prysm Score and improved their antioxidant health.",
+  keywords: [
+    "Prysm iO testimonials",
+    "antioxidant score success stories",
+    "wellness business results",
+    "client retention case studies",
+  ],
+  alternates: { canonical: "/testimonials" },
+  openGraph: {
+    url: "/testimonials",
+    title: "Success Stories",
+    description:
+      "Real stories from people who raised their Prysm Score and improved their antioxidant health.",
+  },
 };
 
 const testimonials = [
@@ -87,6 +100,7 @@ export default function TestimonialsPage() {
                     <img
                       src={image}
                       alt={`${name}'s Prysm Score`}
+                      loading="lazy"
                       style={{ display: "block", width: "280px", height: "100%", objectFit: "cover" }}
                     />
                   )}

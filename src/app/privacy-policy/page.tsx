@@ -3,6 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "How My Antioxidant Score collects, uses, and protects your personal information.",
+  keywords: ["privacy policy", "data protection", "My Antioxidant Score privacy"],
+  alternates: { canonical: "/privacy-policy" },
+  openGraph: {
+    url: "/privacy-policy",
+    title: "Privacy Policy",
+    description: "How My Antioxidant Score collects, uses, and protects your personal information.",
+  },
 };
 
 const sections = [

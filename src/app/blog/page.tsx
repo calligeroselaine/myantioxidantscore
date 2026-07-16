@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   title: "Wellness Insights",
   description:
     "Expert articles on antioxidants, oxidative stress, and how to improve your Prysm Score.",
+  keywords: [
+    "antioxidant health articles",
+    "oxidative stress blog",
+    "wellness insights",
+    "nutrition and healthy ageing",
+  ],
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    url: "/blog",
+    title: "Wellness Insights",
+    description:
+      "Expert articles on antioxidants, oxidative stress, and how to improve your Prysm Score.",
+  },
 };
 
 const categoryColors: Record<string, string> = {

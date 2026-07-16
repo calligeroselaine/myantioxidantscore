@@ -3,6 +3,18 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How It Works",
   description: "How the Prysm iO antioxidant scan works.",
+  keywords: [
+    "how antioxidant scan works",
+    "Prysm iO scan process",
+    "hyperspectral scanning technology",
+    "carotenoid measurement process",
+  ],
+  alternates: { canonical: "/how-it-works" },
+  openGraph: {
+    url: "/how-it-works",
+    title: "How It Works",
+    description: "How the Prysm iO antioxidant scan works.",
+  },
 };
 
 export default function HowItWorksPage() {

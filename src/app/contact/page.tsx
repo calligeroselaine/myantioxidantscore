@@ -5,6 +5,19 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Get in touch with the My Antioxidant Score team. We'd love to hear from you — whether you have a question about your scan, our products, or a partnership.",
+  keywords: [
+    "contact My Antioxidant Score",
+    "antioxidant scan enquiry",
+    "wellness business contact",
+    "Prysm iO support",
+  ],
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    url: "/contact",
+    title: "Contact Us",
+    description:
+      "Get in touch with the My Antioxidant Score team. We'd love to hear from you.",
+  },
 };
 
 const contactMethods = [

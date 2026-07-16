@@ -52,6 +52,17 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "My Antioxidant Score",
+  url: "https://www.myantioxidantscore.com",
+  logo: "https://www.myantioxidantscore.com/og-image.jpg",
+  description:
+    "Discover your antioxidant health score in just 15 seconds with the Prysm iO device — science-backed nutritional insight you can see.",
+  sameAs: [],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -60,6 +71,10 @@ export default function RootLayout({
   return (
     <html lang="en-AU" className={`${inter.variable} h-full scroll-smooth`}>
       <body className="min-h-full flex flex-col antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <Navbar />
         <main className="flex-1 pt-0">{children}</main>
         <Footer />

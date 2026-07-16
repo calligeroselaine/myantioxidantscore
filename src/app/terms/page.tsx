@@ -3,6 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "Terms and conditions for using the My Antioxidant Score website and booking services.",
+  keywords: ["terms of service", "booking terms", "My Antioxidant Score terms and conditions"],
+  alternates: { canonical: "/terms" },
+  openGraph: {
+    url: "/terms",
+    title: "Terms of Service",
+    description: "Terms and conditions for using the My Antioxidant Score website and booking services.",
+  },
 };
 
 const sections = [

@@ -8,6 +8,20 @@ export const metadata: Metadata = {
   title: "Business Opportunities",
   description:
     "Bring the Prysm iO antioxidant scanning experience to your business. Partner with My Antioxidant Score and offer your clients cutting-edge wellness technology.",
+  keywords: [
+    "wellness business opportunity",
+    "antioxidant scanning partnership",
+    "clinic scanning technology",
+    "gym wellness add-on service",
+    "recurring wellness revenue",
+  ],
+  alternates: { canonical: "/partner-with-us" },
+  openGraph: {
+    url: "/partner-with-us",
+    title: "Business Opportunities",
+    description:
+      "Bring the Prysm iO antioxidant scanning experience to your business — a new, recurring revenue stream for wellness businesses.",
+  },
 };
 
 const benefits = [

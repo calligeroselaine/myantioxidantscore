@@ -5,6 +5,19 @@ export const metadata: Metadata = {
   title: "Who It's For",
   description:
     "Health clinics, gyms, wellness consultants, corporate wellness programs, and independent coaches — see how PRYSM scanning fits into what you already do.",
+  keywords: [
+    "wellness clinic scanning technology",
+    "gym antioxidant scan service",
+    "corporate wellness program technology",
+    "wellness coach measurement tool",
+  ],
+  alternates: { canonical: "/who-its-for" },
+  openGraph: {
+    url: "/who-its-for",
+    title: "Who It's For",
+    description:
+      "Health clinics, gyms, wellness consultants, corporate wellness programs, and independent coaches — see how PRYSM scanning fits into what you already do.",
+  },
 };
 
 const profiles = [
