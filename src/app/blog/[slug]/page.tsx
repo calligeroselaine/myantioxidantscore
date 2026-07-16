@@ -70,9 +70,9 @@ export default async function BlogPostPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       {/* Hero */}
-      <section className="bg-[#0D1B3E] pt-28 pb-20">
+      <section className="bg-[#0C2A2C] pt-28 pb-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#C8953C] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">
             {post.category}
           </p>
           <h1 className="text-3xl sm:text-4xl font-bold text-white leading-snug">
@@ -95,14 +95,14 @@ export default async function BlogPostPage({ params }: Props) {
             {post.body.map((section, i) => {
               if (section.type === "h2") {
                 return (
-                  <h2 key={i} className="text-xl font-bold text-[#0D1B3E] mt-8 mb-3 first:mt-0">
+                  <h2 key={i} className="text-xl font-bold text-[#0C2A2C] mt-8 mb-3 first:mt-0">
                     {section.content}
                   </h2>
                 );
               }
               if (section.type === "h3") {
                 return (
-                  <h3 key={i} className="text-lg font-bold text-[#0D1B3E] mt-6 mb-2">
+                  <h3 key={i} className="text-lg font-bold text-[#0C2A2C] mt-6 mb-2">
                     {section.content}
                   </h3>
                 );
@@ -119,7 +119,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <ul key={i} className="space-y-2 mb-4 ml-1">
                     {section.items?.map((item) => (
                       <li key={item} className="flex items-start gap-2 text-gray-600 text-sm leading-relaxed">
-                        <svg className="w-4 h-4 text-[#C8953C] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <svg className="w-4 h-4 text-[#0F8A7D] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                         </svg>
                         {item}
@@ -144,7 +144,7 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="mt-8 text-center">
             <Link
               href="/blog"
-              className="text-sm text-gray-400 hover:text-[#C8953C] transition-colors"
+              className="text-sm text-gray-400 hover:text-[#0F8A7D] transition-colors"
             >
               ← Back to Blog
             </Link>

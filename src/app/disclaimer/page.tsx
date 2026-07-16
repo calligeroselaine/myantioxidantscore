@@ -67,9 +67,9 @@ Nothing in this disclaimer excludes any consumer guarantees under the Australian
 export default function DisclaimerPage() {
   return (
     <>
-      <section className="bg-[#0D1B3E] pt-28 pb-20" aria-labelledby="disclaimer-hero-heading">
+      <section className="bg-[#0C2A2C] pt-28 pb-20" aria-labelledby="disclaimer-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#C8953C] font-semibold text-sm uppercase tracking-widest mb-3">Legal</p>
+          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">Legal</p>
           <h1 id="disclaimer-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
             Disclaimer
           </h1>
@@ -78,9 +78,9 @@ export default function DisclaimerPage() {
       </section>
 
       {/* Important notice banner */}
-      <div className="bg-[#C8953C]/10 border-b border-[#C8953C]/20 py-5">
+      <div className="bg-[#0F8A7D]/10 border-b border-[#0F8A7D]/20 py-5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 flex items-start gap-3">
-          <svg className="w-5 h-5 text-[#C8953C] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <svg className="w-5 h-5 text-[#0F8A7D] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
             <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
           </svg>
           <p className="text-sm text-gray-700 leading-relaxed">
@@ -94,7 +94,7 @@ export default function DisclaimerPage() {
           <div className="bg-white rounded-3xl border border-gray-100 shadow-sm divide-y divide-gray-100">
             {sections.map(({ heading, body }) => (
               <div key={heading} className="px-8 py-8">
-                <h2 className="text-lg font-bold text-[#0D1B3E] mb-4">{heading}</h2>
+                <h2 className="text-lg font-bold text-[#0C2A2C] mb-4">{heading}</h2>
                 <div className="text-gray-600 text-sm leading-relaxed space-y-3">
                   {body.split("\n\n").map((para, i) => (
                     <p key={i}>{para}</p>
@@ -107,11 +107,11 @@ export default function DisclaimerPage() {
           <div className="mt-8 text-center">
             <p className="text-gray-500 text-sm">
               By using our services you acknowledge that you have read and understood this disclaimer.{" "}
-              <Link href="/terms" className="text-[#C8953C] hover:underline font-medium">
+              <Link href="/terms" className="text-[#0F8A7D] hover:underline font-medium">
                 View our Terms of Service
               </Link>{" "}
               or{" "}
-              <Link href="/privacy-policy" className="text-[#C8953C] hover:underline font-medium">
+              <Link href="/privacy-policy" className="text-[#0F8A7D] hover:underline font-medium">
                 Privacy Policy
               </Link>.
             </p>

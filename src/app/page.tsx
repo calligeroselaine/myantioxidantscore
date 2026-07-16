@@ -52,7 +52,7 @@ export default function HomePage() {
             />
             <HeroVideoButton />
           </div>
-          <div className="bg-[#0f1b35] flex flex-col justify-center px-10 py-16 lg:px-16 lg:py-24">
+          <div className="bg-[#0A2224] flex flex-col justify-center px-10 py-16 lg:px-16 lg:py-24">
             <h1 className="text-4xl sm:text-5xl font-light text-white leading-tight tracking-tight">
               15 Seconds Can Change Your Life
             </h1>
@@ -80,13 +80,13 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="#book"
-                  className="flex-1 text-center px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0f1b35] transition-all duration-200"
+                  className="flex-1 text-center px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0A2224] transition-all duration-200"
                 >
                   Get Your Prysm Score
                 </Link>
                 <Link
                   href="/partner-with-us"
-                  className="flex-1 text-center px-8 py-3 bg-[#C8953C] border border-[#C8953C] text-white text-sm font-semibold tracking-widest uppercase hover:bg-[#e8b05a] hover:border-[#e8b05a] transition-all duration-200"
+                  className="flex-1 text-center px-8 py-3 bg-[#0F8A7D] border border-[#0F8A7D] text-white text-sm font-semibold tracking-widest uppercase hover:bg-[#34B3A3] hover:border-[#34B3A3] transition-all duration-200"
                 >
                   Add This to Your Business
                 </Link>
@@ -98,7 +98,7 @@ export default function HomePage() {
 
       {/* ── 2. STOP GUESSING — text left, lifestyle image right ── */}
       <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh]" aria-labelledby="stop-guessing-heading">
-        <div className="bg-[#0a1628] flex flex-col justify-center px-10 py-16 lg:px-16 lg:py-20 order-2 lg:order-1">
+        <div className="bg-[#081C1E] flex flex-col justify-center px-10 py-16 lg:px-16 lg:py-20 order-2 lg:order-1">
           <h2 id="stop-guessing-heading" className="text-4xl sm:text-5xl font-light text-white leading-tight">
             Stop Guessing. Start Seeing.
           </h2>
@@ -115,7 +115,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/backed-by-science"
-            className="inline-block mt-8 px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0a1628] transition-all duration-200 w-fit"
+            className="inline-block mt-8 px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#081C1E] transition-all duration-200 w-fit"
           >
             Learn More
           </Link>
@@ -145,7 +145,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 4b. FOR YOUR BUSINESS — 3-column value props ── */}
-      <section className="py-20 bg-[#0a1628]" aria-labelledby="business-heading">
+      <section className="py-20 bg-[#081C1E]" aria-labelledby="business-heading">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <h2 id="business-heading" className="text-3xl font-light text-white text-center mb-14 tracking-wide">
             For Your Business
@@ -166,8 +166,8 @@ export default function HomePage() {
               },
             ].map(({ title, copy }) => (
               <div key={title} className="text-center flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full bg-[#C8953C]/15 flex items-center justify-center mb-5" aria-hidden="true">
-                  <svg className="w-5 h-5 text-[#C8953C]" fill="none" stroke="currentColor" strokeWidth={1.75} viewBox="0 0 24 24">
+                <div className="w-12 h-12 rounded-full bg-[#0F8A7D]/15 flex items-center justify-center mb-5" aria-hidden="true">
+                  <svg className="w-5 h-5 text-[#0F8A7D]" fill="none" stroke="currentColor" strokeWidth={1.75} viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                   </svg>
                 </div>
@@ -179,7 +179,7 @@ export default function HomePage() {
           <div className="mt-16 text-center">
             <Link
               href="/partner-with-us"
-              className="inline-block px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0a1628] transition-all duration-200"
+              className="inline-block px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#081C1E] transition-all duration-200"
             >
               See Business Opportunities
             </Link>
@@ -188,7 +188,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 8b. REAL RESULTS — consumer + business testimonial preview ── */}
-      <section className="py-20 bg-[#0a1628]" aria-labelledby="results-heading">
+      <section className="py-20 bg-[#081C1E]" aria-labelledby="results-heading">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <h2 id="results-heading" className="text-3xl font-light text-white text-center mb-14 tracking-wide">
             Real Results
@@ -217,7 +217,7 @@ export default function HomePage() {
           <div className="mt-10 text-center">
             <Link
               href="/testimonials"
-              className="inline-block px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0a1628] transition-all duration-200"
+              className="inline-block px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#081C1E] transition-all duration-200"
             >
               See All Results
             </Link>
@@ -226,7 +226,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 9. GUARANTEE ── */}
-      <section className="py-20 bg-[#0f1b35] text-center border-t border-white/10" aria-labelledby="guarantee-heading">
+      <section className="py-20 bg-[#0A2224] text-center border-t border-white/10" aria-labelledby="guarantee-heading">
         <div className="max-w-3xl mx-auto px-6">
           <h2 id="guarantee-heading" className="text-3xl sm:text-4xl font-light text-white tracking-wide">
             Guaranteed to Raise Your Score
@@ -239,7 +239,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/certified-products"
-            className="inline-block mt-8 px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0f1b35] transition-all duration-200"
+            className="inline-block mt-8 px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0A2224] transition-all duration-200"
           >
             See Certified Products
           </Link>
@@ -251,7 +251,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <h2 id="book-heading" className="text-3xl sm:text-4xl font-light text-[#0f1b35] tracking-wide">
+              <h2 id="book-heading" className="text-3xl sm:text-4xl font-light text-[#0A2224] tracking-wide">
                 Find Out How to Get Your Prysm Score
               </h2>
             </div>
@@ -262,10 +262,10 @@ export default function HomePage() {
 
           {/* FAQ */}
           <div id="faq" className="mt-16 max-w-3xl">
-            <h3 className="text-xl font-bold text-[#0f1b35] mb-6">
+            <h3 className="text-xl font-bold text-[#0A2224] mb-6">
               Frequently Asked Questions
             </h3>
-            <div className="bg-[#F7F4EF] rounded-2xl p-6 border border-[#C8953C]/10 space-y-4 text-sm">
+            <div className="bg-[#F0F6F5] rounded-2xl p-6 border border-[#0F8A7D]/10 space-y-4 text-sm">
               {[
                 {
                   q: "Is the scan free?",
@@ -281,7 +281,7 @@ export default function HomePage() {
                 },
               ].map(({ q, a }) => (
                 <div key={q}>
-                  <p className="font-semibold text-[#0D1B3E]">{q}</p>
+                  <p className="font-semibold text-[#0C2A2C]">{q}</p>
                   <p className="text-gray-500 mt-0.5">{a}</p>
                 </div>
               ))}

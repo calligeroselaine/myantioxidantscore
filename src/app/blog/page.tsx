@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 const categoryColors: Record<string, string> = {
-  Wellness: "bg-[#C8953C]/10 text-[#C8953C]",
+  Wellness: "bg-[#0F8A7D]/10 text-[#0F8A7D]",
   Science: "bg-purple-50 text-purple-700",
   Education: "bg-blue-50 text-blue-700",
   News: "bg-green-50 text-green-700",
@@ -32,7 +32,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0D1B3E] pt-28 pb-20" aria-labelledby="blog-hero-heading">
+      <section className="bg-[#0C2A2C] pt-28 pb-20" aria-labelledby="blog-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h1 id="blog-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
             Wellness Insights
@@ -52,13 +52,13 @@ export default function BlogPage() {
             {posts.map(({ slug, title, excerpt, category, date, readTime }) => (
               <article
                 key={slug}
-                className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:border-[#C8953C]/20 transition-all duration-300 flex flex-col"
+                className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:border-[#0F8A7D]/20 transition-all duration-300 flex flex-col"
               >
-                <div className="h-44 bg-gradient-to-br from-[#0D1B3E] to-[#1a2f5e] flex items-center justify-center" aria-hidden="true">
+                <div className="h-44 bg-gradient-to-br from-[#0C2A2C] to-[#123638] flex items-center justify-center" aria-hidden="true">
                   <svg viewBox="0 0 80 60" className="w-16 opacity-30">
-                    <rect x="10" y="10" width="60" height="40" rx="4" fill="none" stroke="#C8953C" strokeWidth="2" />
-                    <circle cx="40" cy="30" r="12" fill="#C8953C" opacity="0.4" />
-                    <path d="M28 30 Q34 20 40 26 Q46 32 52 22" stroke="#C8953C" strokeWidth="2" fill="none" strokeLinecap="round" />
+                    <rect x="10" y="10" width="60" height="40" rx="4" fill="none" stroke="#0F8A7D" strokeWidth="2" />
+                    <circle cx="40" cy="30" r="12" fill="#0F8A7D" opacity="0.4" />
+                    <path d="M28 30 Q34 20 40 26 Q46 32 52 22" stroke="#0F8A7D" strokeWidth="2" fill="none" strokeLinecap="round" />
                   </svg>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
@@ -68,8 +68,8 @@ export default function BlogPage() {
                     </span>
                     <span className="text-gray-400 text-xs">{readTime}</span>
                   </div>
-                  <h3 className="font-bold text-[#0D1B3E] leading-snug mb-2 flex-1">
-                    <Link href={`/blog/${slug}`} className="hover:text-[#C8953C] transition-colors">
+                  <h3 className="font-bold text-[#0C2A2C] leading-snug mb-2 flex-1">
+                    <Link href={`/blog/${slug}`} className="hover:text-[#0F8A7D] transition-colors">
                       {title}
                     </Link>
                   </h3>
@@ -78,7 +78,7 @@ export default function BlogPage() {
                     <span className="text-gray-400 text-xs">{date}</span>
                     <Link
                       href={`/blog/${slug}`}
-                      className="text-[#C8953C] text-xs font-semibold hover:underline"
+                      className="text-[#0F8A7D] text-xs font-semibold hover:underline"
                     >
                       Read more →
                     </Link>

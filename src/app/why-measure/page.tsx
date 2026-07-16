@@ -24,9 +24,9 @@ export default function WhyMeasurePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0D1B3E] pt-28 pb-20" aria-labelledby="why-measure-heading">
+      <section className="bg-[#0C2A2C] pt-28 pb-20" aria-labelledby="why-measure-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#C8953C] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">
             The Measurement Gap
           </p>
           <h1 id="why-measure-heading" className="text-4xl sm:text-5xl font-bold text-white leading-tight">
@@ -43,7 +43,7 @@ export default function WhyMeasurePage() {
       {/* The problem */}
       <section className="py-24 bg-white" aria-labelledby="problem-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 id="problem-heading" className="text-3xl font-bold text-[#0D1B3E] mb-6">
+          <h2 id="problem-heading" className="text-3xl font-bold text-[#0C2A2C] mb-6">
             Feeling Fine Isn&apos;t Proof
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
@@ -59,7 +59,7 @@ export default function WhyMeasurePage() {
           </p>
 
           <blockquote className="bg-[#F9FAFB] rounded-2xl border border-gray-100 p-8">
-            <svg className="w-8 h-8 text-[#C8953C]/30 mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+            <svg className="w-8 h-8 text-[#0F8A7D]/30 mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
               <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H6.5c0-1.9 1.6-3.5 3.5-3.5V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-3.5c0-1.9 1.6-3.5 3.5-3.5V8z" />
             </svg>
             <p className="text-gray-700 leading-relaxed italic">
@@ -67,7 +67,7 @@ export default function WhyMeasurePage() {
               score. When I had my antioxidant levels measured with the Prysm iO, I was
               genuinely surprised. My score was much lower than I expected.&rdquo;
             </p>
-            <p className="mt-4 text-sm font-semibold text-[#0D1B3E]">— Sally A. Mumford</p>
+            <p className="mt-4 text-sm font-semibold text-[#0C2A2C]">— Sally A. Mumford</p>
           </blockquote>
 
           <p className="mt-10 text-gray-600 leading-relaxed">
@@ -85,7 +85,7 @@ export default function WhyMeasurePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl border border-gray-100 p-8">
-              <h3 id="gap-heading" className="text-lg font-bold text-[#0D1B3E] mb-3">
+              <h3 id="gap-heading" className="text-lg font-bold text-[#0C2A2C] mb-3">
                 A Trust Problem
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -96,7 +96,7 @@ export default function WhyMeasurePage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl border border-gray-100 p-8">
-              <h3 className="text-lg font-bold text-[#0D1B3E] mb-3">
+              <h3 className="text-lg font-bold text-[#0C2A2C] mb-3">
                 A Business Opportunity
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -110,9 +110,9 @@ export default function WhyMeasurePage() {
       </section>
 
       {/* PRYSM as the measurement layer */}
-      <section className="py-24 bg-[#0D1B3E]" aria-labelledby="prysm-heading">
+      <section className="py-24 bg-[#0C2A2C]" aria-labelledby="prysm-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#C8953C] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">
             The Missing Layer
           </p>
           <h2 id="prysm-heading" className="text-3xl sm:text-4xl font-bold text-white">
@@ -140,7 +140,7 @@ export default function WhyMeasurePage() {
               },
             ].map(({ title, copy }) => (
               <div key={title}>
-                <h3 className="text-[#C8953C] font-bold text-sm uppercase tracking-widest mb-2">
+                <h3 className="text-[#0F8A7D] font-bold text-sm uppercase tracking-widest mb-2">
                   {title}
                 </h3>
                 <p className="text-white/60 text-sm leading-relaxed">{copy}</p>
@@ -153,7 +153,7 @@ export default function WhyMeasurePage() {
       {/* CTA */}
       <section className="py-20 bg-white text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-[#0D1B3E]">
+          <h2 className="text-3xl font-bold text-[#0C2A2C]">
             Close the measurement gap in your business
           </h2>
           <p className="mt-4 text-gray-500 leading-relaxed">
@@ -161,7 +161,7 @@ export default function WhyMeasurePage() {
           </p>
           <Link
             href="/partner-with-us"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full transition-all duration-200 text-sm"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#0F8A7D] hover:bg-[#34B3A3] text-white font-bold rounded-full transition-all duration-200 text-sm"
           >
             See Business Opportunities
           </Link>

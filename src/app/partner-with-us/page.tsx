@@ -38,9 +38,9 @@ export default function PartnerWithUsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0D1B3E] pt-28 pb-20" aria-labelledby="partner-hero-heading">
+      <section className="bg-[#0C2A2C] pt-28 pb-20" aria-labelledby="partner-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#C8953C] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">
             Business Partnerships
           </p>
           <h1 id="partner-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
@@ -63,7 +63,7 @@ export default function PartnerWithUsPage() {
 
           <Link
             href="#partner-form"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full transition-all duration-200 text-sm"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#0F8A7D] hover:bg-[#34B3A3] text-white font-bold rounded-full transition-all duration-200 text-sm"
           >
             Enquire Now
           </Link>
@@ -86,7 +86,7 @@ export default function PartnerWithUsPage() {
             />
           </div>
           <div className="bg-[#F9FAFB] flex flex-col justify-center px-10 py-16 lg:px-16">
-            <h2 id="imagine-heading" className="text-3xl sm:text-4xl font-bold text-[#0D1B3E] leading-tight">
+            <h2 id="imagine-heading" className="text-3xl sm:text-4xl font-bold text-[#0C2A2C] leading-tight">
               A groundbreaking platform for your business
             </h2>
             <p className="mt-6 text-gray-500 leading-relaxed">
@@ -96,7 +96,7 @@ export default function PartnerWithUsPage() {
             </p>
             <Link
               href="#partner-form"
-              className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full transition-all duration-200 text-sm w-fit"
+              className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#0F8A7D] hover:bg-[#34B3A3] text-white font-bold rounded-full transition-all duration-200 text-sm w-fit"
             >
               Enquire Now
             </Link>
@@ -105,7 +105,7 @@ export default function PartnerWithUsPage() {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 bg-[#0D1B3E]" aria-labelledby="benefits-heading">
+      <section className="py-20 bg-[#0C2A2C]" aria-labelledby="benefits-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -119,7 +119,7 @@ export default function PartnerWithUsPage() {
               <ul className="mt-8 space-y-3">
                 {benefits.map((b) => (
                   <li key={b} className="flex items-center gap-3 text-white/80 text-sm">
-                    <svg className="w-5 h-5 text-[#C8953C] shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <svg className="w-5 h-5 text-[#0F8A7D] shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                     </svg>
                     {b}
@@ -131,8 +131,8 @@ export default function PartnerWithUsPage() {
                 user-provided assumptions. Actual results may vary.
               </p>
             </div>
-            <div className="bg-[#1a2f5e] rounded-3xl p-8 text-center">
-              <div className="text-[#C8953C] text-5xl font-black mb-2">$200B</div>
+            <div className="bg-[#123638] rounded-3xl p-8 text-center">
+              <div className="text-[#0F8A7D] text-5xl font-black mb-2">$200B</div>
               <p className="text-white/60 text-sm">
                 spent on supplements globally every year
               </p>
@@ -150,7 +150,7 @@ export default function PartnerWithUsPage() {
       <section id="partner-form" className="py-24 bg-[#F9FAFB]" aria-labelledby="partner-form-heading">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <h2 id="partner-form-heading" className="text-3xl font-bold text-[#0D1B3E]">
+            <h2 id="partner-form-heading" className="text-3xl font-bold text-[#0C2A2C]">
               Get in Touch
             </h2>
           </div>

@@ -53,9 +53,9 @@ export default function HowItWorksPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0D1B3E] pt-28 pb-20" aria-labelledby="how-it-works-heading">
+      <section className="bg-[#0C2A2C] pt-28 pb-20" aria-labelledby="how-it-works-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#C8953C] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">
             How It Works
           </p>
           <h1 id="how-it-works-heading" className="text-4xl sm:text-5xl font-bold text-white">
@@ -70,10 +70,10 @@ export default function HowItWorksPage() {
       </section>
 
       {/* Step 1 — The Technology */}
-      <section className="py-20 bg-[#0f1b35]" aria-labelledby="tech-heading">
+      <section className="py-20 bg-[#0A2224]" aria-labelledby="tech-heading">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-[#C8953C] text-xs font-semibold uppercase tracking-widest mb-3">
+            <p className="text-[#0F8A7D] text-xs font-semibold uppercase tracking-widest mb-3">
               Step 1
             </p>
             <h2 id="tech-heading" className="text-3xl font-light text-white tracking-wide">
@@ -106,9 +106,9 @@ export default function HowItWorksPage() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[#0a1628]/60 flex items-center justify-center">
+        <div className="absolute inset-0 bg-[#081C1E]/60 flex items-center justify-center">
           <div className="text-center px-6 max-w-xl mx-auto">
-            <p className="text-[#C8953C] text-xs font-semibold uppercase tracking-widest mb-3">
+            <p className="text-[#0F8A7D] text-xs font-semibold uppercase tracking-widest mb-3">
               Step 2
             </p>
             <h2 className="text-3xl sm:text-4xl font-light text-white mb-4">
@@ -123,10 +123,10 @@ export default function HowItWorksPage() {
       </section>
 
       {/* Step 3 — What Your Score Means */}
-      <section className="py-20 bg-[#0a1628]" aria-labelledby="score-heading">
+      <section className="py-20 bg-[#081C1E]" aria-labelledby="score-heading">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-[#C8953C] text-xs font-semibold uppercase tracking-widest mb-3">
+            <p className="text-[#0F8A7D] text-xs font-semibold uppercase tracking-widest mb-3">
               Step 3
             </p>
             <h2 id="score-heading" className="text-3xl font-light text-white tracking-wide">
@@ -139,7 +139,7 @@ export default function HowItWorksPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {scoreItems.map(({ img, label }) => (
-              <div key={label} className="relative rounded overflow-hidden bg-[#e8e6dd]" style={{ aspectRatio: "3/4" }}>
+              <div key={label} className="relative rounded overflow-hidden bg-[#E6EEEC]" style={{ aspectRatio: "3/4" }}>
                 <Image src={img} alt={label} fill className="object-contain" sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
             ))}
@@ -158,8 +158,8 @@ export default function HowItWorksPage() {
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
-        <div className="bg-[#0f1b35] flex flex-col justify-center px-10 py-16 lg:px-16">
-          <p className="text-[#C8953C] text-xs font-semibold uppercase tracking-widest mb-3">
+        <div className="bg-[#0A2224] flex flex-col justify-center px-10 py-16 lg:px-16">
+          <p className="text-[#0F8A7D] text-xs font-semibold uppercase tracking-widest mb-3">
             Step 4
           </p>
           <h2 id="app-heading" className="text-3xl sm:text-4xl font-light text-white leading-tight">
@@ -175,8 +175,8 @@ export default function HowItWorksPage() {
 
       {/* Step 5 — AI Guidance */}
       <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[60vh]" aria-labelledby="ai-heading">
-        <div className="bg-[#0a1628] flex flex-col justify-center px-10 py-16 lg:px-16 order-2 lg:order-1">
-          <p className="text-[#C8953C] text-xs font-semibold uppercase tracking-widest mb-3">
+        <div className="bg-[#081C1E] flex flex-col justify-center px-10 py-16 lg:px-16 order-2 lg:order-1">
+          <p className="text-[#0F8A7D] text-xs font-semibold uppercase tracking-widest mb-3">
             Step 5
           </p>
           <h2 id="ai-heading" className="text-3xl sm:text-4xl font-light text-white leading-tight">
@@ -202,7 +202,7 @@ export default function HowItWorksPage() {
       {/* CTA */}
       <section className="py-20 bg-white text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-[#0D1B3E]">
+          <h2 className="text-3xl font-bold text-[#0C2A2C]">
             See it for yourself
           </h2>
           <p className="mt-4 text-gray-500 leading-relaxed">
@@ -210,7 +210,7 @@ export default function HowItWorksPage() {
           </p>
           <Link
             href="/#book"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full transition-all duration-200 text-sm"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#0F8A7D] hover:bg-[#34B3A3] text-white font-bold rounded-full transition-all duration-200 text-sm"
           >
             Get Your Prysm Score
           </Link>

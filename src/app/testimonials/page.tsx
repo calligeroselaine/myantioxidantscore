@@ -67,9 +67,9 @@ export default function TestimonialsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0D1B3E] pt-28 pb-20" aria-labelledby="testimonials-hero-heading">
+      <section className="bg-[#0C2A2C] pt-28 pb-20" aria-labelledby="testimonials-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#C8953C] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-[#0F8A7D] font-semibold text-sm uppercase tracking-widest mb-3">
             Real Results
           </p>
           <h1 id="testimonials-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
@@ -84,14 +84,14 @@ export default function TestimonialsPage() {
       {/* Client Results */}
       <section className="py-24 bg-[#F9FAFB]" aria-labelledby="client-results-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 id="client-results-heading" className="text-2xl font-bold text-[#0D1B3E] text-center mb-10">
+          <h2 id="client-results-heading" className="text-2xl font-bold text-[#0C2A2C] text-center mb-10">
             Client Results
           </h2>
           <div className="space-y-8 max-w-4xl mx-auto">
             {testimonials.map(({ name, location, image, quote, scoreChange }, i) => (
               <article
                 key={i}
-                className="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#C8953C]/20 transition-all duration-300 overflow-hidden"
+                className="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#0F8A7D]/20 transition-all duration-300 overflow-hidden"
               >
                 <div style={{ display: "grid", gridTemplateColumns: image ? "280px 1fr" : "1fr" }}>
                   {/* Score image */}
@@ -107,16 +107,16 @@ export default function TestimonialsPage() {
 
                   {/* Quote */}
                   <div className="p-8 flex flex-col">
-                    <svg className="w-8 h-8 text-[#C8953C]/30 mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                    <svg className="w-8 h-8 text-[#0F8A7D]/30 mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                       <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H6.5c0-1.9 1.6-3.5 3.5-3.5V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-3.5c0-1.9 1.6-3.5 3.5-3.5V8z" />
                     </svg>
                     <p className="text-gray-600 text-sm leading-relaxed flex-1">
                       &ldquo;{quote}&rdquo;
                     </p>
                     <div className="mt-6 pt-6 border-t border-gray-100">
-                      <p className="font-bold text-[#0D1B3E]">{name}</p>
+                      <p className="font-bold text-[#0C2A2C]">{name}</p>
                       {location && <p className="text-gray-400 text-xs">{location}</p>}
-                      <p className="mt-2 inline-block px-3 py-1 bg-[#C8953C]/10 text-[#C8953C] text-xs font-semibold rounded-full">
+                      <p className="mt-2 inline-block px-3 py-1 bg-[#0F8A7D]/10 text-[#0F8A7D] text-xs font-semibold rounded-full">
                         {scoreChange}
                       </p>
                     </div>
@@ -131,7 +131,7 @@ export default function TestimonialsPage() {
       {/* Business Results */}
       <section className="py-24 bg-white" aria-labelledby="business-results-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 id="business-results-heading" className="text-2xl font-bold text-[#0D1B3E] text-center mb-10">
+          <h2 id="business-results-heading" className="text-2xl font-bold text-[#0C2A2C] text-center mb-10">
             Business Results
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -140,16 +140,16 @@ export default function TestimonialsPage() {
                 key={i}
                 className="bg-[#F9FAFB] rounded-3xl border border-gray-100 shadow-sm p-8 flex flex-col"
               >
-                <svg className="w-8 h-8 text-[#C8953C]/30 mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                <svg className="w-8 h-8 text-[#0F8A7D]/30 mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                   <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H6.5c0-1.9 1.6-3.5 3.5-3.5V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-3.5c0-1.9 1.6-3.5 3.5-3.5V8z" />
                 </svg>
                 <p className="text-gray-600 text-sm leading-relaxed flex-1">
                   &ldquo;{quote}&rdquo;
                 </p>
                 <div className="mt-6 pt-6 border-t border-gray-200">
-                  <p className="font-bold text-[#0D1B3E]">{name}</p>
+                  <p className="font-bold text-[#0C2A2C]">{name}</p>
                   <p className="text-gray-400 text-xs">{role}</p>
-                  <p className="mt-2 inline-block px-3 py-1 bg-[#C8953C]/10 text-[#C8953C] text-xs font-semibold rounded-full">
+                  <p className="mt-2 inline-block px-3 py-1 bg-[#0F8A7D]/10 text-[#0F8A7D] text-xs font-semibold rounded-full">
                     {result}
                   </p>
                 </div>
@@ -160,14 +160,14 @@ export default function TestimonialsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#0D1B3E] text-center">
+      <section className="py-20 bg-[#0C2A2C] text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl font-bold text-white">
             Find Out How to Get Your Prysm Score
           </h2>
           <Link
             href="/#book"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full transition-all duration-200 text-sm"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#0F8A7D] hover:bg-[#34B3A3] text-white font-bold rounded-full transition-all duration-200 text-sm"
           >
             Submit Enquiry
           </Link>
