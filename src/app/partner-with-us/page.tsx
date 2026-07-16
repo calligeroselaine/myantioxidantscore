@@ -10,33 +10,6 @@ export const metadata: Metadata = {
     "Bring the Prysm iO antioxidant scanning experience to your business. Partner with My Antioxidant Score and offer your clients cutting-edge wellness technology.",
 };
 
-const partnerTypes = [
-  {
-    title: "Health & Wellness Clinics",
-    description:
-      "Enhance your client consultations with objective, data-driven nutritional assessments. The Prysm iO integrates seamlessly into naturopathic, chiropractic, and integrative medicine practices.",
-    icon: "🏥",
-  },
-  {
-    title: "Gyms & Fitness Studios",
-    description:
-      "Help your members understand the nutritional side of performance. Scans make a compelling add-on service that drives retention and revenue.",
-    icon: "💪",
-  },
-  {
-    title: "Wellness Consultation Services",
-    description:
-      "Differentiate your consultations with fast, non-invasive antioxidant scanning. Provide measurable wellness insights that support informed conversations about nutrition and healthy living.",
-    icon: "🌿",
-  },
-  {
-    title: "Corporate Wellness Programs",
-    description:
-      "Bring antioxidant scanning to your workplace wellness events. Employees get actionable insights; you get a memorable, high-value benefit.",
-    icon: "🏢",
-  },
-];
-
 const benefits = [
   "An accessible technology investment, with setup and onboarding handled for you",
   "Full training provided at no charge",
@@ -85,32 +58,6 @@ export default function PartnerWithUsPage() {
 
       <Script src="https://fast.wistia.com/player.js" strategy="lazyOnload" />
       <Script src="https://fast.wistia.com/embed/zrw2qb4qsn.js" strategy="lazyOnload" type="module" />
-
-      {/* Partner types */}
-      <section className="py-24 bg-white" aria-labelledby="partner-types-heading">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h2 id="partner-types-heading" className="text-3xl font-bold text-[#0D1B3E]">
-              Who We Partner With
-            </h2>
-            <p className="mt-3 text-gray-500 max-w-xl mx-auto">
-              We work with a wide range of health and wellness businesses.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {partnerTypes.map(({ title, description, icon }) => (
-              <div
-                key={title}
-                className="bg-[#F9FAFB] rounded-2xl p-8 border border-gray-100 hover:border-[#C8953C]/30 transition-all duration-200"
-              >
-                <div className="text-3xl mb-4" aria-hidden="true">{icon}</div>
-                <h3 className="text-lg font-bold text-[#0D1B3E] mb-2">{title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Imagine banner */}
       <section className="bg-white" aria-labelledby="imagine-heading">
