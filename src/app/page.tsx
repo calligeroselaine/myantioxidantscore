@@ -33,31 +33,7 @@ const IMG = {
   carousel1:      `${BASE}/2cbe9c_c661e5125a8a4eb6ae48492d989be1e9~mv2.avif`,
   carousel2:      `${BASE}/2cbe9c_178911420ef0472a91451087c7ed7ab4~mv2.avif`,
   carousel3:      `${BASE}/2cbe9c_5f23817806644ad2b5393ab51a7eba45~mv2.jpg`,
-  patent:         `${BASE}/2cbe9c_250e8466e7cd47648e9cbdc48835b4f3~mv2.png`,
-  mlCalibration:  `${BASE}/2cbe9c_0ed41fd191cc4c7e9bd781be8942e7b4~mv2.png`,
-  measurements:   `${BASE}/2cbe9c_688d05e2d0ab431783ad357fb16cfd53~mv2.png`,
-  raman:          `${BASE}/2cbe9c_9ec9a87e7cb645a085021d6231bb64a5~mv2.png`,
-  lifestyle2:     `${BASE}/2cbe9c_fc06a7852d174dc3b7a27b8b61ca405a~mv2.jpg`,
-  score6:         `${BASE}/2cbe9c_f180b3b7501542d0821dd904f6ec9f09~mv2.jpeg`,
-  score8:         `${BASE}/2cbe9c_0371afa51088419dbeeaca48493f10f8~mv2.jpeg`,
-  score7:         `${BASE}/2cbe9c_4ff4d7291f32478981036e37f718c273~mv2.jpeg`,
-  appHero:        `${BASE}/2cbe9c_72715b930c474f789ba107ff9ce16e40~mv2.webp`,
-  aiGuidance:     `${BASE}/2cbe9c_6c63b07746c641d3b0a62e680ade79fa~mv2.jpg`,
-  aiImage:        `${BASE}/2cbe9c_30e6a467b3434c21ae8eeff0c27b9d4c~mv2.png`,
 };
-
-const techFeatures = [
-  { img: IMG.patent,        label: "Patent-Pending Technology" },
-  { img: IMG.mlCalibration, label: "Machine Learning Calibration" },
-  { img: IMG.measurements,  label: "700K+ Measurements per Scan" },
-  { img: IMG.raman,         label: "Raman Technology" },
-];
-
-const scoreItems = [
-  { img: IMG.score6, label: "Low Score" },
-  { img: IMG.score7, label: "Average Score" },
-  { img: IMG.score8, label: "High Score" },
-];
 
 export default function HomePage() {
   return (
@@ -168,25 +144,6 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* ── 4. TECHNOLOGY — 4 feature icons/images ── */}
-      <section className="py-20 bg-[#0f1b35]" aria-labelledby="tech-heading">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <h2 id="tech-heading" className="text-3xl font-light text-white text-center mb-14 tracking-wide">
-            Precision You Can Trust
-          </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {techFeatures.map(({ img, label }) => (
-              <div key={label} className="flex flex-col items-center text-center gap-4">
-                <div className="relative w-24 h-24">
-                  <Image src={img} alt={label} fill className="object-contain" sizes="96px" />
-                </div>
-                <p className="text-white/70 text-xs uppercase tracking-widest leading-relaxed">{label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── 4b. FOR YOUR BUSINESS — 3-column value props ── */}
       <section className="py-20 bg-[#0a1628]" aria-labelledby="business-heading">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
@@ -227,93 +184,6 @@ export default function HomePage() {
               See Business Opportunities
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* ── 5. SECOND LIFESTYLE — full-width lifestyle image ── */}
-      <section className="relative h-[60vh]" aria-label="Wellness lifestyle">
-        <Image
-          src={IMG.lifestyle2}
-          alt="Healthy lifestyle with antioxidant nutrition"
-          fill
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-[#0a1628]/50 flex items-center justify-center">
-          <div className="text-center px-6">
-            <p className="text-white/80 text-sm uppercase tracking-widest mb-3">Backed by science</p>
-            <h2 className="text-3xl sm:text-4xl font-light text-white">
-              Your health, quantified.
-            </h2>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 6. WHAT DOES MY SCORE MEAN — 3 score-level images ── */}
-      <section className="py-20 bg-[#0a1628]" aria-labelledby="score-heading">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <h2 id="score-heading" className="text-3xl font-light text-white text-center mb-12 tracking-wide">
-            What Does My Score Mean?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {scoreItems.map(({ img, label }) => (
-              <div key={label} className="relative rounded overflow-hidden bg-[#e8e6dd]" style={{ aspectRatio: "3/4" }}>
-                <Image src={img} alt={label} fill className="object-contain" sizes="(max-width: 768px) 100vw, 33vw" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── 7. APP HERO — full-width app image ── */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh]" aria-labelledby="app-heading">
-        <div className="relative min-h-[50vh] bg-black">
-          <Image
-            src={IMG.appHero}
-            alt="Prysm iO app showing antioxidant score"
-            fill
-            className="object-contain object-left lg:object-center"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-          />
-        </div>
-        <div className="bg-[#0f1b35] flex flex-col justify-center px-10 py-16 lg:px-16">
-          <h2 id="app-heading" className="text-3xl sm:text-4xl font-light text-white leading-tight">
-            More than just a score — your personal wellness guide.
-          </h2>
-          <p className="mt-6 text-white/70 leading-relaxed">
-            The Prysm iO app delivers your score instantly, tracks your progress
-            over time, and gives you AI-powered personalised guidance to build
-            healthier habits.
-          </p>
-          <Link
-            href="#book"
-            className="inline-block mt-8 px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0f1b35] transition-all duration-200 w-fit"
-          >
-            Get Your Prysm Score
-          </Link>
-        </div>
-      </section>
-
-      {/* ── 8. AI GUIDANCE ── */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[60vh]" aria-labelledby="ai-heading">
-        <div className="bg-[#0a1628] flex flex-col justify-center px-10 py-16 lg:px-16 order-2 lg:order-1">
-          <h2 id="ai-heading" className="text-3xl sm:text-4xl font-light text-white leading-tight">
-            AI-Powered Personalised Guidance
-          </h2>
-          <p className="mt-6 text-white/70 leading-relaxed">
-            The Prysm iO app doesn&apos;t just show you your score — it explains
-            what it means and tells you exactly what to do next. Personalised
-            recommendations based on your unique results.
-          </p>
-        </div>
-        <div className="relative min-h-[40vh] order-1 lg:order-2">
-          <Image
-            src={IMG.aiGuidance}
-            alt="AI-powered wellness guidance"
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-          />
         </div>
       </section>
 
