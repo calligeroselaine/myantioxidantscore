@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const footerLinks = {
   Company: [
@@ -20,7 +23,21 @@ const footerLinks = {
   ],
 };
 
+const BUSINESS_CTA_PATHS = ["/partner-with-us", "/backed-by-science"];
+
 export default function Footer() {
+  const pathname = usePathname();
+  const isBusinessCta = BUSINESS_CTA_PATHS.includes(pathname);
+
+  const ctaHeadline = isBusinessCta
+    ? "Ready to add this to your business?"
+    : "Ready to see your score?";
+  const ctaSubtext = isBusinessCta
+    ? "Book a free discovery call and we'll walk you through the fit, the numbers, and what's involved."
+    : "Book a free antioxidant scan and get results in 15 seconds.";
+  const ctaButtonLabel = isBusinessCta ? "Book a Discovery Call" : "Book a Scan";
+  const ctaButtonHref = isBusinessCta ? "/partner-with-us#partner-form" : "/book-a-scan";
+
   return (
     <footer className="bg-[#0D1B3E] text-white" role="contentinfo">
       {/* CTA Banner */}
@@ -28,17 +45,17 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h2 className="text-xl font-bold text-white">
-              Ready to see your score?
+              {ctaHeadline}
             </h2>
             <p className="text-white/90 mt-1 text-sm">
-              Book a free antioxidant scan and get results in 15 seconds.
+              {ctaSubtext}
             </p>
           </div>
           <Link
-            href="/book-a-scan"
+            href={ctaButtonHref}
             className="shrink-0 px-8 py-3 bg-[#0D1B3E] hover:bg-[#1a2f5e] text-white font-semibold rounded-full transition-colors duration-200 text-sm"
           >
-            Book a Scan
+            {ctaButtonLabel}
           </Link>
         </div>
       </div>
