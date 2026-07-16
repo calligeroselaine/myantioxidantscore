@@ -94,24 +94,6 @@ export default async function BlogPostPage({ params }: Props) {
                   </div>
                 );
               }
-              if (section.type === "cta") {
-                return (
-                  <div key={i} className="mt-10 pt-8 border-t border-gray-100 text-center">
-                    <p className="text-[#0D1B3E] font-bold text-lg mb-2">
-                      Ready to find out your score?
-                    </p>
-                    <p className="text-gray-500 text-sm mb-6">
-                      A Prysm iO scan takes 15 seconds and gives you a clear picture of how well your body is defending itself right now.
-                    </p>
-                    <Link
-                      href="/book-a-scan"
-                      className="inline-flex items-center gap-2 px-8 py-4 bg-[#C8953C] hover:bg-[#e8b05a] text-white font-bold rounded-full transition-all duration-200 text-sm"
-                    >
-                      Book a Free Scan
-                    </Link>
-                  </div>
-                );
-              }
               return null;
             })}
           </div>
