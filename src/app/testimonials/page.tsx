@@ -26,6 +26,30 @@ const testimonials = [
   },
 ];
 
+const businessTestimonials = [
+  {
+    name: "Placeholder Name",
+    role: "Clinic Owner",
+    quote:
+      "Adding scans to our consultations gave clients something to come back for. Instead of a one-off visit, we now see people quarterly to track their progress — it's changed how we think about retention entirely.",
+    result: "Higher client retention",
+  },
+  {
+    name: "Placeholder Name",
+    role: "Gym Owner",
+    quote:
+      "Our members love having something measurable to work towards beyond the scale. It's become a genuine point of difference for us — nobody else in our area offers anything like it.",
+    result: "New recurring revenue stream",
+  },
+  {
+    name: "Placeholder Name",
+    role: "Wellness Coach",
+    quote:
+      "Clients trust the number in a way they don't trust my opinion alone. It's given my recommendations real weight, and clients are more satisfied because they can actually see the impact of the changes we make together.",
+    result: "Improved client satisfaction",
+  },
+];
+
 export default function TestimonialsPage() {
   return (
     <>
@@ -44,10 +68,12 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      {/* Testimonials grid */}
-      <section className="py-24 bg-[#F9FAFB]" aria-labelledby="testimonials-grid-heading">
+      {/* Client Results */}
+      <section className="py-24 bg-[#F9FAFB]" aria-labelledby="client-results-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 id="testimonials-grid-heading" className="sr-only">Client Testimonials</h2>
+          <h2 id="client-results-heading" className="text-2xl font-bold text-[#0D1B3E] text-center mb-10">
+            Client Results
+          </h2>
           <div className="space-y-8 max-w-4xl mx-auto">
             {testimonials.map(({ name, location, image, quote, scoreChange }, i) => (
               <article
@@ -81,6 +107,40 @@ export default function TestimonialsPage() {
                       </p>
                     </div>
                   </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Business Results */}
+      <section className="py-24 bg-white" aria-labelledby="business-results-heading">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="business-results-heading" className="text-2xl font-bold text-[#0D1B3E] text-center mb-3">
+            Business Results
+          </h2>
+          <p className="text-center text-xs text-gray-400 italic mb-10">
+            Illustrative examples — to be replaced with real partner case studies
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {businessTestimonials.map(({ name, role, quote, result }, i) => (
+              <article
+                key={i}
+                className="bg-[#F9FAFB] rounded-3xl border border-gray-100 shadow-sm p-8 flex flex-col"
+              >
+                <svg className="w-8 h-8 text-[#C8953C]/30 mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                  <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H6.5c0-1.9 1.6-3.5 3.5-3.5V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-3.5c0-1.9 1.6-3.5 3.5-3.5V8z" />
+                </svg>
+                <p className="text-gray-600 text-sm leading-relaxed flex-1">
+                  &ldquo;{quote}&rdquo;
+                </p>
+                <div className="mt-6 pt-6 border-t border-gray-200">
+                  <p className="font-bold text-[#0D1B3E]">{name}</p>
+                  <p className="text-gray-400 text-xs">{role}</p>
+                  <p className="mt-2 inline-block px-3 py-1 bg-[#C8953C]/10 text-[#C8953C] text-xs font-semibold rounded-full">
+                    {result}
+                  </p>
                 </div>
               </article>
             ))}

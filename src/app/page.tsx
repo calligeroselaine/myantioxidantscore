@@ -302,6 +302,44 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── 8b. REAL RESULTS — consumer + business testimonial preview ── */}
+      <section className="py-20 bg-[#0a1628]" aria-labelledby="results-heading">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <h2 id="results-heading" className="text-3xl font-light text-white text-center mb-14 tracking-wide">
+            Real Results
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+              <p className="text-white/70 text-sm leading-relaxed">
+                &ldquo;I honestly thought I was doing all the right things…
+                until I saw my score. I followed the personalised
+                recommendations, and when I rescanned, my antioxidant score
+                had improved dramatically.&rdquo;
+              </p>
+              <p className="mt-5 font-semibold text-white text-sm">Sally A Mumford</p>
+              <p className="text-white/40 text-xs">Score improved dramatically on rescan</p>
+            </div>
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+              <p className="text-white/70 text-sm leading-relaxed">
+                &ldquo;Adding scans to our consultations gave clients
+                something to come back for. Instead of a one-off visit, we
+                now see people quarterly to track their progress.&rdquo;
+              </p>
+              <p className="mt-5 font-semibold text-white text-sm">Placeholder Name</p>
+              <p className="text-white/40 text-xs">Clinic Owner — Higher client retention</p>
+            </div>
+          </div>
+          <div className="mt-10 text-center">
+            <Link
+              href="/testimonials"
+              className="inline-block px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#0a1628] transition-all duration-200"
+            >
+              See All Results
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── 9. GUARANTEE ── */}
       <section className="py-20 bg-[#0f1b35] text-center border-t border-white/10" aria-labelledby="guarantee-heading">
         <div className="max-w-3xl mx-auto px-6">
