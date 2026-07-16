@@ -33,7 +33,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="px-2 py-2 text-[11px] font-semibold text-gray-700 hover:text-[#0D1B3E] tracking-wide whitespace-nowrap transition-colors duration-150"
+                  className="shrink-0 px-2 py-2 text-[11px] font-semibold text-gray-700 hover:text-[#0D1B3E] tracking-wide whitespace-nowrap transition-colors duration-150"
                 >
                   {link.label}
                 </Link>
