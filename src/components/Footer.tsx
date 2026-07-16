@@ -15,7 +15,6 @@ const footerLinks = {
   Products: [
     { href: "/certified-products", label: "Certified Products" },
     { href: "/book-a-scan", label: "Book a Scan" },
-    { href: "/login", label: "Customer Login" },
   ],
   Legal: [
     { href: "/privacy-policy", label: "Privacy Policy" },
