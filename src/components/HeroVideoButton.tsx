@@ -16,11 +16,16 @@ export default function HeroVideoButton() {
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Play video"
-        className="absolute bottom-6 left-6 z-10 w-14 h-14 rounded-full bg-white/90 hover:bg-white flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-105"
+        className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 group"
       >
-        <svg className="w-5 h-5 text-[#0f1b35] translate-x-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M8 5v14l11-7z" />
-        </svg>
+        <span className="w-16 h-16 rounded-full bg-white/90 group-hover:bg-white flex items-center justify-center shadow-lg transition-all duration-200 group-hover:scale-105">
+          <svg className="w-6 h-6 text-[#0f1b35] translate-x-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </span>
+        <span className="px-4 py-1.5 rounded-full bg-black/50 text-white text-xs font-semibold tracking-wide backdrop-blur-sm">
+          Watch the Video
+        </span>
       </button>
 
       {open && (
