@@ -24,41 +24,30 @@ const footerLinks = {
 };
 
 const BUSINESS_CTA_PATHS = ["/partner-with-us", "/backed-by-science"];
-const HIDE_CTA_PATHS = ["/blog"];
 
 export default function Footer() {
   const pathname = usePathname();
   const isBusinessCta = BUSINESS_CTA_PATHS.includes(pathname);
-  const hideCta = HIDE_CTA_PATHS.includes(pathname);
-
-  const ctaHeadline = isBusinessCta
-    ? "Ready to add this to your business?"
-    : "Ready to see your score?";
-  const ctaSubtext = isBusinessCta
-    ? "Book a free discovery call and we'll walk you through the fit, the numbers, and what's involved."
-    : "Book a free antioxidant scan and get results in 15 seconds.";
-  const ctaButtonLabel = isBusinessCta ? "Book a Discovery Call" : "Book a Scan";
-  const ctaButtonHref = isBusinessCta ? "/partner-with-us#partner-form" : "/#book";
 
   return (
     <footer className="bg-[#0D1B3E] text-white" role="contentinfo">
-      {/* CTA Banner */}
-      {!hideCta && (
+      {/* CTA Banner — business pages only */}
+      {isBusinessCta && (
         <div className="bg-[#C8953C]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h2 className="text-xl font-bold text-white">
-                {ctaHeadline}
+                Ready to add this to your business?
               </h2>
               <p className="text-white/90 mt-1 text-sm">
-                {ctaSubtext}
+                Book a free discovery call and we&apos;ll walk you through the fit, the numbers, and what&apos;s involved.
               </p>
             </div>
             <Link
-              href={ctaButtonHref}
+              href="/partner-with-us#partner-form"
               className="shrink-0 px-8 py-3 bg-[#0D1B3E] hover:bg-[#1a2f5e] text-white font-semibold rounded-full transition-colors duration-200 text-sm"
             >
-              {ctaButtonLabel}
+              Book a Discovery Call
             </Link>
           </div>
         </div>
