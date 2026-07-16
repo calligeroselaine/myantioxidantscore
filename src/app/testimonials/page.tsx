@@ -117,12 +117,9 @@ export default function TestimonialsPage() {
       {/* Business Results */}
       <section className="py-24 bg-white" aria-labelledby="business-results-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 id="business-results-heading" className="text-2xl font-bold text-[#0D1B3E] text-center mb-3">
+          <h2 id="business-results-heading" className="text-2xl font-bold text-[#0D1B3E] text-center mb-10">
             Business Results
           </h2>
-          <p className="text-center text-xs text-gray-400 italic mb-10">
-            Illustrative examples — to be replaced with real partner case studies
-          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {businessTestimonials.map(({ name, role, quote, result }, i) => (
               <article
