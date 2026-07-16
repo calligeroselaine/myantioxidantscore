@@ -5,13 +5,15 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "HOME" },
-  { href: "/book-a-scan", label: "BOOK A SCAN" },
-  { href: "/partner-with-us", label: "PARTNER WITH US" },
-  { href: "/certified-products", label: "CERTIFIED PRODUCTS" },
-  { href: "/backed-by-science", label: "BACKED BY SCIENCE" },
-  { href: "/testimonials", label: "TESTIMONIALS" },
-  { href: "/blog", label: "BLOG" },
-  { href: "/contact", label: "CONTACT US" },
+  { href: "/how-it-works", label: "HOW IT WORKS" },
+  { href: "/why-measure", label: "WHY MEASURE?" },
+  { href: "/partner-with-us", label: "BUSINESS OPPORTUNITIES" },
+  { href: "/who-its-for", label: "WHO IT'S FOR" },
+  { href: "/testimonials", label: "SUCCESS STORIES" },
+  { href: "/backed-by-science", label: "TECHNOLOGY & SCIENCE" },
+  { href: "/blog", label: "RESOURCES" },
+  { href: "/book-a-scan#faq", label: "FAQ" },
+  { href: "/contact", label: "CONTACT" },
 ];
 
 export default function Navbar() {
@@ -21,30 +23,47 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm" role="banner">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
-          {/* Desktop nav — centered */}
-          <nav className="hidden lg:flex items-center gap-0 flex-1 justify-center" aria-label="Main navigation">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="px-3 py-2 text-xs font-semibold text-gray-700 hover:text-[#0D1B3E] tracking-wide whitespace-nowrap transition-colors duration-150 border-r border-gray-200 last:border-r-0"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Log In — right side */}
-          <div className="hidden lg:flex items-center gap-2 ml-4">
-            <Link
-              href="/login"
-              className="flex items-center gap-1.5 px-4 py-1.5 text-xs font-semibold text-gray-700 hover:text-[#0D1B3E] transition-colors"
+          <div className="hidden lg:flex items-center w-full min-w-0">
+            {/* Desktop nav */}
+            <nav
+              className="flex items-center gap-x-0.5 flex-1 min-w-0 overflow-x-auto"
+              aria-label="Main navigation"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-              </svg>
-              Log In
-            </Link>
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="px-2 py-2 text-[11px] font-semibold text-gray-700 hover:text-[#0D1B3E] tracking-wide whitespace-nowrap transition-colors duration-150"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+
+            {/* Right side — primary + secondary actions */}
+            <div className="flex items-center gap-3 shrink-0 ml-4">
+              <Link
+                href="/book-a-scan"
+                className="text-xs font-semibold text-gray-500 hover:text-[#0D1B3E] tracking-wide whitespace-nowrap transition-colors"
+              >
+                Book a Scan
+              </Link>
+              <Link
+                href="/partner-with-us#partner-form"
+                className="px-5 py-2.5 bg-[#C8953C] hover:bg-[#a67820] text-white text-xs font-bold rounded-full tracking-wide whitespace-nowrap transition-colors duration-200"
+              >
+                Book a Discovery Call
+              </Link>
+              <Link
+                href="/login"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:text-[#0D1B3E] transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                </svg>
+                Log In
+              </Link>
+            </div>
           </div>
 
           {/* Mobile hamburger */}
@@ -82,6 +101,21 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+
+          <Link
+            href="/partner-with-us#partner-form"
+            className="block mt-2 px-3 py-3 bg-[#C8953C] hover:bg-[#a67820] text-white text-center text-xs font-bold rounded-full tracking-wide transition-colors"
+            onClick={() => setMenuOpen(false)}
+          >
+            Book a Discovery Call
+          </Link>
+          <Link
+            href="/book-a-scan"
+            className="block px-3 py-2.5 text-xs font-semibold text-gray-500 hover:text-[#0D1B3E] hover:bg-gray-50 rounded tracking-wide text-center transition-colors"
+            onClick={() => setMenuOpen(false)}
+          >
+            Book a Scan
+          </Link>
           <Link
             href="/login"
             className="block px-3 py-2.5 text-xs font-semibold text-gray-700 hover:text-[#0D1B3E] hover:bg-gray-50 rounded tracking-wide"

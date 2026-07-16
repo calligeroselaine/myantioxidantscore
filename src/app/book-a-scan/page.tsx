@@ -75,7 +75,7 @@ export default function BookAScanPage() {
               </div>
 
               {/* FAQ */}
-              <div className="mt-10 bg-[#F7F4EF] rounded-2xl p-6 border border-[#C8953C]/10">
+              <div id="faq" className="mt-10 bg-[#F7F4EF] rounded-2xl p-6 border border-[#C8953C]/10">
                 <h3 className="font-bold text-[#0D1B3E] mb-4">
                   Frequently Asked Questions
                 </h3>

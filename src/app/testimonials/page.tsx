@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Testimonials",
+  title: "Success Stories",
   description:
     "Real stories from people who raised their Prysm Score and improved their antioxidant health.",
 };

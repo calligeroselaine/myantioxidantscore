@@ -5,7 +5,7 @@ import Script from "next/script";
 import BookingForm from "@/components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Partner With Us",
+  title: "Business Opportunities",
   description:
     "Bring the Prysm iO antioxidant scanning experience to your business. Partner with My Antioxidant Score and offer your clients cutting-edge wellness technology.",
 };
@@ -57,7 +57,7 @@ export default function PartnerWithUsPage() {
             Business Partnerships
           </p>
           <h1 id="partner-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
-            Partner With Us
+            Business Opportunities
           </h1>
           <p className="mt-6 text-white/60 text-lg leading-relaxed max-w-xl mx-auto">
             Every year, people spend $200 billion on supplements and wellness

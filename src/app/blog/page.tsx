@@ -3,7 +3,7 @@ import Link from "next/link";
 import { posts } from "./posts";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Resources",
   description:
     "Expert articles on antioxidants, oxidative stress, and how to improve your Prysm Score.",
 };
@@ -25,7 +25,7 @@ export default function BlogPage() {
             Insights & Education
           </p>
           <h1 id="blog-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
-            The Antioxidant Score Blog
+            Resources
           </h1>
           <p className="mt-6 text-white/60 text-lg leading-relaxed">
             Science-backed articles to help you understand, track, and improve

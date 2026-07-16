@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Backed by Science",
+  title: "Technology & Science",
   description:
     "Discover the 80+ studies behind Prysm iO antioxidant scanning technology — including research from Stanford, Yonsei University, and Jiao Tong University.",
 };
@@ -98,7 +98,7 @@ export default function BackedBySciencePage() {
             80+ Independent Studies
           </p>
           <h1 id="science-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
-            Backed by Science
+            Technology &amp; Science
           </h1>
           <p className="mt-6 text-white/60 text-lg leading-relaxed max-w-xl mx-auto">
             The Prysm iO isn&apos;t a wellness gimmick. It&apos;s a clinically-validated
