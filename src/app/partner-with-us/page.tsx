@@ -147,7 +147,7 @@ export default function PartnerWithUsPage() {
       </section>
 
       {/* Enquiry form */}
-      <section id="partner-form" className="py-24 bg-[#F9FAFB]" aria-labelledby="partner-form-heading">
+      <section id="partner-form" className="py-24 bg-[#F9FAFB] scroll-mt-20" aria-labelledby="partner-form-heading">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 id="partner-form-heading" className="text-3xl font-bold text-[#1B2A3D]">

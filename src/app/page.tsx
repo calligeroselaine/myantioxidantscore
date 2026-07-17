@@ -247,7 +247,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 10. GET YOUR PRYSM SCORE FORM ── */}
-      <section id="book" className="py-24 bg-white" aria-labelledby="book-heading">
+      <section id="book" className="py-24 bg-white scroll-mt-20" aria-labelledby="book-heading">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
@@ -261,7 +261,7 @@ export default function HomePage() {
           </div>
 
           {/* FAQ */}
-          <div id="faq" className="mt-16 max-w-3xl">
+          <div id="faq" className="mt-16 max-w-3xl scroll-mt-20">
             <h3 className="text-xl font-bold text-[#17242F] mb-6">
               Frequently Asked Questions
             </h3>
