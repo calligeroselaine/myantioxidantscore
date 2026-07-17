@@ -112,18 +112,17 @@ export default function TestimonialsPage() {
       <section className="py-24 bg-white" aria-labelledby="featured-endorsement-heading">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 id="featured-endorsement-heading" className="sr-only">Featured Endorsement</h2>
-          <article className="bg-[#F9FAFB] rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-[280px_1fr]">
-              <div className="relative h-72 md:h-full">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/dr-joseph-chang.jpg"
-                  alt="Dr Joseph Chang holding his book, The Aging Myth"
-                  loading="lazy"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-8 lg:p-10 flex flex-col justify-center">
+          <article className="bg-[#F9FAFB] rounded-3xl border border-gray-100 shadow-sm overflow-hidden md:flex md:items-stretch">
+            <div className="w-full md:w-[280px] md:shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/dr-joseph-chang.jpg"
+                alt="Dr Joseph Chang holding his book, The Aging Myth"
+                loading="lazy"
+                className="w-full h-auto md:h-full md:object-cover"
+              />
+            </div>
+            <div className="p-8 lg:p-10 flex flex-col justify-center">
                 <svg className="w-9 h-9 text-[#5C7A94]/30 mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                   <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H6.5c0-1.9 1.6-3.5 3.5-3.5V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-3.5c0-1.9 1.6-3.5 3.5-3.5V8z" />
                 </svg>
@@ -162,7 +161,6 @@ export default function TestimonialsPage() {
                   </p>
                 </div>
               </div>
-            </div>
           </article>
         </div>
       </section>
