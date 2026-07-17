@@ -90,7 +90,7 @@ export default function ContactPage() {
             </p>
           </div>
           <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8">
-            <BookingForm />
+            <BookingForm context="contact" />
           </div>
         </div>
       </section>

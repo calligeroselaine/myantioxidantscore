@@ -23,9 +23,28 @@ interface FormState {
 
 interface BookingFormProps {
   source?: "booking" | "partner";
+  context?: "booking" | "partner" | "contact";
 }
 
-export default function BookingForm({ source = "booking" }: BookingFormProps) {
+const successCopy = {
+  booking: {
+    title: "You're booked in!",
+    message: (name: string) =>
+      `Thanks, ${name}! We'll be in touch shortly to confirm your scan appointment.`,
+  },
+  partner: {
+    title: "Thanks for your interest!",
+    message: (name: string) =>
+      `Thanks, ${name}! Our partnerships team will be in touch shortly to discuss next steps.`,
+  },
+  contact: {
+    title: "Message received!",
+    message: (name: string) => `Thanks, ${name}! We'll be in touch soon.`,
+  },
+};
+
+export default function BookingForm({ source = "booking", context }: BookingFormProps) {
+  const messageContext = context ?? source;
   const [form, setForm] = useState<FormState>({
     firstName: "",
     lastName: "",
@@ -101,11 +120,10 @@ export default function BookingForm({ source = "booking" }: BookingFormProps) {
           </svg>
         </div>
         <h3 className="text-2xl font-bold text-[#1B2A3D] mb-2">
-          You&apos;re booked in!
+          {successCopy[messageContext].title}
         </h3>
         <p className="text-gray-600 max-w-sm mx-auto">
-          Thanks, {form.firstName}! We&apos;ll be in touch shortly to confirm
-          your scan appointment.
+          {successCopy[messageContext].message(form.firstName)}
         </p>
       </div>
     );
