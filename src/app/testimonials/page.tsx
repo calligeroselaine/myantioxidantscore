@@ -39,6 +39,33 @@ const testimonials = [
   },
 ];
 
+const expertEndorsements = [
+  {
+    quote: "You guys are the next frontier with health",
+    name: "Anthony Lolli",
+    role: "Founder of BiohackYourself Media",
+    bio: "Producer of the Biohack Yourself series, where he's interviewed over 100 leading experts, and publisher of a national biohacking magazine.",
+  },
+  {
+    quote: "The Future of Personalised Medicine",
+    name: "William Sears, MD",
+    role: "Physician",
+    bio: "Best-selling author of more than 40 health and wellness books, and co-founder of the Dr. Sears Wellness Institute, which has trained thousands of health coaches worldwide. A leading voice in preventive medicine, Dr. Sears has been featured on major media outlets, including The Today Show, Good Morning America, and CNN.",
+  },
+  {
+    quote: "A great tool to quantify wellness",
+    name: "Del Bigtree",
+    role: "CEO of MAHA Action",
+    bio: "Award-winning producer of the TV show The Doctors, and founder of the Informed Consent Action Network (ICAN). He is also the host of The HighWire, a health news and talk show, where he brings cutting-edge science and thought leaders to a global audience.",
+  },
+  {
+    quote: "I am getting better outcomes with my patients",
+    name: "Ben Gonzalez, MD",
+    role: "Physician",
+    bio: "Expert in functional medicine and longevity and keynote speaker at American Academy of Anti Aging Medicine and other leading integrative medical conferences, widely known for blending science with personalised wellness strategies to deliver consistent, measurable results.",
+  },
+];
+
 const businessTestimonials = [
   {
     name: "Placeholder Name",
@@ -121,6 +148,38 @@ export default function TestimonialsPage() {
                       </p>
                     </div>
                   </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Expert Endorsements */}
+      <section className="py-24 bg-[#1B2A3D]" aria-labelledby="expert-endorsements-heading">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="expert-endorsements-heading" className="text-2xl font-bold text-white text-center mb-3">
+            Expert Endorsements
+          </h2>
+          <p className="text-white/60 text-center max-w-xl mx-auto mb-10">
+            Trusted by leading voices in preventive medicine, functional health, and wellness media.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {expertEndorsements.map(({ quote, name, role, bio }, i) => (
+              <article
+                key={i}
+                className="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col"
+              >
+                <svg className="w-8 h-8 text-[#5C7A94]/50 mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                  <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H6.5c0-1.9 1.6-3.5 3.5-3.5V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-3.5c0-1.9 1.6-3.5 3.5-3.5V8z" />
+                </svg>
+                <p className="text-white text-lg font-semibold leading-snug mb-4">
+                  &ldquo;{quote}&rdquo;
+                </p>
+                <p className="text-white/60 text-sm leading-relaxed flex-1">{bio}</p>
+                <div className="mt-6 pt-6 border-t border-white/10">
+                  <p className="font-bold text-white">{name}</p>
+                  <p className="text-[#5C7A94] text-xs font-semibold">{role}</p>
                 </div>
               </article>
             ))}
