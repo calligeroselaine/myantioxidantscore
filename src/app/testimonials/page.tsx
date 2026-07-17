@@ -179,7 +179,7 @@ export default function TestimonialsPage() {
                 key={i}
                 className="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#5C7A94]/20 transition-all duration-300 overflow-hidden"
               >
-                <div style={{ display: "grid", gridTemplateColumns: image ? "280px 1fr" : "1fr" }}>
+                <div className={`grid grid-cols-1 ${image ? "sm:grid-cols-[280px_1fr]" : ""}`}>
                   {/* Score image */}
                   {image && (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -187,7 +187,7 @@ export default function TestimonialsPage() {
                       src={image}
                       alt={`${name}'s Prysm Score`}
                       loading="lazy"
-                      style={{ display: "block", width: "280px", height: "100%", objectFit: "cover" }}
+                      className="block w-full h-56 sm:w-[280px] sm:h-full object-cover"
                     />
                   )}
 
