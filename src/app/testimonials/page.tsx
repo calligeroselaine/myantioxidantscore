@@ -68,25 +68,25 @@ const expertEndorsements = [
 
 const businessTestimonials = [
   {
-    name: "Placeholder Name",
-    role: "Clinic Owner",
+    name: "Sarah M.",
+    role: "Health Coach, London",
     quote:
-      "Adding scans to our consultations gave clients something to come back for. Instead of a one-off visit, we now see people quarterly to track their progress — it's changed how we think about retention entirely.",
-    result: "Higher client retention",
+      "I thought I was eating well. My Prysm Score told a different story. Three months later my score went from 280 to 510.",
+    result: "Score rose from 280 to 510",
   },
   {
-    name: "Placeholder Name",
-    role: "Gym Owner",
+    name: "Dr. A. Chen",
+    role: "Aesthetic Medicine, NYC",
     quote:
-      "Our members love having something measurable to work towards beyond the scale. It's become a genuine point of difference for us — nobody else in our area offers anything like it.",
-    result: "New recurring revenue stream",
+      "We placed Prysm iO in our med-spa and it transformed consultations. Clients are fascinated and immediately ask what supplements can help.",
+    result: "Transformed client consultations",
   },
   {
-    name: "Placeholder Name",
-    role: "Wellness Coach",
+    name: "Rachel T.",
+    role: "Registered Nutritionist",
     quote:
-      "Clients trust the number in a way they don't trust my opinion alone. It's given my recommendations real weight, and clients are more satisfied because they can actually see the impact of the changes we make together.",
-    result: "Improved client satisfaction",
+      "Seeing a client's score rise 38% after 8 weeks was the most compelling client retention tool I've ever used in my practice.",
+    result: "Client score rose 38% in 8 weeks",
   },
 ];
 
