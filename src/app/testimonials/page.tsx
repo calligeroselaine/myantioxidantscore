@@ -108,6 +108,65 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
+      {/* Featured Endorsement */}
+      <section className="py-24 bg-white" aria-labelledby="featured-endorsement-heading">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="featured-endorsement-heading" className="sr-only">Featured Endorsement</h2>
+          <article className="bg-[#F9FAFB] rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-[280px_1fr]">
+              <div className="relative h-72 md:h-full">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/dr-joseph-chang.jpg"
+                  alt="Dr Joseph Chang holding his book, The Aging Myth"
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-8 lg:p-10 flex flex-col justify-center">
+                <svg className="w-9 h-9 text-[#5C7A94]/30 mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                  <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H6.5c0-1.9 1.6-3.5 3.5-3.5V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-3.5c0-1.9 1.6-3.5 3.5-3.5V8z" />
+                </svg>
+                <div className="text-gray-600 text-sm leading-relaxed space-y-4">
+                  <p>
+                    &ldquo;There are moments when an industry changes forever—not because we
+                    discover something entirely new, but because, for the first time, we can
+                    finally see what was hidden all along.
+                  </p>
+                  <p>
+                    Prysm is rapidly becoming far more than a nutritional scanner. It is
+                    evolving into a longevity compass—a window into our biological future,
+                    transforming invisible signals into visible insight and uncertainty into
+                    understanding.
+                  </p>
+                  <p>
+                    When you can see what is happening within your own body, everything
+                    changes. Knowledge replaces guesswork. Confidence replaces doubt. Action
+                    replaces hesitation.
+                  </p>
+                  <p>
+                    I believe Prysm represents something extraordinary. It is not simply
+                    another product. It is a new way of seeing. And when people can truly
+                    see, they no longer have to wonder.
+                  </p>
+                  <p>
+                    The future of youth preservation begins with a revelation. See, Modify,
+                    Live.&rdquo;
+                  </p>
+                </div>
+                <div className="mt-6 pt-6 border-t border-gray-200">
+                  <p className="font-bold text-[#1B2A3D]">Dr Joseph Chang, PhD</p>
+                  <p className="text-gray-500 text-xs leading-relaxed mt-1">
+                    Has published numerous articles, reviews, and books on pharmacological
+                    research, including the New York Times best seller, <em>The Aging Myth</em>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       {/* Client Results */}
       <section className="py-24 bg-[#F9FAFB]" aria-labelledby="client-results-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
