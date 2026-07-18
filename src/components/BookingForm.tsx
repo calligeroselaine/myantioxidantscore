@@ -28,18 +28,16 @@ interface BookingFormProps {
 
 const successCopy = {
   booking: {
-    title: "You're booked in!",
-    message: (name: string) =>
-      `Thanks, ${name}! We'll be in touch shortly to confirm your scan appointment.`,
+    title: "Thank you!",
+    message: () => "We will be in touch soon.",
   },
   partner: {
-    title: "Thanks for your interest!",
-    message: (name: string) =>
-      `Thanks, ${name}! Our partnerships team will be in touch shortly to discuss next steps.`,
+    title: "Thank you!",
+    message: () => "We will be in touch soon.",
   },
   contact: {
-    title: "Message received!",
-    message: (name: string) => `Thanks, ${name}! We'll be in touch soon.`,
+    title: "Thank you!",
+    message: () => "We will be in touch soon.",
   },
 };
 
@@ -123,7 +121,7 @@ export default function BookingForm({ source = "booking", context }: BookingForm
           {successCopy[messageContext].title}
         </h3>
         <p className="text-gray-600 max-w-sm mx-auto">
-          {successCopy[messageContext].message(form.firstName)}
+          {successCopy[messageContext].message()}
         </p>
       </div>
     );
