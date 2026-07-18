@@ -71,6 +71,12 @@ const profiles = [
     fit:
       "A portable scanning device gives you a professional, science-backed tool that instantly sets you apart — and turns client transformations into shareable, measurable proof you can use to grow your business.",
   },
+  {
+    icon: "🌱",
+    title: "Future Wellness Entrepreneurs",
+    description:
+      "Whether you're looking to start a new business, build a side income, or create a full-time wellness career, Prysm iO gives you a unique way to help people make more informed health decisions. Combine cutting-edge wellness technology with personalised guidance and create a business built on measurable results and lasting client relationships.",
+  },
 ];
 
 export default function WhoItsForPage() {
@@ -83,11 +89,13 @@ export default function WhoItsForPage() {
             Who It&apos;s For
           </p>
           <h1 id="who-its-for-heading" className="text-4xl sm:text-5xl font-bold text-white">
-            Built to Fit What You Already Do
+            Built to Fit Your Business—or Help You Start One
           </h1>
           <p className="mt-6 text-white/60 text-lg leading-relaxed max-w-xl mx-auto">
-            PRYSM doesn&apos;t ask you to change your business — it gives you a way to
-            measure the results you&apos;re already delivering.
+            Whether you already work in wellness or are starting something new, PRYSM
+            combines measurable insights with technology-enabled follow-up, personalised
+            recommendations and subscription-based services—helping you build ongoing
+            client value without adding more hours to every sale.
           </p>
         </div>
       </section>
@@ -97,7 +105,7 @@ export default function WhoItsForPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 id="profiles-heading" className="sr-only">Business Profiles</h2>
           <div className="space-y-8">
-            {profiles.map(({ icon, title, today, problem, fit }) => (
+            {profiles.map(({ icon, title, today, problem, fit, description }) => (
               <article
                 key={title}
                 className="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 lg:p-10"
@@ -106,26 +114,30 @@ export default function WhoItsForPage() {
                   <div className="text-3xl shrink-0" aria-hidden="true">{icon}</div>
                   <h3 className="text-2xl font-bold text-[#1B2A3D]">{title}</h3>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div>
-                    <p className="text-xs font-bold text-[#5C7A94] uppercase tracking-widest mb-2">
-                      Today
-                    </p>
-                    <p className="text-gray-600 text-sm leading-relaxed">{today}</p>
+                {description ? (
+                  <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
+                ) : (
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                      <p className="text-xs font-bold text-[#5C7A94] uppercase tracking-widest mb-2">
+                        Today
+                      </p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{today}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-[#5C7A94] uppercase tracking-widest mb-2">
+                        The Problem
+                      </p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{problem}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-[#5C7A94] uppercase tracking-widest mb-2">
+                        How PRYSM Fits
+                      </p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{fit}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-xs font-bold text-[#5C7A94] uppercase tracking-widest mb-2">
-                      The Problem
-                    </p>
-                    <p className="text-gray-600 text-sm leading-relaxed">{problem}</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-[#5C7A94] uppercase tracking-widest mb-2">
-                      How PRYSM Fits
-                    </p>
-                    <p className="text-gray-600 text-sm leading-relaxed">{fit}</p>
-                  </div>
-                </div>
+                )}
               </article>
             ))}
           </div>
