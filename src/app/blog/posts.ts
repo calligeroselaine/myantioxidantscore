@@ -5,6 +5,7 @@ export type Post = {
   category: string;
   date: string;
   readTime: string;
+  author?: string;
   body: Section[];
 };
 
@@ -17,6 +18,68 @@ type Section = {
 };
 
 export const posts: Post[] = [
+  {
+    slug: "daily-multivitamin-biological-ageing",
+    title: "Can a Daily Multivitamin Slow Biological Ageing?",
+    excerpt:
+      "New research published in Nature Medicine found that a daily multivitamin measurably slowed biological ageing over two years — and raises the question of whether more advanced nutrition could do even more.",
+    category: "Science",
+    date: "July 19, 2026",
+    readTime: "3 min read",
+    author: "George Calligeros",
+    body: [
+      {
+        type: "p",
+        content:
+          "For years, many people have questioned whether taking a daily multivitamin makes any real difference. New research published in Nature Medicine suggests the answer may be yes.",
+      },
+      {
+        type: "p",
+        content:
+          "In a two-year clinical trial involving 958 healthy older adults, researchers led by Dr. Howard Sesso from Massachusetts General Brigham found that participants taking a daily multivitamin experienced a measurable slowing of biological ageing when assessed using multiple DNA-based epigenetic ageing clocks. The effect was equivalent to reducing biological ageing by approximately four months over the course of the study, with the greatest benefit seen in people who appeared to be ageing faster at the beginning of the trial.",
+      },
+      {
+        type: "p",
+        content: "Reflecting on the findings, Dr. Sesso said:",
+      },
+      {
+        type: "p",
+        content:
+          "\"There is a lot of interest today in identifying ways to not just live longer, but to live better. It was exciting to see the benefits of a multivitamin linked with markers of biological aging. This study opens the door to learning more about accessible, safe interventions that contribute to healthier, higher-quality aging.\"",
+      },
+      {
+        type: "p",
+        content:
+          "The findings add to a growing body of evidence suggesting that high-quality multivitamin supplementation can support healthy ageing—not simply by addressing nutrient deficiencies, but by influencing measurable biological markers associated with the ageing process.",
+      },
+      { type: "h2", content: "The Next Question: Are All Supplements Equally Effective?" },
+      {
+        type: "p",
+        content:
+          "The study provides encouraging evidence that multivitamin supplementation can positively influence biological ageing. However, it also raises an important question: if a standard multivitamin can produce measurable improvements, could a more advanced nutritional formulation achieve even greater results?",
+      },
+      {
+        type: "p",
+        content: "This is where measurable wellness becomes especially valuable.",
+      },
+      {
+        type: "p",
+        content:
+          "Early clinical studies using Prysm iO technology have shown substantially greater improvements in carotenoid antioxidant scores among participants using Prysm Certified nutritional products than those typically achieved with an ordinary multivitamin. While these studies measured a different biomarker than Dr. Sesso's research, they point to the exciting possibility that nutritional quality matters—not all supplements deliver the same biological response.",
+      },
+      {
+        type: "p",
+        content:
+          "Rather than simply assuming a supplement is working, technologies like Prysm iO allow people to measure changes in important nutritional biomarkers over time, helping to personalise wellness decisions based on objective results instead of guesswork.",
+      },
+      {
+        type: "p",
+        content:
+          "As the science of healthy ageing continues to evolve, the future of nutrition may not simply be taking supplements—it may be measuring whether they're actually making a meaningful difference.",
+      },
+      { type: "cta" },
+    ],
+  },
   {
     slug: "signs-of-oxidative-stress",
     title: "5 Signs Your Body Is Under Oxidative Stress (And What to Do About It)",

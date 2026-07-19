@@ -51,7 +51,7 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.excerpt,
     datePublished: isoDate,
     dateModified: isoDate,
-    author: { "@type": "Person", name: "Elaine Calligeros" },
+    author: { "@type": "Person", name: post.author ?? "Elaine Calligeros" },
     publisher: {
       "@type": "Organization",
       name: "My Antioxidant Score",
@@ -83,7 +83,7 @@ export default async function BlogPostPage({ params }: Props) {
             <span>·</span>
             <span>{post.readTime}</span>
             <span>·</span>
-            <span>By Elaine Calligeros</span>
+            <span>By {post.author ?? "Elaine Calligeros"}</span>
           </div>
         </div>
       </section>
