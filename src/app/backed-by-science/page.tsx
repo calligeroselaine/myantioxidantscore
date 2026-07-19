@@ -383,6 +383,21 @@ export default function BackedBySciencePage() {
         </div>
       </section>
 
+      {/* Prysm swirl video */}
+      <section className="bg-white py-16" aria-label="Prysm iO technology showcase">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <video
+            src="/Prysm swirl tag.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            className="w-full rounded-3xl shadow-sm"
+          />
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 bg-[#1B2A3D] text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
