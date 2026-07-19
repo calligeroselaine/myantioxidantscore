@@ -44,3 +44,4 @@ next-env.d.ts
 public/lifepak-family-au.tif
 public/lifepak-family-au-1.tif
 public/*.mp4
+!public/Prysm swirl tag.mp4
