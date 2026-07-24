@@ -59,8 +59,8 @@ export default function HomePage() {
             <div className="mt-8 space-y-5 text-white/75 text-base leading-relaxed">
               <p>
                 The global nutrition and supplements industry is approaching{" "}
-                <strong className="text-white">half a trillion dollars</strong> a
-                year. Yet one question remains&hellip;
+                <strong className="text-white">half a trillion dollars</strong>{" "}
+                a year. Yet one question remains&hellip;
               </p>
               <p className="text-white text-xl font-light italic">
                 &ldquo;Are they working?&rdquo;
