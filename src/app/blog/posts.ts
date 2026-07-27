@@ -19,6 +19,23 @@ type Section = {
 
 export const posts: Post[] = [
   {
+    slug: "you-deserve-to-know",
+    title: "You Deserve to Know",
+    excerpt:
+      "You deserve to know what's really happening inside your body. Watch the story behind Prysm iO.",
+    category: "Wellness",
+    date: "July 27, 2026",
+    readTime: "1 min read",
+    body: [
+      {
+        type: "video",
+        mediaId: "8uz5xpoqzu",
+        aspect: 1.7777777777777777,
+      },
+      { type: "cta" },
+    ],
+  },
+  {
     slug: "daily-multivitamin-biological-ageing",
     title: "Can a Daily Multivitamin Slow Biological Ageing?",
     excerpt:
