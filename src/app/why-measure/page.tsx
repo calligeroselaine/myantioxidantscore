@@ -33,9 +33,10 @@ export default function WhyMeasurePage() {
             You Sell Results. Almost No One Proves Them.
           </h1>
           <p className="mt-6 text-white/60 text-lg leading-relaxed max-w-xl mx-auto">
-            Every year, people spend <strong className="text-white">$200 billion</strong> on
-            supplements and wellness services — and walk away with no real way of knowing
-            if any of it worked.
+            Every year, people spend{" "}
+            <strong className="text-white">hundreds of billions of dollars</strong>{" "}
+            on supplements and wellness services — and walk away with no real way of
+            knowing if any of it worked.
           </p>
         </div>
       </section>

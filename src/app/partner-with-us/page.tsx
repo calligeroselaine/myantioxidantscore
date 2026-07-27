@@ -47,8 +47,8 @@ export default function PartnerWithUsPage() {
             Business Opportunities
           </h1>
           <p className="mt-6 text-white/60 text-lg leading-relaxed max-w-xl mx-auto">
-            Every year, people spend $200 billion on supplements and wellness
-            services with no way to know if any of it is working. PRYSM
+            Every year, people spend hundreds of billions of dollars on supplements
+            and wellness services with no way to know if any of it is working. PRYSM
             changes that. In 15 seconds, our scanning technology gives your
             clients an objective, data-backed measurement of their wellness
             progress — turning guesswork into proof, one-off visits into
