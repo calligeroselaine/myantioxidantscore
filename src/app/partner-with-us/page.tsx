@@ -104,6 +104,29 @@ export default function PartnerWithUsPage() {
         </div>
       </section>
 
+      {/* Europe testimonial */}
+      <section className="py-20 bg-[#F9FAFB]" aria-labelledby="europe-heading">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <h2 id="europe-heading" className="text-3xl sm:text-4xl font-bold text-[#1B2A3D] leading-tight">
+            Trusted by Wellness Professionals Across Europe
+          </h2>
+          <p className="mt-4 text-gray-500 leading-relaxed">
+            Skincare specialists, physicians, physiotherapists and business owners across
+            dozens of professions are already putting Prysm iO to work.
+          </p>
+          <div className="mt-10 rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+            <Image
+              src="/Europe testimonial Image Aug 2, 2026 at 10_11_37 AM copy.png"
+              alt="Dozens of European wellness professionals holding the Prysm iO device"
+              width={1122}
+              height={1400}
+              className="w-full h-auto"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section className="py-20 bg-[#1B2A3D]" aria-labelledby="benefits-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -132,7 +155,7 @@ export default function PartnerWithUsPage() {
               </p>
             </div>
             <div className="bg-[#2C3E52] rounded-3xl p-8 text-center">
-              <div className="text-[#5C7A94] text-5xl font-black mb-2">$200B</div>
+              <div className="text-[#5C7A94] text-4xl font-black mb-2">Hundreds of Billions</div>
               <p className="text-white/60 text-sm">
                 spent on supplements globally every year
               </p>
