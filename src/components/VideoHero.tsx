@@ -63,19 +63,28 @@ export default function VideoHero() {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-[1.1] tracking-tight">
-              Discover What Your Body{" "}
-              <span className="italic">Is Trying to Tell You</span>
+              15 Seconds Can{" "}
+              <span className="italic">Change Your Life</span>
             </h1>
 
             {/* Supporting text */}
             <p className="mt-6 text-white/75 text-base sm:text-lg leading-relaxed max-w-xl">
-              Your wellness score provides personalised insights into how your
-              body is functioning, helping you identify areas that may benefit
-              from attention before symptoms appear.
+              The global nutrition and supplement industry is approaching half
+              a trillion dollars a year. Yet one question remains...
+              &ldquo;Are they working?&rdquo; Prysm iO gives you a fast,
+              science-based snapshot of your antioxidant status—helping you
+              move beyond guesswork and make more informed wellness decisions
+              in just 15 seconds.
+            </p>
+
+            {/* CTA lead-in */}
+            <p className="mt-8 text-white/75 text-base sm:text-lg leading-relaxed max-w-xl">
+              Whether you want to check your own antioxidant levels or add
+              measurable wellness technology to your business, start here.
             </p>
 
             {/* CTAs */}
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 items-stretch sm:items-start">
+            <div className="mt-6 flex flex-col sm:flex-row gap-4 items-stretch sm:items-start">
               <Link
                 href="#book"
                 className="text-center px-8 py-4 bg-[#C8953C] hover:bg-[#b8842c] text-white text-sm font-semibold tracking-widest uppercase transition-all duration-300 shadow-lg shadow-black/30"
