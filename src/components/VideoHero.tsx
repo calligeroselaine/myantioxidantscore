@@ -56,84 +56,66 @@ export default function VideoHero() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 pt-28 pb-24">
           <div className="max-w-2xl">
 
-            {/* Eyebrow */}
-            <p className="text-[#C8953C] text-xs font-semibold uppercase tracking-[0.25em] mb-5">
-              Prysm iO · Antioxidant Wellness Scan
-            </p>
-
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-[1.1] tracking-tight">
-              15 Seconds Can{" "}
-              <span className="italic">Change Your Life</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight tracking-tight">
+              15 Seconds Can Change Your Life
             </h1>
 
-            {/* Supporting text */}
-            <p className="mt-6 text-white/75 text-base sm:text-lg leading-relaxed max-w-xl">
-              The global nutrition and supplement industry is approaching half
-              a trillion dollars a year. Yet one question remains...
-              &ldquo;Are they working?&rdquo; Prysm iO gives you a fast,
-              science-based snapshot of your antioxidant status—helping you
-              move beyond guesswork and make more informed wellness decisions
-              in just 15 seconds.
-            </p>
-
-            {/* CTA lead-in */}
-            <p className="mt-8 text-white/75 text-base sm:text-lg leading-relaxed max-w-xl">
-              Whether you want to check your own antioxidant levels or add
-              measurable wellness technology to your business, start here.
-            </p>
+            {/* Body copy */}
+            <div className="mt-8 space-y-5 text-white/75 text-base leading-relaxed max-w-xl">
+              <p>
+                The global nutrition and supplements industry is approaching{" "}
+                <strong className="text-white">half a trillion dollars</strong>{" "}
+                a year. Yet one question remains&hellip;
+              </p>
+              <p className="text-white text-xl font-light italic">
+                &ldquo;Are they working?&rdquo;
+              </p>
+              <p>
+                Prysm iO delivers the answer—instantly. Backed by more than 20
+                years of leadership in antioxidant science, including the iconic
+                LifePak, it represents the next wave of trusted, personalized
+                wellness—and you&apos;re driving what&apos;s next.
+              </p>
+            </div>
 
             {/* CTAs */}
-            <div className="mt-6 flex flex-col sm:flex-row gap-4 items-stretch sm:items-start">
-              <Link
-                href="#book"
-                className="text-center px-8 py-4 bg-[#C8953C] hover:bg-[#b8842c] text-white text-sm font-semibold tracking-widest uppercase transition-all duration-300 shadow-lg shadow-black/30"
-              >
-                Get My Wellness Score
-              </Link>
-              <Link
-                href="/partner-with-us"
-                className="text-center px-8 py-4 bg-[#5C7A94] hover:bg-[#4a6880] text-white text-sm font-semibold tracking-widest uppercase transition-all duration-300"
-              >
-                Add This to Your Business
-              </Link>
+            <div className="mt-10">
+              <p className="text-white/70 text-sm leading-relaxed mb-5">
+                Whether you want to check your own antioxidant levels or add
+                measurable wellness technology to your business, start here.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="#book"
+                  className="flex-1 text-center px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#17242F] transition-all duration-200"
+                >
+                  Get Your Prysm Score
+                </Link>
+                <Link
+                  href="/partner-with-us"
+                  className="flex-1 text-center px-8 py-3 bg-[#5C7A94] border border-[#5C7A94] text-white text-sm font-semibold tracking-widest uppercase hover:bg-[#7A96AC] hover:border-[#7A96AC] transition-all duration-200"
+                >
+                  Add This to Your Business
+                </Link>
+              </div>
+
+              {/* Watch the Video */}
               <button
                 type="button"
                 onClick={() => setWistiaOpen(true)}
                 aria-label="Watch the video"
-                className="flex items-center justify-center gap-3 px-6 py-4 border border-white/60 hover:border-white hover:bg-white/10 text-white text-sm font-semibold tracking-widest uppercase transition-all duration-300"
+                className="mt-6 flex items-center gap-3 group"
               >
-                <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center shrink-0">
-                  <svg className="w-3.5 h-3.5 translate-x-px" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <span className="w-12 h-12 rounded-full bg-white/20 group-hover:bg-white/30 flex items-center justify-center transition-all duration-200">
+                  <svg className="w-5 h-5 text-white translate-x-px" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 </span>
-                Watch Video
-              </button>
-            </div>
-
-            {/* Trust row */}
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2">
-              {trustItems.map((item) => (
-                <span
-                  key={item}
-                  className="flex items-center gap-2 text-white/65 text-xs tracking-wide"
-                >
-                  <svg
-                    className="w-3.5 h-3.5 text-[#C8953C] shrink-0"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  {item}
+                <span className="text-white/80 group-hover:text-white text-sm font-semibold tracking-wide transition-colors duration-200">
+                  Watch the Video
                 </span>
-              ))}
+              </button>
             </div>
           </div>
         </div>
