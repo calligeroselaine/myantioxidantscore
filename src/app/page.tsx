@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import BookingForm from "@/components/BookingForm";
-import HeroVideoButton from "@/components/HeroVideoButton";
+import VideoHero from "@/components/VideoHero";
 
 export const metadata: Metadata = {
   title: "Antioxidant Scan | Check Your Health Score in Seconds",
@@ -28,7 +28,6 @@ export const metadata: Metadata = {
 const BASE = "https://static.wixstatic.com/media";
 
 const IMG = {
-  hero:           "/IMG25081400427.jpg",
   lifestyle1:     `${BASE}/2cbe9c_c92926f009194ad4813908678bf53e73~mv2.jpg`,
   carousel1:      `${BASE}/2cbe9c_c661e5125a8a4eb6ae48492d989be1e9~mv2.avif`,
   carousel2:      `${BASE}/2cbe9c_178911420ef0472a91451087c7ed7ab4~mv2.avif`,
@@ -38,63 +37,7 @@ const IMG = {
 export default function HomePage() {
   return (
     <>
-      {/* ── 1. HERO — device image left, text right ── */}
-      <section className="pt-14" aria-label="Hero">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-3.5rem)]">
-          <div className="relative min-h-[50vh] lg:min-h-full bg-black">
-            <Image
-              src={IMG.hero}
-              alt="Prysm iO antioxidant scanning device"
-              fill
-              className="object-contain"
-              priority
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-            <HeroVideoButton />
-          </div>
-          <div className="bg-[#17242F] flex flex-col justify-center px-10 py-16 lg:px-16 lg:py-24">
-            <h1 className="text-4xl sm:text-5xl font-light text-white leading-tight tracking-tight">
-              15 Seconds Can Change Your Life
-            </h1>
-            <div className="mt-8 space-y-5 text-white/75 text-base leading-relaxed">
-              <p>
-                The global nutrition and supplements industry is approaching{" "}
-                <strong className="text-white">half a trillion dollars</strong>{" "}
-                a year. Yet one question remains&hellip;
-              </p>
-              <p className="text-white text-xl font-light italic">
-                &ldquo;Are they working?&rdquo;
-              </p>
-              <p>
-                Prysm iO delivers the answer—instantly. Backed by more than 20
-                years of leadership in antioxidant science, including the iconic
-                LifePak, it represents the next wave of trusted, personalized
-                wellness—and you&apos;re driving what&apos;s next.
-              </p>
-            </div>
-            <div className="mt-10">
-              <p className="text-white/70 text-sm leading-relaxed mb-5">
-                Whether you want to check your own antioxidant levels or add
-                measurable wellness technology to your business, start here.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="#book"
-                  className="flex-1 text-center px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#17242F] transition-all duration-200"
-                >
-                  Get Your Prysm Score
-                </Link>
-                <Link
-                  href="/partner-with-us"
-                  className="flex-1 text-center px-8 py-3 bg-[#5C7A94] border border-[#5C7A94] text-white text-sm font-semibold tracking-widest uppercase hover:bg-[#7A96AC] hover:border-[#7A96AC] transition-all duration-200"
-                >
-                  Add This to Your Business
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <VideoHero />
 
       {/* ── 2. STOP GUESSING — text left, lifestyle image right ── */}
       <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh]" aria-labelledby="stop-guessing-heading">
