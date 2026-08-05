@@ -162,7 +162,7 @@ export default function HomePage() {
               href="/testimonials"
               className="inline-block px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#101B24] transition-all duration-200"
             >
-              See All Results
+              See More Results
             </Link>
           </div>
         </div>
