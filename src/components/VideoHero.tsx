@@ -64,7 +64,7 @@ export default function VideoHero() {
             {/* Body copy */}
             <div className="mt-8 space-y-5 text-white/75 text-base leading-relaxed max-w-xl">
               <p>
-                The global nutrition and supplements industry is approaching{" "}
+                The global nutrition and supplement industry is approaching{" "}
                 <strong className="text-white">half a trillion dollars</strong>{" "}
                 a year. Yet one question remains&hellip;
               </p>
@@ -72,10 +72,9 @@ export default function VideoHero() {
                 &ldquo;Are they working?&rdquo;
               </p>
               <p>
-                Prysm iO delivers the answer—instantly. Backed by more than 20
-                years of leadership in antioxidant science, including the iconic
-                LifePak, it represents the next wave of trusted, personalized
-                wellness—and you&apos;re driving what&apos;s next.
+                Prysm iO gives you a fast, science-based snapshot of your
+                antioxidant status—helping you move beyond guesswork and make
+                more informed wellness decisions in just 15 seconds.
               </p>
             </div>
 
