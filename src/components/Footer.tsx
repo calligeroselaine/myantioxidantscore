@@ -74,7 +74,7 @@ export default function Footer() {
               </div>
               <div className="leading-tight">
                 <span className="block text-white font-semibold text-xs tracking-wide">
-                  MY ANTIOXIDANT
+                  SCAN YOUR
                 </span>
                 <span className="block text-[#5C7A94] font-bold text-sm tracking-widest">
                   SCORE
@@ -108,7 +108,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/40 text-xs">
-          <p>© {new Date().getFullYear()} My Antioxidant Score. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ScanYourScore. All rights reserved.</p>
           <p>
             Powered by{" "}
             <span className="text-[#5C7A94]">Prysm iO Technology</span>
