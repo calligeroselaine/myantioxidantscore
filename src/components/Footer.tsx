@@ -30,7 +30,7 @@ export default function Footer() {
   const isBusinessCta = BUSINESS_CTA_PATHS.includes(pathname);
 
   return (
-    <footer className="bg-[#1B2A3D] text-white" role="contentinfo">
+    <footer className="bg-black text-white" role="contentinfo">
       {/* CTA Banner — business pages only */}
       {isBusinessCta && (
         <div className="bg-[#5C7A94]">
@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
             <Link
               href="/partner-with-us#partner-form"
-              className="shrink-0 px-8 py-3 bg-[#1B2A3D] hover:bg-[#2C3E52] text-white font-semibold rounded-full transition-colors duration-200 text-sm"
+              className="shrink-0 px-8 py-3 bg-black hover:bg-white/10 text-white font-semibold rounded-full transition-colors duration-200 text-sm"
             >
               Book a Discovery Call
             </Link>

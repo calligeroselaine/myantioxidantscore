@@ -41,7 +41,7 @@ export default function HomePage() {
 
       {/* ── 2. STOP GUESSING — text left, lifestyle image right ── */}
       <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh]" aria-labelledby="stop-guessing-heading">
-        <div className="bg-[#101B24] flex flex-col justify-center px-10 py-16 lg:px-16 lg:py-20 order-2 lg:order-1">
+        <div className="bg-black flex flex-col justify-center px-10 py-16 lg:px-16 lg:py-20 order-2 lg:order-1">
           <h2 id="stop-guessing-heading" className="text-4xl sm:text-5xl font-light text-white leading-tight">
             Stop Guessing. Start Seeing.
           </h2>
@@ -88,7 +88,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 4b. FOR YOUR BUSINESS — 3-column value props ── */}
-      <section className="py-20 bg-[#101B24]" aria-labelledby="business-heading">
+      <section className="py-20 bg-black" aria-labelledby="business-heading">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <h2 id="business-heading" className="text-3xl font-light text-white text-center mb-14 tracking-wide">
             For Your Business
@@ -131,7 +131,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 8b. REAL RESULTS — consumer + business testimonial preview ── */}
-      <section className="py-20 bg-[#101B24]" aria-labelledby="results-heading">
+      <section className="py-20 bg-black" aria-labelledby="results-heading">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <h2 id="results-heading" className="text-3xl font-light text-white text-center mb-14 tracking-wide">
             Real Results
@@ -169,7 +169,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 9. GUARANTEE ── */}
-      <section className="py-20 bg-[#17242F] text-center border-t border-white/10" aria-labelledby="guarantee-heading">
+      <section className="py-20 bg-black text-center border-t border-white/10" aria-labelledby="guarantee-heading">
         <div className="max-w-3xl mx-auto px-6">
           <h2 id="guarantee-heading" className="text-3xl sm:text-4xl font-light text-white tracking-wide">
             Guaranteed to Raise Your Score

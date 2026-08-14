@@ -106,7 +106,7 @@ Email: info@myantioxidantscore.com.au`,
 export default function TermsPage() {
   return (
     <>
-      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="terms-hero-heading">
+      <section className="bg-black pt-28 pb-20" aria-labelledby="terms-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">Legal</p>
           <h1 id="terms-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">

@@ -53,7 +53,7 @@ export default function HowItWorksPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="how-it-works-heading">
+      <section className="bg-black pt-28 pb-20" aria-labelledby="how-it-works-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
             How It Works
@@ -70,7 +70,7 @@ export default function HowItWorksPage() {
       </section>
 
       {/* Step 1 — The Technology */}
-      <section className="py-20 bg-[#17242F]" aria-labelledby="tech-heading">
+      <section className="py-20 bg-black" aria-labelledby="tech-heading">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="text-[#5C7A94] text-xs font-semibold uppercase tracking-widest mb-3">
@@ -106,7 +106,7 @@ export default function HowItWorksPage() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[#101B24]/60 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
           <div className="text-center px-6 max-w-xl mx-auto">
             <p className="text-[#5C7A94] text-xs font-semibold uppercase tracking-widest mb-3">
               Step 2
@@ -123,7 +123,7 @@ export default function HowItWorksPage() {
       </section>
 
       {/* Step 3 — What Your Score Means */}
-      <section className="py-20 bg-[#101B24]" aria-labelledby="score-heading">
+      <section className="py-20 bg-black" aria-labelledby="score-heading">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-[#5C7A94] text-xs font-semibold uppercase tracking-widest mb-3">
@@ -158,7 +158,7 @@ export default function HowItWorksPage() {
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
-        <div className="bg-[#17242F] flex flex-col justify-center px-10 py-16 lg:px-16">
+        <div className="bg-black flex flex-col justify-center px-10 py-16 lg:px-16">
           <p className="text-[#5C7A94] text-xs font-semibold uppercase tracking-widest mb-3">
             Step 4
           </p>
@@ -175,7 +175,7 @@ export default function HowItWorksPage() {
 
       {/* Step 5 — AI Guidance */}
       <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[60vh]" aria-labelledby="ai-heading">
-        <div className="bg-[#101B24] flex flex-col justify-center px-10 py-16 lg:px-16 order-2 lg:order-1">
+        <div className="bg-black flex flex-col justify-center px-10 py-16 lg:px-16 order-2 lg:order-1">
           <p className="text-[#5C7A94] text-xs font-semibold uppercase tracking-widest mb-3">
             Step 5
           </p>

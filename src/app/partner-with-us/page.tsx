@@ -38,7 +38,7 @@ export default function PartnerWithUsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="partner-hero-heading">
+      <section className="bg-black pt-28 pb-20" aria-labelledby="partner-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
             Business Partnerships
@@ -128,7 +128,7 @@ export default function PartnerWithUsPage() {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 bg-[#1B2A3D]" aria-labelledby="benefits-heading">
+      <section className="py-20 bg-black" aria-labelledby="benefits-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -154,7 +154,7 @@ export default function PartnerWithUsPage() {
                 user-provided assumptions. Actual results may vary.
               </p>
             </div>
-            <div className="bg-[#2C3E52] rounded-3xl p-8 text-center">
+            <div className="bg-black rounded-3xl p-8 text-center">
               <div className="text-[#5C7A94] text-4xl font-black mb-2">Hundreds of Billions</div>
               <p className="text-white/60 text-sm">
                 spent on supplements globally every year

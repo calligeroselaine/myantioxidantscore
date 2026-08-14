@@ -94,7 +94,7 @@ export default function TestimonialsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="testimonials-hero-heading">
+      <section className="bg-black pt-28 pb-20" aria-labelledby="testimonials-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
             Real Results
@@ -213,7 +213,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Expert Endorsements */}
-      <section className="py-24 bg-[#1B2A3D]" aria-labelledby="expert-endorsements-heading">
+      <section className="py-24 bg-black" aria-labelledby="expert-endorsements-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 id="expert-endorsements-heading" className="text-2xl font-bold text-white text-center mb-3">
             Expert Endorsements
@@ -276,7 +276,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#1B2A3D] text-center">
+      <section className="py-20 bg-black text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl font-bold text-white">
             Find Out How to Get Your Prysm Score

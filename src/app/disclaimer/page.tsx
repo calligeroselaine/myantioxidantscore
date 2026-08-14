@@ -67,7 +67,7 @@ Nothing in this disclaimer excludes any consumer guarantees under the Australian
 export default function DisclaimerPage() {
   return (
     <>
-      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="disclaimer-hero-heading">
+      <section className="bg-black pt-28 pb-20" aria-labelledby="disclaimer-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">Legal</p>
           <h1 id="disclaimer-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">

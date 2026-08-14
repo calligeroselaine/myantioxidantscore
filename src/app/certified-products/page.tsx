@@ -113,7 +113,7 @@ export default function CertifiedProductsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="products-hero-heading">
+      <section className="bg-black pt-28 pb-20" aria-labelledby="products-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
             Guaranteed Results
@@ -198,7 +198,7 @@ export default function CertifiedProductsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#1B2A3D] text-center">
+      <section className="py-20 bg-black text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl font-bold text-white">
             Not sure which product is right for you?

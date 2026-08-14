@@ -106,7 +106,7 @@ export default function BackedBySciencePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="science-hero-heading">
+      <section className="bg-black pt-28 pb-20" aria-labelledby="science-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
             80+ Independent Studies
@@ -225,7 +225,7 @@ export default function BackedBySciencePage() {
             <div className="lg:col-span-2 overflow-x-auto">
               <table className="w-full text-sm" aria-label="Aging clock correlations with Prysm Score">
                 <thead>
-                  <tr className="bg-[#1B2A3D] text-white text-left">
+                  <tr className="bg-black text-white text-left">
                     <th className="px-5 py-3 font-semibold rounded-tl-xl">Ageing Clock</th>
                     <th className="px-4 py-3 font-semibold text-center">r vs Prysm</th>
                     <th className="px-4 py-3 font-semibold text-center">p-value</th>
@@ -249,7 +249,7 @@ export default function BackedBySciencePage() {
             </div>
 
             {/* Tertile callout */}
-            <div className="bg-[#1B2A3D] rounded-2xl p-6 text-white">
+            <div className="bg-black rounded-2xl p-6 text-white">
               <p className="text-[#5C7A94] text-xs font-bold uppercase tracking-widest mb-2">Tertile Comparison</p>
               <p className="font-bold text-lg leading-snug mb-4">
                 Top-Prysm tertile averages 3–5 years younger on every ageing clock
@@ -313,18 +313,18 @@ export default function BackedBySciencePage() {
                 key={system}
                 className="flex items-center gap-4 bg-white rounded-xl px-5 py-4 border border-gray-100 shadow-sm"
               >
-                <span className="w-8 h-8 rounded-full bg-[#1B2A3D] text-white text-xs font-bold flex items-center justify-center shrink-0">
+                <span className="w-8 h-8 rounded-full bg-black text-white text-xs font-bold flex items-center justify-center shrink-0">
                   {rank}
                 </span>
                 <span className="flex-1 font-medium text-[#1B2A3D]">{system}</span>
-                <span className="px-4 py-1.5 bg-[#1B2A3D] text-white text-sm font-bold rounded-lg">
+                <span className="px-4 py-1.5 bg-black text-white text-sm font-bold rounded-lg">
                   {years}
                 </span>
               </div>
             ))}
           </div>
 
-          <div className="mt-8 bg-[#1B2A3D] rounded-2xl px-8 py-6 text-white text-center">
+          <div className="mt-8 bg-black rounded-2xl px-8 py-6 text-white text-center">
             <p className="font-bold text-lg">
               Every single system points the same way — high-Prysm scorers look younger across the board.
             </p>
@@ -399,7 +399,7 @@ export default function BackedBySciencePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#1B2A3D] text-center">
+      <section className="py-20 bg-black text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl font-bold text-white">
             Ready to see the science in action?

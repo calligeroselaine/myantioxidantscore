@@ -32,7 +32,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="blog-hero-heading">
+      <section className="bg-black pt-28 pb-20" aria-labelledby="blog-hero-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h1 id="blog-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
             Wellness Insights
@@ -54,7 +54,7 @@ export default function BlogPage() {
                 key={slug}
                 className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:border-[#5C7A94]/20 transition-all duration-300 flex flex-col"
               >
-                <div className="h-44 bg-gradient-to-br from-[#1B2A3D] to-[#2C3E52] flex items-center justify-center" aria-hidden="true">
+                <div className="h-44 bg-gradient-to-br from-black to-black flex items-center justify-center" aria-hidden="true">
                   <svg viewBox="0 0 80 60" className="w-16 opacity-30">
                     <rect x="10" y="10" width="60" height="40" rx="4" fill="none" stroke="#5C7A94" strokeWidth="2" />
                     <circle cx="40" cy="30" r="12" fill="#5C7A94" opacity="0.4" />

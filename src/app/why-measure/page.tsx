@@ -24,7 +24,7 @@ export default function WhyMeasurePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B2A3D] pt-28 pb-20" aria-labelledby="why-measure-heading">
+      <section className="bg-black pt-28 pb-20" aria-labelledby="why-measure-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
             The Measurement Gap
@@ -111,7 +111,7 @@ export default function WhyMeasurePage() {
       </section>
 
       {/* PRYSM as the measurement layer */}
-      <section className="py-24 bg-[#1B2A3D]" aria-labelledby="prysm-heading">
+      <section className="py-24 bg-black" aria-labelledby="prysm-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
             The Missing Layer
