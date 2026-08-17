@@ -44,10 +44,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
 
-          {/* Logo — always visible */}
+          {/* Logo — mobile only; desktop nav already includes a Home link */}
           <Link
             href="/"
-            className={`shrink-0 text-[11px] font-bold tracking-widest transition-colors duration-300 ${
+            className={`lg:hidden shrink-0 text-[11px] font-bold tracking-widest transition-colors duration-300 ${
               transparent ? "text-white/90" : "text-[#1B2A3D]"
             }`}
             aria-label="My Antioxidant Score — Home"
