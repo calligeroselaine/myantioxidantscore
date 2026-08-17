@@ -7,7 +7,7 @@ const footerLinks = {
   Company: [
     { href: "/", label: "Home" },
     { href: "/backed-by-science", label: "Technology & Science" },
-    { href: "/partner-with-us", label: "Business Opportunities" },
+    { href: "/partner-with-us", label: "For Professionals" },
     { href: "/testimonials", label: "Success Stories" },
     { href: "/blog", label: "Wellness Insights" },
     { href: "/contact", label: "Contact Us" },

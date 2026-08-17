@@ -8,7 +8,7 @@ const navLinks = [
   { href: "/", label: "HOME" },
   { href: "/how-it-works", label: "HOW IT WORKS" },
   { href: "/why-measure", label: "WHY MEASURE?" },
-  { href: "/partner-with-us", label: "BUSINESS OPPORTUNITIES" },
+  { href: "/partner-with-us", label: "FOR PROFESSIONALS" },
   { href: "/who-its-for", label: "WHO IT'S FOR" },
   { href: "/testimonials", label: "SUCCESS STORIES" },
   { href: "/backed-by-science", label: "TECHNOLOGY & SCIENCE" },

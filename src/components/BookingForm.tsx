@@ -331,7 +331,7 @@ export default function BookingForm({ source = "booking", context }: BookingForm
             Submitting…
           </>
         ) : source === "partner" ? (
-          "I'm Interested"
+          "Explore PRYSM for My Business"
         ) : (
           "Submit"
         )}

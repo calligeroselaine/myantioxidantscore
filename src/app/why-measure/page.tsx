@@ -164,7 +164,7 @@ export default function WhyMeasurePage() {
             href="/partner-with-us"
             className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#5C7A94] hover:bg-[#7A96AC] text-white font-bold rounded-full transition-all duration-200 text-sm"
           >
-            See Business Opportunities
+            Explore PRYSM for My Business
           </Link>
         </div>
       </section>

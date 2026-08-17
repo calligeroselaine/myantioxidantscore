@@ -124,7 +124,7 @@ export default function HomePage() {
               href="/partner-with-us"
               className="inline-block px-8 py-3 border border-white text-white text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[#101B24] transition-all duration-200"
             >
-              See Business Opportunities
+              Explore PRYSM for My Business
             </Link>
           </div>
         </div>
