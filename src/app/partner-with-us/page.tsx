@@ -184,7 +184,7 @@ export default function PartnerWithUsPage() {
           </div>
           <div className="bg-[#F9FAFB] flex flex-col justify-center px-10 py-16 lg:px-16 order-1 lg:order-2">
             <h2 id="gap-heading" className="text-3xl sm:text-4xl font-bold text-[#1B2A3D] leading-tight">
-              Clients Invest in Their Wellness. Most Can&apos;t See If It&apos;s Working.
+              Clients Invest in Their Wellness. Give Them Something Measurable.
             </h2>
             <p className="mt-6 text-gray-500 leading-relaxed">
               Every year, people spend hundreds of billions of dollars on
@@ -347,9 +347,20 @@ export default function PartnerWithUsPage() {
       {/* Market opportunity */}
       <section className="py-20 bg-black" aria-labelledby="market-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <div className="text-[#5C7A94] text-4xl font-black mb-2">Hundreds of Billions</div>
+          <div className="text-[#5C7A94] text-4xl font-black mb-2">USD $435 Billion</div>
           <p className="text-white/60 text-sm">
-            spent on supplements and wellness globally every year
+            projected global dietary supplements market by 2034
+          </p>
+          <p className="mt-2 text-white/30 text-xs">
+            Source:{" "}
+            <a
+              href="https://www.zionmarketresearch.com/news/dietary-supplements-market"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-white/50"
+            >
+              Zion Market Research, 2025
+            </a>
           </p>
           <div className="my-6 h-px bg-white/10 max-w-xs mx-auto" aria-hidden="true" />
           <h2 id="market-heading" className="sr-only">A fast-growing wellness market</h2>
