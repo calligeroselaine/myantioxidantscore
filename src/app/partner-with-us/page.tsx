@@ -60,7 +60,7 @@ const whoItFits = [
     ),
   },
   {
-    title: "Chiropractic & Wellness",
+    title: "Health & Wellness Practices",
     copy: "Introduce objective wellness tracking alongside existing services.",
     icon: (
       <path
