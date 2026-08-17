@@ -129,7 +129,7 @@ const integrationSupport = [
   "Full training provided at no charge",
   "Co-branded marketing materials",
   "Ongoing support from an experienced team",
-  "Access to the clinically-validated formulations the technology is built around",
+  "Supporting Nutrition Solutions — access to complementary nutrition solutions that can form part of an ongoing client wellness program",
   "Recurring revenue potential — turn scans into an ongoing client service with repeat scanning and membership-style tracking",
   "Custom revenue modelling based on your expected client activity",
 ];
@@ -189,10 +189,10 @@ export default function PartnerWithUsPage() {
             <p className="mt-6 text-gray-500 leading-relaxed">
               Every year, people spend hundreds of billions of dollars on
               supplements, nutrition programs and wellness services — often with
-              little more than how they feel to go on. For the professionals
-              guiding them, that&apos;s a missed opportunity: without an objective
-              measurement, it&apos;s hard to show a client that what you&apos;re
-              doing together is actually making a difference.
+              little more than how they feel to go on. Without an objective
+              measurement, it can be difficult for clients to see whether their
+              nutrition and lifestyle choices are translating into measurable
+              change.
             </p>
             <p className="mt-4 text-gray-500 leading-relaxed">
               PRYSM iO adds that missing layer. In around 15 seconds, it gives

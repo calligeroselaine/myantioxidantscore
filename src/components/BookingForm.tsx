@@ -18,7 +18,6 @@ interface FormState {
   email: string;
   phone: string;
   referral: string;
-  referredBy: string;
 }
 
 interface BookingFormProps {
@@ -49,7 +48,6 @@ export default function BookingForm({ source = "booking", context }: BookingForm
     email: "",
     phone: "",
     referral: "",
-    referredBy: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -63,7 +61,6 @@ export default function BookingForm({ source = "booking", context }: BookingForm
     if (!form.email.trim() || !/\S+@\S+\.\S+/.test(form.email))
       e.email = "Valid email is required";
     if (!form.phone.trim()) e.phone = "Phone number is required";
-    if (!form.referredBy.trim()) e.referredBy = "This field is required";
     return e;
   };
 
@@ -268,31 +265,6 @@ export default function BookingForm({ source = "booking", context }: BookingForm
             </option>
           ))}
         </select>
-      </div>
-
-      <div>
-        <label
-          htmlFor="referredBy"
-          className="block text-sm font-medium text-[#1B2A3D] mb-1"
-        >
-          Who referred you/what is their email? <span className="text-red-500">*</span>
-        </label>
-        <input
-          id="referredBy"
-          name="referredBy"
-          type="text"
-          value={form.referredBy}
-          onChange={handleChange}
-          className={inputClass("referredBy")}
-          placeholder="Name of person or business"
-          aria-required="true"
-          aria-describedby={errors.referredBy ? "referredBy-error" : undefined}
-        />
-        {errors.referredBy && (
-          <p id="referredBy-error" className="mt-1 text-xs text-red-500" role="alert">
-            {errors.referredBy}
-          </p>
-        )}
       </div>
 
       {submitError && (
