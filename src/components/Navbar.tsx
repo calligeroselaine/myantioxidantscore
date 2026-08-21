@@ -42,12 +42,12 @@ export default function Navbar() {
       role="banner"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14">
+        <div className="flex items-center justify-between h-18">
 
-          {/* Logo — mobile only; desktop nav already includes a Home link */}
+          {/* Logo — mobile only */}
           <Link
             href="/"
-            className={`lg:hidden shrink-0 text-[11px] font-bold tracking-widest transition-colors duration-300 ${
+            className={`lg:hidden shrink-0 text-xs font-bold tracking-widest transition-colors duration-300 ${
               transparent ? "text-white/90" : "text-[#1B2A3D]"
             }`}
             aria-label="My Antioxidant Score — Home"
@@ -58,14 +58,14 @@ export default function Navbar() {
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center min-w-0 flex-1 ml-4">
             <nav
-              className="flex items-center gap-x-px flex-1 min-w-0 overflow-x-auto"
+              className="flex items-center gap-x-1 flex-1 min-w-0 overflow-x-auto"
               aria-label="Main navigation"
             >
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`shrink-0 px-1.5 py-2 text-[10px] font-semibold tracking-wide whitespace-nowrap transition-colors duration-200 ${
+                  className={`shrink-0 px-2.5 py-2 text-xs font-semibold tracking-wide whitespace-nowrap transition-colors duration-200 ${
                     transparent
                       ? "text-white/80 hover:text-white"
                       : "text-gray-700 hover:text-[#1B2A3D]"
@@ -74,18 +74,12 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <div
-                className={`pointer-events-none sticky right-0 h-full w-6 shrink-0 -ml-6 bg-gradient-to-r ${
-                  transparent ? "from-transparent to-transparent" : "from-transparent to-white"
-                }`}
-                aria-hidden="true"
-              />
             </nav>
 
-            <div className="flex items-center gap-2 shrink-0 ml-2">
+            <div className="flex items-center gap-2 shrink-0 ml-3">
               <Link
                 href="/partner-with-us#partner-form"
-                className={`px-4 py-2 text-[11px] font-bold rounded-full tracking-wide whitespace-nowrap transition-all duration-200 ${
+                className={`px-5 py-2.5 text-xs font-bold rounded-full tracking-wide whitespace-nowrap transition-all duration-200 ${
                   transparent
                     ? "bg-white/20 hover:bg-white/30 text-white border border-white/40"
                     : "bg-[#5C7A94] hover:bg-[#45607A] text-white"
