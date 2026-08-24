@@ -2,59 +2,65 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How My Antioxidant Score collects, uses, and protects your personal information.",
-  keywords: ["privacy policy", "data protection", "My Antioxidant Score privacy"],
+  description: "How Scan Your Score collects, uses, and protects your personal information.",
+  keywords: ["privacy policy", "data protection", "Scan Your Score privacy"],
   alternates: { canonical: "/privacy-policy" },
   openGraph: {
     url: "/privacy-policy",
     title: "Privacy Policy",
-    description: "How My Antioxidant Score collects, uses, and protects your personal information.",
+    description: "How Scan Your Score collects, uses, and protects your personal information.",
   },
 };
 
 const sections = [
   {
-    heading: "1. Who We Are",
-    body: `www.myantioxidantscore.com ("My Antioxidant Score") is a website used by a network of independent Prysm business partners to share information about Prysm iO antioxidant scanning technology — with people who are curious about it, and with health professionals, wellness practitioners, and businesses considering offering it. It is not a single registered company. References to "we", "us", or "our" in this policy mean the partners who operate and use this site.
-
-We handle personal information submitted through this site in line with the Australian Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs), to the extent they apply to us.`,
+    heading: "1. Who Operates This Website",
+    body: `ScanYourScore.com ("Scan Your Score", "we", "us", "our") provides information about PRYSM iO antioxidant scanning technology, shares educational content about antioxidants and wellness, and lets visitors get in touch to book a scan or ask about bringing PRYSM into their business.`,
   },
   {
     heading: "2. Information We Collect",
-    body: `When you submit an enquiry form on this site, we collect your name, email address, phone number, and business name (if provided). We also collect basic website usage data — pages visited, referring links, device/browser type — through analytics tools.
+    body: `When you submit an enquiry form on this site, we collect your name, email address, phone number, and — if you provide it — how you heard about us. We also collect basic website usage and analytics information through our website hosting and analytics services.
 
-We do not collect sensitive health information through this website.`,
+Our enquiry forms do not ask for and do not collect health information, medical history, supplement history, or PRYSM scan results. PRYSM scores are generated and stored through the PRYSM device/app itself, not through this website.`,
   },
   {
     heading: "3. How We Use Your Information",
-    body: `This site exists to give you information and put you in touch with the right next step. We use the details you provide only to:
+    body: `We use the information you provide to respond to your enquiry, provide information you have requested, follow up with you where appropriate, and maintain basic records of enquiries and expressions of interest.`,
+  },
+  {
+    heading: "4. Service Providers",
+    body: `We use trusted third-party service providers to help operate this website and respond to enquiries — for example, an email and contact-management platform to store enquiry details and send responses, and our hosting provider's analytics to understand general site usage. These providers only process your information on our behalf, to the extent needed to provide these services.
 
-— Get in touch about your enquiry
-— Arrange a discovery call if you're interested in the business opportunity, or point you toward getting a scan if that's what you're after
-— Improve the site using anonymised analytics
-
-We don't sell anything through this website, and we don't use your information for anything beyond the above.`,
+We don't sell, rent, or trade your personal information, and we don't share it with independent third parties for their own marketing purposes.`,
   },
   {
-    heading: "4. Sharing Your Information",
-    body: `We don't sell, rent, or trade your personal information. Because this site is used by a network of independent partners, your enquiry details are shared with the specific partner best placed to follow up with you (for example, whoever referred you, or whoever covers your area).`,
+    heading: "5. International Visitors",
+    body: `This website may be visited by people in Australia and elsewhere. We handle personal information in accordance with applicable privacy and data-protection requirements, and, where applicable to us, the Australian Privacy Principles under the Privacy Act 1988 (Cth).`,
   },
   {
-    heading: "5. Data Storage & Security",
-    body: `Your information is stored securely, and we take reasonable steps to protect it from misuse, loss, or unauthorised access. No method of transmitting data over the internet is completely secure, so we can't guarantee absolute security. We keep your information only as long as needed to respond to your enquiry, or as required by law.`,
+    heading: "6. Data Storage & Security",
+    body: `Your information is stored securely with our service providers, and we take reasonable steps to protect it from misuse, loss, or unauthorised access. No method of transmitting data over the internet is completely secure, so we can't guarantee absolute security.`,
   },
   {
-    heading: "6. Your Rights",
-    body: `You can ask what personal information we hold about you, ask us to correct it, or ask us to delete it — just contact us using the details below.`,
+    heading: "7. Retention",
+    body: `We keep enquiry information only for as long as reasonably needed to respond to you and keep an appropriate record, or as required by law.`,
   },
   {
-    heading: "7. Changes to This Policy",
+    heading: "8. Access, Correction & Deletion",
+    body: `You can ask what personal information we hold about you, ask us to correct it, or ask us to delete it, at any time — just contact us using the details below.`,
+  },
+  {
+    heading: "9. Questions or Complaints",
+    body: `If you have a question or concern about how we handle your personal information, please contact us — we'll do our best to resolve it directly.`,
+  },
+  {
+    heading: "10. Changes to This Policy",
     body: `We may update this policy from time to time. The most current version will always be available on this page.`,
   },
   {
-    heading: "8. Contact Us",
-    body: `**My Antioxidant Score**
-Email: info@myantioxidantscore.com.au`,
+    heading: "11. Contact Us",
+    body: `**Scan Your Score**
+Email: hello@scanyourscore.com`,
   },
 ];
 
@@ -67,7 +73,7 @@ export default function PrivacyPolicyPage() {
           <h1 id="privacy-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
             Privacy Policy
           </h1>
-          <p className="mt-4 text-white/50 text-sm">Last updated: July 2026</p>
+          <p className="mt-4 text-white/50 text-sm">Last updated: August 2026</p>
         </div>
       </section>
 

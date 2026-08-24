@@ -1,105 +1,81 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service",
-  description: "Terms and conditions for using the My Antioxidant Score website and booking services.",
-  keywords: ["terms of service", "booking terms", "My Antioxidant Score terms and conditions"],
+  title: "Terms of Use",
+  description: "Terms and conditions for using the Scan Your Score website.",
+  keywords: ["terms of use", "Scan Your Score terms and conditions"],
   alternates: { canonical: "/terms" },
   openGraph: {
     url: "/terms",
-    title: "Terms of Service",
-    description: "Terms and conditions for using the My Antioxidant Score website and booking services.",
+    title: "Terms of Use",
+    description: "Terms and conditions for using the Scan Your Score website.",
   },
 };
 
 const sections = [
   {
-    heading: "1. Acceptance of Terms",
-    body: `By accessing or using the My Antioxidant Score website and services, you agree to be bound by these Terms of Service. If you do not agree, please do not use our website or book any services.
+    heading: "1. Acceptance of These Terms",
+    body: `By accessing or using this website, you agree to be bound by these Terms of Use. If you do not agree, please do not use the website.
 
-These terms are governed by the laws of Australia and the state in which services are provided. Any disputes will be subject to the exclusive jurisdiction of the courts of that state.`,
+These terms are governed by the laws of Australia and the state in which the website is operated. Any disputes will be subject to the exclusive jurisdiction of the courts of that state.`,
   },
   {
-    heading: "2. Our Services",
-    body: `My Antioxidant Score provides:
-
-— Non-invasive antioxidant scanning using Prysm iO technology
-— Educational content relating to antioxidants, nutrition, and general wellness
-— Information about Prysm-certified supplement products
-
-Our services are intended for general wellness and educational purposes only. They do not constitute medical diagnosis, treatment, or advice. See our Disclaimer for full details.`,
+    heading: "2. About This Website",
+    body: `ScanYourScore.com provides general information about PRYSM iO antioxidant scanning technology, educational content relating to antioxidants, nutrition and general wellness, and a way to get in touch about scanning or bringing PRYSM into your business.`,
   },
   {
-    heading: "3. Booking & Appointments",
-    body: `**Availability**: Scan appointments are subject to availability at participating locations.
+    heading: "3. General Information Only — Not Medical Advice",
+    body: `Content on this website, including information about PRYSM Scores and related wellness guidance, is provided for general informational and educational purposes only. It is not medical advice, diagnosis or treatment and is not a substitute for advice from a suitably qualified healthcare professional.
 
-**Confirmation**: Your booking is confirmed once you receive a confirmation email. Please retain this for your records.
-
-**Cancellations**: We ask for at least 24 hours' notice if you need to cancel or reschedule. Late cancellations or no-shows may forfeit any prepaid booking fee.
-
-**Punctuality**: Please arrive on time. If you arrive more than 15 minutes late, we may need to reschedule your appointment.
-
-**Age requirement**: Participants under 18 years of age must be accompanied by a parent or guardian.`,
+You should always consult a qualified healthcare professional before making changes to your diet, supplement regimen, or health routine. See our Disclaimer page for further detail.`,
   },
   {
-    heading: "4. Pricing & Payment",
-    body: `All prices are displayed in Australian Dollars (AUD) and include GST where applicable.
-
-Payment is processed through secure third-party payment providers. We do not store your payment card details.
-
-Prices are subject to change without notice. The price confirmed at the time of booking will apply to that booking.`,
+    heading: "4. No Guarantee of Individual Results",
+    body: `Results and outcomes vary between individuals. Nothing on this website guarantees any particular personal health outcome.`,
   },
   {
-    heading: "5. Refund Policy",
-    body: `If you cancel with more than 24 hours' notice, you will receive a full refund or the option to reschedule at no cost.
-
-Refunds for cancellations with less than 24 hours' notice are at our discretion.
-
-If we need to cancel or reschedule your appointment for any reason, you will be offered a full refund or a rescheduled appointment.`,
+    heading: "5. Business Information Is General",
+    body: `Any information on this website about bringing PRYSM into a business is general in nature. It does not guarantee revenue, client numbers, or business results — actual outcomes depend on many factors specific to each business.`,
   },
   {
-    heading: "6. Not Medical Advice",
-    body: `The Prysm Score and all content on this website are for general wellness and informational purposes only. Nothing on this site should be interpreted as medical advice, diagnosis, or treatment.
-
-You should always consult a qualified healthcare professional before making changes to your diet, supplement regimen, or health routine based on your Prysm Score or any content on this website.
-
-My Antioxidant Score does not accept liability for decisions made based on information provided through our services. See our Disclaimer page for further detail.`,
+    heading: "6. Accuracy & Availability",
+    body: `We aim to keep this website accurate and available, but we don't guarantee it will always be error-free, uninterrupted, or fully up to date, and content may change without notice.`,
   },
   {
     heading: "7. Intellectual Property",
-    body: `All content on this website — including text, images, graphics, logos, and the Prysm Score methodology — is the intellectual property of My Antioxidant Score or its licensors and is protected by Australian copyright law.
+    body: `The content, design, graphics and other materials on this website are owned by us or used with permission, and are protected by applicable intellectual property laws. You may not reproduce, distribute, modify, or commercially exploit any content without prior written permission.
 
-You may not reproduce, distribute, modify, or commercially exploit any content without prior written permission.`,
+PRYSM® and related marks are trademarks of their respective owners and are used with appropriate permission.`,
   },
   {
-    heading: "8. User Conduct",
+    heading: "8. Third-Party Links",
+    body: `This website may link to third-party websites, research publications, or product pages. We don't endorse, control, or take responsibility for the content or privacy practices of any external sites.`,
+  },
+  {
+    heading: "9. User Conduct",
     body: `By using this website, you agree not to:
 
 — Use the site for any unlawful purpose
 — Attempt to gain unauthorised access to any part of the website or its systems
 — Transmit any harmful, offensive, or disruptive content
-— Misrepresent your identity or affiliation
-
-We reserve the right to terminate access for any user who breaches these terms.`,
+— Misrepresent your identity or affiliation`,
   },
   {
-    heading: "9. Limitation of Liability",
-    body: `To the fullest extent permitted by Australian law, My Antioxidant Score is not liable for any indirect, incidental, special, or consequential damages arising from your use of our services or website.
+    heading: "10. Limitation of Liability",
+    body: `To the fullest extent permitted by law, we are not liable for any indirect, incidental, special, or consequential loss arising from your use of this website.
 
-Our total liability to you for any claim arising from the use of our services is limited to the amount you paid for the specific service giving rise to the claim.
-
-Nothing in these terms excludes any consumer guarantees under the Australian Consumer Law that cannot be legally excluded.`,
+Nothing in these terms excludes any consumer guarantee under the Australian Consumer Law that cannot be legally excluded.`,
   },
   {
-    heading: "10. Changes to These Terms",
-    body: `We reserve the right to update these Terms of Service at any time. The updated version will be posted on this page with a revised date. Continued use of our website or services after changes constitutes your acceptance of the revised terms.`,
+    heading: "11. Changes to These Terms",
+    body: `We may update these Terms of Use at any time. The updated version will be posted on this page. Continued use of the website after changes constitutes your acceptance of the revised terms.`,
   },
   {
-    heading: "11. Contact",
-    body: `For any questions regarding these Terms of Service, please contact us:
+    heading: "12. Contact",
+    body: `For any questions regarding these Terms of Use, please contact us:
 
-**My Antioxidant Score**
-Email: info@myantioxidantscore.com.au`,
+**Scan Your Score**
+Email: hello@scanyourscore.com`,
   },
 ];
 
@@ -110,9 +86,9 @@ export default function TermsPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">Legal</p>
           <h1 id="terms-hero-heading" className="text-4xl sm:text-5xl font-bold text-white">
-            Terms of Service
+            Terms of Use
           </h1>
-          <p className="mt-4 text-white/50 text-sm">Last updated: July 2026</p>
+          <p className="mt-4 text-white/50 text-sm">Last updated: August 2026</p>
         </div>
       </section>
 

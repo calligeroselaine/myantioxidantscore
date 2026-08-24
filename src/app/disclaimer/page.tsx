@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Disclaimer",
-  description: "Important information about the limitations of the Prysm Score and My Antioxidant Score services.",
+  description: "Important information about the limitations of the Prysm Score and Scan Your Score services.",
   keywords: ["medical disclaimer", "wellness disclaimer", "antioxidant score limitations"],
   alternates: { canonical: "/disclaimer" },
   openGraph: {
     url: "/disclaimer",
     title: "Disclaimer",
-    description: "Important information about the limitations of the Prysm Score and My Antioxidant Score services.",
+    description: "Important information about the limitations of the Prysm Score and Scan Your Score services.",
   },
 };
 
@@ -18,7 +18,7 @@ const sections = [
     heading: "Not Medical Advice",
     body: `The Prysm Score, all content on this website, and any information provided during a scan appointment are for general wellness and educational purposes only.
 
-Nothing on this website or provided through our services constitutes medical advice, medical diagnosis, or medical treatment. My Antioxidant Score is not a healthcare provider and does not claim to be.
+Nothing on this website or provided through our services constitutes medical advice, medical diagnosis, or medical treatment. Scan Your Score is not a healthcare provider and does not claim to be.
 
 You should always consult a qualified and registered healthcare professional — such as your GP, dietitian, or specialist — before making any changes to your diet, supplement use, exercise habits, or health management based on your Prysm Score or any content on this site.`,
   },
@@ -36,7 +36,7 @@ Results may vary between individuals. An improvement in your Prysm Score does no
 
 Associations between Prysm Score and biological markers (such as ageing clocks or telomere length) reflect observed correlations in research cohorts and do not imply causation. These findings may not apply to every individual.
 
-My Antioxidant Score endeavours to represent scientific findings accurately and in context, but we recommend consulting original source publications for full methodological detail.`,
+Scan Your Score endeavours to represent scientific findings accurately and in context, but we recommend consulting original source publications for full methodological detail.`,
   },
   {
     heading: "Supplement Information",
@@ -50,17 +50,17 @@ Supplements are not a substitute for a balanced diet or medical treatment. You s
   },
   {
     heading: "External Links",
-    body: `This website may link to third-party websites, research publications, or product pages. My Antioxidant Score does not endorse, control, or take responsibility for the content or privacy practices of any external sites.`,
+    body: `This website may link to third-party websites, research publications, or product pages. Scan Your Score does not endorse, control, or take responsibility for the content or privacy practices of any external sites.`,
   },
   {
     heading: "Limitation of Liability",
-    body: `To the fullest extent permitted by Australian law, My Antioxidant Score, its operators, employees, and partners accept no liability for any loss, harm, or adverse outcome arising from reliance on information provided through this website or our scanning services.
+    body: `To the fullest extent permitted by Australian law, Scan Your Score, its operators, employees, and partners accept no liability for any loss, harm, or adverse outcome arising from reliance on information provided through this website or our scanning services.
 
 Nothing in this disclaimer excludes any consumer guarantees under the Australian Consumer Law that cannot be legally excluded.`,
   },
   {
     heading: "Questions",
-    body: `If you have any questions about this disclaimer or our services, please contact us at info@myantioxidantscore.com.au or visit our Contact page.`,
+    body: `If you have any questions about this disclaimer or our services, please contact us at hello@scanyourscore.com or visit our Contact page.`,
   },
 ];
 
@@ -108,7 +108,7 @@ export default function DisclaimerPage() {
             <p className="text-gray-500 text-sm">
               By using our services you acknowledge that you have read and understood this disclaimer.{" "}
               <Link href="/terms" className="text-[#5C7A94] hover:underline font-medium">
-                View our Terms of Service
+                View our Terms of Use
               </Link>{" "}
               or{" "}
               <Link href="/privacy-policy" className="text-[#5C7A94] hover:underline font-medium">

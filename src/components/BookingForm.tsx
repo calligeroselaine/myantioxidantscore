@@ -314,7 +314,8 @@ export default function BookingForm({ source = "booking", context }: BookingForm
         <a href="/privacy-policy" className="text-[#5C7A94] hover:underline">
           Privacy Policy
         </a>
-        . We&apos;ll never share your details.
+        . We&apos;ll only use your details to respond to your enquiry and
+        follow up with you where appropriate.
       </p>
     </form>
   );

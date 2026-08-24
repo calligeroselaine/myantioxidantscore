@@ -15,13 +15,13 @@ const footerLinks = {
   Products: [
     { href: "/certified-products", label: "Certified Products" },
   ],
-  // Legal links hidden for now — revisit later.
-  // Legal: [
-  //   { href: "/privacy-policy", label: "Privacy Policy" },
-  //   { href: "/terms", label: "Terms of Service" },
-  //   { href: "/disclaimer", label: "Disclaimer" },
-  // ],
 };
+
+const legalLinks = [
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/terms", label: "Terms of Use" },
+  { href: "/disclaimer", label: "Disclaimer" },
+];
 
 const BUSINESS_CTA_PATHS = ["/partner-with-us", "/backed-by-science"];
 
@@ -109,6 +109,17 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/40 text-xs">
           <p>© {new Date().getFullYear()} ScanYourScore. All rights reserved.</p>
+          <div className="flex items-center gap-4">
+            {legalLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="hover:text-white/70 transition-colors duration-200"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
           <p>
             Powered by{" "}
             <span className="text-[#5C7A94]">Prysm iO Technology</span>
