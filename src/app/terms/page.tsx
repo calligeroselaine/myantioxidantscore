@@ -17,7 +17,7 @@ const sections = [
     heading: "1. Acceptance of These Terms",
     body: `By accessing or using this website, you agree to be bound by these Terms of Use. If you do not agree, please do not use the website.
 
-These terms are governed by the laws of Australia and the state in which the website is operated. Any disputes will be subject to the exclusive jurisdiction of the courts of that state.`,
+These Terms are governed by the laws of New South Wales, Australia. You submit to the jurisdiction of the courts of New South Wales and courts entitled to hear appeals from those courts.`,
   },
   {
     heading: "2. About This Website",
@@ -99,14 +99,19 @@ export default function TermsPage() {
               <div key={heading} className="px-8 py-8">
                 <h2 className="text-lg font-bold text-[#1B2A3D] mb-4">{heading}</h2>
                 <div className="text-gray-600 text-sm leading-relaxed space-y-3">
-                  {body.split("\n\n").map((para, i) => (
-                    <p key={i} dangerouslySetInnerHTML={{
-                      __html: para
-                        .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-                        .replace(/^— /gm, "&mdash;&nbsp;")
-                        .replace(/\n— /g, "<br />&mdash;&nbsp;")
-                    }} />
-                  ))}
+                  {body.split("\n\n").map((para, i) =>
+                    para.startsWith("— ") ? (
+                      <ul key={i} className="list-disc pl-5 space-y-1.5">
+                        {para.split("\n— ").map((item, j) => (
+                          <li key={j}>{item.replace(/^— /, "")}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p key={i} dangerouslySetInnerHTML={{
+                        __html: para.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+                      }} />
+                    )
+                  )}
                 </div>
               </div>
             ))}
