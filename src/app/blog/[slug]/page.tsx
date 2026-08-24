@@ -54,12 +54,12 @@ export default async function BlogPostPage({ params }: Props) {
     author: { "@type": "Person", name: post.author ?? "Elaine Calligeros" },
     publisher: {
       "@type": "Organization",
-      name: "My Antioxidant Score",
-      logo: { "@type": "ImageObject", url: "https://www.myantioxidantscore.com/og-image.jpg" },
+      name: "Scan Your Score",
+      logo: { "@type": "ImageObject", url: "https://www.scanyourscore.com/og-image.jpg" },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.myantioxidantscore.com/blog/${post.slug}`,
+      "@id": `https://www.scanyourscore.com/blog/${post.slug}`,
     },
   };
 

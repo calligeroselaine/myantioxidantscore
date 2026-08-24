@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://www.myantioxidantscore.com";
+const BASE_URL = "https://www.scanyourscore.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [

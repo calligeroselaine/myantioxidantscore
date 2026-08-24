@@ -13,8 +13,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "My Antioxidant Score | Antioxidant Scan in 15 Seconds",
-    template: "%s | My Antioxidant Score",
+    default: "Scan Your Score | Antioxidant Scan in 15 Seconds",
+    template: "%s | Scan Your Score",
   },
   description:
     "Discover your antioxidant health score in just 15 seconds with the Prysm iO device. No blood tests. No guessing. Science-backed nutritional insight you can see.",
@@ -28,20 +28,20 @@ export const metadata: Metadata = {
     "supplement effectiveness",
     "Pharmanex",
   ],
-  metadataBase: new URL("https://www.myantioxidantscore.com"),
+  metadataBase: new URL("https://www.scanyourscore.com"),
   openGraph: {
     type: "website",
     locale: "en_AU",
-    url: "https://www.myantioxidantscore.com",
-    siteName: "My Antioxidant Score",
-    title: "My Antioxidant Score | Antioxidant Scan in 15 Seconds",
+    url: "https://www.scanyourscore.com",
+    siteName: "Scan Your Score",
+    title: "Scan Your Score | Antioxidant Scan in 15 Seconds",
     description:
       "See if your supplements are actually working. The Prysm iO delivers your antioxidant score in 15 seconds — no blood tests needed.",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "My Antioxidant Score | Antioxidant Scan in 15 Seconds",
+    title: "Scan Your Score | Antioxidant Scan in 15 Seconds",
     description:
       "See if your supplements are actually working. Prysm iO gives you a health score in 15 seconds.",
     images: ["/og-image.jpg"],
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "My Antioxidant Score",
-  url: "https://www.myantioxidantscore.com",
-  logo: "https://www.myantioxidantscore.com/og-image.jpg",
+  name: "Scan Your Score",
+  url: "https://www.scanyourscore.com",
+  logo: "https://www.scanyourscore.com/og-image.jpg",
   description:
     "Discover your antioxidant health score in just 15 seconds with the Prysm iO device — science-backed nutritional insight you can see.",
   sameAs: [],

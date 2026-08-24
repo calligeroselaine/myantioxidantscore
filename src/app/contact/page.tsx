@@ -4,9 +4,9 @@ import BookingForm from "@/components/BookingForm";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with the My Antioxidant Score team. We'd love to hear from you — whether you have a question about your scan, our products, or a partnership.",
+    "Get in touch with the Scan Your Score team. We'd love to hear from you — whether you have a question about your scan, our products, or a partnership.",
   keywords: [
-    "contact My Antioxidant Score",
+    "contact Scan Your Score",
     "antioxidant scan enquiry",
     "wellness business contact",
     "Prysm iO support",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "/contact",
     title: "Contact Us",
     description:
-      "Get in touch with the My Antioxidant Score team. We'd love to hear from you.",
+      "Get in touch with the Scan Your Score team. We'd love to hear from you.",
   },
 };
 

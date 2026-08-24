@@ -50,7 +50,7 @@ export default function Navbar() {
             className={`lg:hidden shrink-0 text-xs font-bold tracking-widest transition-colors duration-300 ${
               transparent ? "text-white/90" : "text-[#1B2A3D]"
             }`}
-            aria-label="My Antioxidant Score — Home"
+            aria-label="Scan Your Score — Home"
           >
             MY ANTIOXIDANT SCORE
           </Link>
