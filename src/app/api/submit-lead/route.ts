@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
       "api-key": BREVO_API_KEY,
     },
     body: JSON.stringify({
-      sender: { name: "My Antioxidant Score", email: NOTIFY_EMAIL },
+      sender: { name: "Scan Your Score", email: NOTIFY_EMAIL },
       to: [{ email: NOTIFY_EMAIL }],
       replyTo: { email, name: `${firstName} ${lastName}` },
       subject: `New ${label}: ${firstName} ${lastName}`,
