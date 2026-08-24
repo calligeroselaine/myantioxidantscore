@@ -40,7 +40,7 @@ const techFeatures = [
   { img: IMG.patent,        label: "Patent-Pending Technology" },
   { img: IMG.mlCalibration, label: "Machine Learning Calibration" },
   { img: IMG.measurements,  label: "700K+ Measurements per Scan" },
-  { img: IMG.raman,         label: "Raman Technology" },
+  { img: IMG.raman,         label: "Spectral Rai™ Technology" },
 ];
 
 const scoreItems = [
@@ -183,9 +183,18 @@ export default function HowItWorksPage() {
             AI-Powered Personalised Guidance
           </h2>
           <p className="mt-6 text-white/70 leading-relaxed">
-            The app doesn&apos;t just show you a number — it explains what it means and
-            tells you exactly what to do next, with personalised recommendations based
-            on your unique results.
+            The app doesn&apos;t just show you a number. Using AI-powered
+            technology supported by insights from more than 20 million
+            historical antioxidant scans, it combines your PRYSM Score with
+            lifestyle information to provide personalised guidance across
+            nutrition, lifestyle, fitness and supplementation.
+          </p>
+          <p className="mt-4 text-white/70 leading-relaxed">
+            So you&apos;re not simply given a score — you&apos;re given a
+            personalised pathway for what to do next.
+          </p>
+          <p className="mt-6 text-[#5C7A94] text-xs font-bold uppercase tracking-widest">
+            Nutrition · Lifestyle · Fitness · Supplementation
           </p>
         </div>
         <div className="relative min-h-[40vh] order-1 lg:order-2">

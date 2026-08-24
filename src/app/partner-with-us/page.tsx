@@ -94,25 +94,65 @@ const whoItFits = [
   },
 ];
 
-const flowSteps = [
-  { label: "Scan", sub: "15 seconds" },
-  { label: "Engage", sub: "Objective score" },
-  { label: "Track", sub: "Track progress" },
-  { label: "Rescan", sub: "Build ongoing engagement" },
+const guidanceAreas = [
+  {
+    title: "Nutrition",
+    copy: "Personalised nutritional guidance.",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 3c-4 3-7 7-7 11a7 7 0 0014 0c0-4-3-8-7-11z M8.5 13.5c1.8-.8 3.6-2.6 4.5-5.5"
+      />
+    ),
+  },
+  {
+    title: "Lifestyle",
+    copy: "Insights relevant to everyday habits.",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3 12h4l2 5 4-14 2 9h6"
+      />
+    ),
+  },
+  {
+    title: "Fitness",
+    copy: "Personalised fitness guidance.",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+      />
+    ),
+  },
+  {
+    title: "Supplementation",
+    copy: "Relevant supplementation recommendations.",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5.106 14.4a2.25 2.25 0 001.591 3.84h10.606a2.25 2.25 0 001.591-3.84l-3.985-3.99a2.25 2.25 0 01-.659-1.591V3.104M9.75 3.104h4.5M9.75 3.104h-1.5m6 0h1.5"
+      />
+    ),
+  },
 ];
 
 const practiceSteps = [
   {
     title: "Baseline Scan",
-    copy: "Give the client their initial PRYSM score.",
+    copy: "Give the client their initial PRYSM Score.",
   },
   {
-    title: "Wellness Conversation",
-    copy: "Use the measurement to support a conversation around nutrition and lifestyle.",
+    title: "Personalised Guidance & Conversation",
+    copy: "Use the score together with the PRYSM app's personalised guidance to structure the conversation around nutrition, lifestyle, fitness and supplementation.",
   },
   {
     title: "Client Action",
-    copy: "The client follows their agreed wellness approach.",
+    copy: "The client has a personalised pathway to follow based on their score, lifestyle information and agreed wellness approach.",
   },
   {
     title: "Rescan",
@@ -120,7 +160,7 @@ const practiceSteps = [
   },
   {
     title: "Ongoing Engagement",
-    copy: "Integrate repeat scanning into an existing wellness program, membership or client journey.",
+    copy: "Use repeat measurement to support an ongoing client wellness journey.",
   },
 ];
 
@@ -129,6 +169,7 @@ const integrationSupport = [
   "Full training provided at no charge",
   "Co-branded marketing materials",
   "Ongoing support from an experienced team",
+  "AI-Guided Client Experience — the PRYSM app helps structure personalised guidance after the scan, reducing the need to build the consultation from scratch",
   "Supporting Nutrition Solutions — access to complementary nutrition solutions that can form part of an ongoing client wellness program",
   "Recurring revenue potential — turn scans into an ongoing client service with repeat scanning and membership-style tracking",
   "Custom revenue modelling based on your expected client activity",
@@ -231,6 +272,62 @@ export default function PartnerWithUsPage() {
         </div>
       </section>
 
+      {/* The intelligence behind the score */}
+      <section className="py-20 bg-black" aria-labelledby="ai-heading">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
+            The Intelligence Behind the Score
+          </p>
+          <h2 id="ai-heading" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+            The Scan Takes Seconds. The Technology Helps With What Comes Next.
+          </h2>
+          <p className="mt-6 text-white/60 leading-relaxed">
+            PRYSM doesn&apos;t simply produce a number and leave you to work
+            out what to do with it.
+          </p>
+          <p className="mt-4 text-white/60 leading-relaxed">
+            The dedicated PRYSM app combines the client&apos;s score and
+            lifestyle information with AI-powered technology supported by
+            insights from more than 20 million historical antioxidant scans
+            to provide personalised guidance across nutrition, lifestyle,
+            fitness and supplementation.
+          </p>
+          <p className="mt-4 text-white/60 leading-relaxed">
+            For the professional, that means less guesswork and a more
+            structured, personalised client conversation.
+          </p>
+        </div>
+      </section>
+
+      {/* Four guidance areas */}
+      <section className="py-20 bg-[#F9FAFB]" aria-labelledby="guidance-areas-heading">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <h2 id="guidance-areas-heading" className="sr-only">Personalised guidance areas</h2>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {guidanceAreas.map(({ title, copy, icon }) => (
+              <div key={title} className="bg-white rounded-2xl border border-gray-100 p-6 text-center shadow-sm">
+                <div className="w-10 h-10 rounded-full bg-[#5C7A94]/10 flex items-center justify-center mx-auto mb-4" aria-hidden="true">
+                  <svg className="w-5 h-5 text-[#5C7A94]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                    {icon}
+                  </svg>
+                </div>
+                <h3 className="text-[#1B2A3D] font-bold text-xs uppercase tracking-wide mb-2">{title}</h3>
+                <p className="text-gray-500 text-xs leading-relaxed">{copy}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-14 text-center max-w-xl mx-auto">
+            <p className="text-2xl font-bold text-[#1B2A3D]">
+              You Don&apos;t Need to Invent the Consultation.
+            </p>
+            <p className="mt-3 text-gray-500 leading-relaxed">
+              PRYSM helps turn the measurement into a structured conversation
+              about what comes next.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Who it fits */}
       <section className="py-20 bg-[#F9FAFB]" aria-labelledby="who-fits-heading">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
@@ -247,29 +344,6 @@ export default function PartnerWithUsPage() {
                 </div>
                 <h3 className="text-[#1B2A3D] font-bold text-sm uppercase tracking-wide mb-3">{title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{copy}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Simple visual flow */}
-      <section className="py-20 bg-black" aria-labelledby="flow-heading">
-        <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <h2 id="flow-heading" className="sr-only">The PRYSM client journey</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-4 items-start text-center">
-            {flowSteps.map(({ label, sub }, i) => (
-              <div key={label} className="relative">
-                {i > 0 && (
-                  <svg className="hidden sm:block absolute -left-6 top-6 w-6 h-6 text-[#5C7A94]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                )}
-                <div className="w-12 h-12 rounded-full bg-[#5C7A94] text-white font-bold flex items-center justify-center mx-auto mb-4 text-sm">
-                  {i + 1}
-                </div>
-                <h3 className="text-white font-bold text-lg tracking-wide uppercase">{label}</h3>
-                <p className="mt-1 text-white/50 text-xs uppercase tracking-widest">{sub}</p>
               </div>
             ))}
           </div>

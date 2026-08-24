@@ -29,9 +29,9 @@ const researchPoints = [
     citation: "Mayne et al. (2010). American Journal of Clinical Nutrition.",
   },
   {
-    title: "Raman Spectroscopy",
+    title: "Foundational Resonance Raman Research",
     description:
-      "Resonance Raman spectroscopy is used to measure carotenoid concentrations in the skin. This technology is clinically validated against blood serum carotenoid measurements, with strong correlation across diverse populations.",
+      "Resonance Raman spectroscopy research helped establish and validate skin carotenoid concentration as a non-invasive biomarker, with strong correlation to blood serum carotenoid measurements across diverse populations. This foundational science underpins the reference knowledge behind Prysm iO's current Spectral Rai™ measurement technology.",
     citation: "Ermakov et al. (2005). Journal of Biomedical Optics.",
   },
   {
@@ -51,7 +51,7 @@ const researchPoints = [
 const specs = [
   { label: "Measurements per scan", value: "700,000+" },
   { label: "Scan duration", value: "15 seconds" },
-  { label: "Technology type", value: "Hyperspectral Raman" },
+  { label: "Technology type", value: "Spectral Rai™" },
   { label: "Studies published", value: "80+" },
   { label: "Patent status", value: "Patent-Pending" },
   { label: "Calibration", value: "Machine Learning" },
@@ -146,20 +146,25 @@ export default function BackedBySciencePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 id="tech-overview-heading" className="text-3xl font-bold text-[#1B2A3D]">
-                Hyperspectral Measurement Technology
+                Spectral Rai™ Measurement Technology
               </h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
                 At the heart of the Prysm iO is the patent-pending Spectral
                 Rai™ technology. Each scan fires more than{" "}
                 <strong>700,000 hyperspectral absorption measurements</strong>{" "}
-                at the skin in just 15 seconds, using resonance Raman
-                spectroscopy to detect carotenoid molecules with extraordinary
-                precision.
+                at the skin in just 15 seconds to detect carotenoid molecules
+                with extraordinary precision.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
                 A machine learning calibration engine maps those measurements against
                 validated reference populations to deliver your personalised Prysm Score —
                 a number that reflects your antioxidant defence in real time.
+              </p>
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                Spectral Rai™ builds on decades of foundational resonance
+                Raman spectroscopy research, which helped establish and
+                validate non-invasive skin-carotenoid measurement as a
+                science.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -171,6 +176,28 @@ export default function BackedBySciencePage() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* From measurement to personalised guidance */}
+      <section className="py-16 bg-black" aria-labelledby="ai-stack-heading">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <p className="text-[#5C7A94] font-semibold text-sm uppercase tracking-widest mb-3">
+            From Measurement to Personalised Guidance
+          </p>
+          <h2 id="ai-stack-heading" className="text-2xl sm:text-3xl font-bold text-white leading-tight">
+            The Technology Doesn&apos;t Stop at the Score.
+          </h2>
+          <p className="mt-4 text-white/60 leading-relaxed">
+            The dedicated PRYSM app combines the individual&apos;s score and
+            lifestyle information with AI-powered technology supported by
+            insights from more than 20 million historical antioxidant scans
+            to provide personalised guidance across nutrition, lifestyle,
+            fitness and supplementation.
+          </p>
+          <p className="mt-6 text-[#5C7A94] text-xs font-bold uppercase tracking-widest">
+            Nutrition · Lifestyle · Fitness · Supplementation
+          </p>
         </div>
       </section>
 

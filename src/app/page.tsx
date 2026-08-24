@@ -62,6 +62,23 @@ export default function HomePage() {
           >
             Learn More
           </Link>
+
+          <div className="mt-10 pt-8 border-t border-white/10">
+            <h3 className="text-white font-semibold text-sm uppercase tracking-widest">
+              And the Score Is Only the Beginning.
+            </h3>
+            <p className="mt-3 text-white/60 text-sm leading-relaxed max-w-md">
+              The dedicated PRYSM app uses AI-powered technology to turn your
+              result and lifestyle information into personalised guidance
+              across nutrition, lifestyle, fitness and supplementation.
+            </p>
+            <Link
+              href="/how-it-works"
+              className="inline-block mt-4 text-[#5C7A94] hover:text-white text-xs font-bold uppercase tracking-widest transition-colors duration-200"
+            >
+              See How It Works →
+            </Link>
+          </div>
         </div>
         <div className="relative min-h-[50vh] order-1 lg:order-2">
           <Image
