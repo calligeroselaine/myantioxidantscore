@@ -12,12 +12,21 @@ const referralOptions = [
   "Other",
 ];
 
+const REFERRED_BY_NO_ONE = "No one — I found the site myself";
+const REFERRED_BY_SOMEONE = "Someone referred me";
+
+const referredByOptions = [REFERRED_BY_NO_ONE, REFERRED_BY_SOMEONE];
+
 interface FormState {
   firstName: string;
   lastName: string;
   email: string;
   phone: string;
   referral: string;
+  referredBySource: string;
+  referrerName: string;
+  referrerEmail: string;
+  referrerPhone: string;
 }
 
 interface BookingFormProps {
@@ -48,6 +57,10 @@ export default function BookingForm({ source = "booking", context }: BookingForm
     email: "",
     phone: "",
     referral: "",
+    referredBySource: "",
+    referrerName: "",
+    referrerEmail: "",
+    referrerPhone: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -61,14 +74,33 @@ export default function BookingForm({ source = "booking", context }: BookingForm
     if (!form.email.trim() || !/\S+@\S+\.\S+/.test(form.email))
       e.email = "Valid email is required";
     if (!form.phone.trim()) e.phone = "Phone number is required";
+    if (!form.referredBySource) e.referredBySource = "Please select an option";
+    if (form.referredBySource === REFERRED_BY_SOMEONE) {
+      if (!form.referrerName.trim()) e.referrerName = "Referrer's name is required";
+      if (!form.referrerEmail.trim() || !/\S+@\S+\.\S+/.test(form.referrerEmail))
+        e.referrerEmail = "Valid email is required";
+    }
     return e;
   };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
-    setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
-    setErrors((err) => ({ ...err, [e.target.name]: undefined }));
+    const { name, value } = e.target;
+    setForm((f) => ({
+      ...f,
+      [name]: value,
+      ...(name === "referredBySource" && value !== REFERRED_BY_SOMEONE
+        ? { referrerName: "", referrerEmail: "", referrerPhone: "" }
+        : {}),
+    }));
+    setErrors((err) => ({
+      ...err,
+      [name]: undefined,
+      ...(name === "referredBySource" && value !== REFERRED_BY_SOMEONE
+        ? { referrerName: undefined, referrerEmail: undefined }
+        : {}),
+    }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -266,6 +298,108 @@ export default function BookingForm({ source = "booking", context }: BookingForm
           ))}
         </select>
       </div>
+
+      <div>
+        <label
+          htmlFor="referredBySource"
+          className="block text-sm font-medium text-[#1B2A3D] mb-1"
+        >
+          Who referred you to Scan Your Score? <span className="text-red-500">*</span>
+        </label>
+        <select
+          id="referredBySource"
+          name="referredBySource"
+          value={form.referredBySource}
+          onChange={handleChange}
+          className={inputClass("referredBySource") + " bg-white"}
+          aria-required="true"
+          aria-describedby={errors.referredBySource ? "referredBySource-error" : undefined}
+        >
+          <option value="">Select an option</option>
+          {referredByOptions.map((o) => (
+            <option key={o} value={o}>
+              {o}
+            </option>
+          ))}
+        </select>
+        {errors.referredBySource && (
+          <p id="referredBySource-error" className="mt-1 text-xs text-red-500" role="alert">
+            {errors.referredBySource}
+          </p>
+        )}
+      </div>
+
+      {form.referredBySource === REFERRED_BY_SOMEONE && (
+        <div className="space-y-4 rounded-xl border border-gray-100 bg-[#F9FAFB] p-4">
+          <div>
+            <label
+              htmlFor="referrerName"
+              className="block text-sm font-medium text-[#1B2A3D] mb-1"
+            >
+              Please enter their name <span className="text-red-500">*</span>
+            </label>
+            <input
+              id="referrerName"
+              name="referrerName"
+              type="text"
+              value={form.referrerName}
+              onChange={handleChange}
+              className={inputClass("referrerName")}
+              placeholder="Referrer's name"
+              aria-required="true"
+              aria-describedby={errors.referrerName ? "referrerName-error" : undefined}
+            />
+            {errors.referrerName && (
+              <p id="referrerName-error" className="mt-1 text-xs text-red-500" role="alert">
+                {errors.referrerName}
+              </p>
+            )}
+          </div>
+
+          <div>
+            <label
+              htmlFor="referrerEmail"
+              className="block text-sm font-medium text-[#1B2A3D] mb-1"
+            >
+              Their email <span className="text-red-500">*</span>
+            </label>
+            <input
+              id="referrerEmail"
+              name="referrerEmail"
+              type="email"
+              value={form.referrerEmail}
+              onChange={handleChange}
+              className={inputClass("referrerEmail")}
+              placeholder="referrer@example.com"
+              aria-required="true"
+              aria-describedby={errors.referrerEmail ? "referrerEmail-error" : undefined}
+            />
+            {errors.referrerEmail && (
+              <p id="referrerEmail-error" className="mt-1 text-xs text-red-500" role="alert">
+                {errors.referrerEmail}
+              </p>
+            )}
+          </div>
+
+          <div>
+            <label
+              htmlFor="referrerPhone"
+              className="block text-sm font-medium text-[#1B2A3D] mb-1"
+            >
+              Their phone (optional)
+            </label>
+            <input
+              id="referrerPhone"
+              name="referrerPhone"
+              type="tel"
+              value={form.referrerPhone}
+              onChange={handleChange}
+              className={inputClass("referrerPhone")}
+              placeholder="+61 4XX XXX XXX"
+            />
+          </div>
+        </div>
+      )}
 
       {submitError && (
         <p className="text-sm text-red-500 text-center" role="alert">

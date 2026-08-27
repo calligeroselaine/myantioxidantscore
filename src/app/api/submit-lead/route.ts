@@ -15,7 +15,18 @@ const SOURCE_LABELS: Record<string, string> = {
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const { firstName, lastName, email, phone, referral, source } = body;
+  const {
+    firstName,
+    lastName,
+    email,
+    phone,
+    referral,
+    referredBySource,
+    referrerName,
+    referrerEmail,
+    referrerPhone,
+    source,
+  } = body;
 
   if (!firstName || !lastName || !email || !phone || !source) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
@@ -41,6 +52,10 @@ export async function POST(req: NextRequest) {
         LASTNAME: lastName,
         PHONE: phone,
         REFERRAL_SOURCE: referral || "",
+        REFERRED_BY: referredBySource || "",
+        REFERRER_NAME: referrerName || "",
+        REFERRER_EMAIL: referrerEmail || "",
+        REFERRER_PHONE: referrerPhone || "",
       },
       listIds: [listId],
       updateEnabled: true,
@@ -71,6 +86,10 @@ export async function POST(req: NextRequest) {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
         ${referral ? `<p><strong>Heard about us via:</strong> ${referral}</p>` : ""}
+        ${referredBySource ? `<p><strong>Referred By:</strong> ${referredBySource}</p>` : ""}
+        ${referrerName ? `<p><strong>Referrer's Name:</strong> ${referrerName}</p>` : ""}
+        ${referrerEmail ? `<p><strong>Referrer's Email:</strong> ${referrerEmail}</p>` : ""}
+        ${referrerPhone ? `<p><strong>Referrer's Phone:</strong> ${referrerPhone}</p>` : ""}
       `,
     }),
   });
