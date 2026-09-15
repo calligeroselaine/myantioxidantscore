@@ -237,7 +237,7 @@ export default function HomePage() {
                 },
                 {
                   q: "How accurate is it?",
-                  a: "Prysm iO uses 700,000+ measurements per reading and has been validated against blood tests over 20+ years of research.",
+                  a: "Prysm iO uses 700,000+ measurements per reading and has been validated against blood tests with over 20 years of research.",
                 },
               ].map(({ q, a }) => (
                 <div key={q}>
@@ -278,7 +278,7 @@ export default function HomePage() {
                 name: "How accurate is it?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Prysm iO uses 700,000+ measurements per reading and has been validated against blood tests over 20+ years of research.",
+                  text: "Prysm iO uses 700,000+ measurements per reading and has been validated against blood tests with over 20 years of research.",
                 },
               },
             ],

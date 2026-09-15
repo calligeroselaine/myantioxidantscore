@@ -15,7 +15,7 @@ const referralOptions = [
 const REFERRED_BY_NO_ONE = "No one — I found the site myself";
 const REFERRED_BY_SOMEONE = "Someone referred me";
 
-const referredByOptions = [REFERRED_BY_NO_ONE, REFERRED_BY_SOMEONE];
+const referredByOptions = [REFERRED_BY_SOMEONE, REFERRED_BY_NO_ONE];
 
 interface FormState {
   firstName: string;
