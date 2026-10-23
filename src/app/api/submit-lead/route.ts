@@ -3,6 +3,11 @@ import { NextRequest, NextResponse } from "next/server";
 const BREVO_API_KEY = process.env.BREVO_API_KEY!;
 const NOTIFY_EMAIL = process.env.NOTIFY_EMAIL!;
 
+// CRM pipeline: "Nu Great Skin" — stage: "New"
+const PIPELINE_ID = "6a51aa0f955fab05c4bf628e";
+const STAGE_NEW_ID = "6d5b02e360b74b99812b7b765d3f3767";
+const CRM_TIMEOUT_MS = 5000;
+
 const LIST_IDS: Record<string, number> = {
   booking: 3, // Scan Bookings
   partner: 4, // Partner Enquiries
@@ -12,6 +17,120 @@ const SOURCE_LABELS: Record<string, string> = {
   booking: "Scan Booking",
   partner: "Partner Enquiry",
 };
+
+function fetchWithTimeout(url: string, options: RequestInit, ms: number) {
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), ms);
+  return fetch(url, { ...options, signal: controller.signal }).finally(() =>
+    clearTimeout(id)
+  );
+}
+
+async function getBrevoContactId(email: string): Promise<number | null> {
+  const res = await fetchWithTimeout(
+    `https://api.brevo.com/v3/contacts/${encodeURIComponent(email)}`,
+    { headers: { accept: "application/json", "api-key": BREVO_API_KEY } },
+    CRM_TIMEOUT_MS
+  );
+  if (!res.ok) return null;
+  const data = await res.json();
+  return typeof data.id === "number" ? data.id : null;
+}
+
+async function createCrmDeal(params: {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  referral: string;
+  referredBySource: string;
+  referrerName: string;
+  referrerEmail: string;
+  referrerPhone: string;
+}): Promise<void> {
+  const {
+    firstName,
+    lastName,
+    email,
+    phone,
+    referral,
+    referredBySource,
+    referrerName,
+    referrerEmail,
+    referrerPhone,
+  } = params;
+
+  const contactId = await getBrevoContactId(email);
+  if (!contactId) {
+    console.error("CRM: could not retrieve contact ID for", email);
+    return;
+  }
+
+  const dealRes = await fetchWithTimeout(
+    "https://api.brevo.com/v3/crm/deals",
+    {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        accept: "application/json",
+        "api-key": BREVO_API_KEY,
+      },
+      body: JSON.stringify({
+        name: `${firstName} ${lastName} - PRYSM Scan Booking`,
+        attributes: {
+          pipeline: PIPELINE_ID,
+          deal_stage: STAGE_NEW_ID,
+        },
+        linkedContactsIds: [contactId],
+      }),
+    },
+    CRM_TIMEOUT_MS
+  );
+
+  if (!dealRes.ok) {
+    console.error("CRM deal creation failed:", await dealRes.text());
+    return;
+  }
+
+  const { id: dealId } = await dealRes.json();
+
+  const noteLines = [
+    `Source: Scan Booking`,
+    `Name: ${firstName} ${lastName}`,
+    `Email: ${email}`,
+    `Phone: ${phone}`,
+    referral && `Heard about us: ${referral}`,
+    referredBySource && `Referred by: ${referredBySource}`,
+    referrerName && `Referrer name: ${referrerName}`,
+    referrerEmail && `Referrer email: ${referrerEmail}`,
+    referrerPhone && `Referrer phone: ${referrerPhone}`,
+    `Submitted: ${new Date().toISOString()}`,
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  const noteRes = await fetchWithTimeout(
+    "https://api.brevo.com/v3/crm/notes",
+    {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        accept: "application/json",
+        "api-key": BREVO_API_KEY,
+      },
+      body: JSON.stringify({
+        text: noteLines,
+        dealIds: [dealId],
+        contactIds: [contactId],
+      }),
+    },
+    CRM_TIMEOUT_MS
+  );
+
+  if (!noteRes.ok) {
+    console.error("CRM note creation failed:", await noteRes.text());
+  }
+}
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -93,6 +212,25 @@ export async function POST(req: NextRequest) {
       `,
     }),
   });
+
+  // CRM: create deal + note for scan bookings only (failure never fails the booking)
+  if (source === "booking") {
+    try {
+      await createCrmDeal({
+        firstName,
+        lastName,
+        email,
+        phone,
+        referral: referral || "",
+        referredBySource: referredBySource || "",
+        referrerName: referrerName || "",
+        referrerEmail: referrerEmail || "",
+        referrerPhone: referrerPhone || "",
+      });
+    } catch (err) {
+      console.error("CRM deal error:", err);
+    }
+  }
 
   return NextResponse.json({ success: true });
 }
