@@ -107,7 +107,7 @@ async function createCrmDeal(params: {
     `Submitted: ${new Date().toISOString()}`,
   ]
     .filter(Boolean)
-    .join("\n");
+    .join("<br>");
 
   const noteRes = await fetchWithTimeout(
     "https://api.brevo.com/v3/crm/notes",
